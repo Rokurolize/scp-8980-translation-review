@@ -1,0 +1,220 @@
+{
+  "segment_id": "09_addendum5_post_reemployment",
+  "title": "SCP-8980 該当箇所 09 査読",
+  "source_en_path": "articles/fragment_scp-8980-1/segments/en/09_addendum5_post_reemployment.wikidot",
+  "source_jp_path": "`congy.wikidot` 行 1885-2083 付近",
+  "source_range": {
+    "start": 1885,
+    "end": 2083,
+    "note": "`congy.wikidot` 行 1885-2083 付近"
+  },
+  "usage_notes": [
+    "この箇所では、SCP-8980 がバーンズの管轄を抜けようとする方向が見えているかを最優先で確認する。\n今回は 3 件ともそのまま採る。"
+  ],
+  "overview": [
+    "ここは単なる口論ではない。\nSCP-8980 が初めて制度の抜け道を探し、バーンズを飛ばして別経路へ進もうとする場面である。\nしたがって、制度名、迂回、案件移管の 3 つが崩れると、この箇所全体の方向が変わる。"
+  ],
+  "issues": [
+    {
+      "id": "E-09-01",
+      "severity": "error",
+      "order": 1,
+      "heading": "引用符つき制度名が制度語として立っていない",
+      "en_display_lines": [
+        "`\"continued employment despite anomalous interference\"`"
+      ],
+      "line_display_lines": [
+        "`1527`"
+      ],
+      "jp_display_lines": [
+        "`異常影響の保有に関わらない雇用継続`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 1527
+        }
+      ],
+      "summary": "これはSCP-8980が皮肉を込めて言い直す制度名であり、構文も意味も崩してはいけない。",
+      "why_bad": [
+        "`interference` が `保有` に化けている",
+        "制度名として読めない",
+        "SCP-8980 が自分を縛る仕組みを苦々しく呼ぶ感じが消える"
+      ],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "N-09-01",
+      "severity": "note",
+      "order": 1,
+      "heading": "`\"quickly achieved similar efficiency\"` の回復感を残す",
+      "en_display_lines": [
+        "`\"For the first few days following SCP-8980's accommodations being standardized, SCP-8980 showed signs of struggling, however quickly achieved similar efficiency within a week of acclimation, despite the limitations.\"`"
+      ],
+      "line_display_lines": [
+        "`1487`"
+      ],
+      "jp_display_lines": [
+        "`SCP-8980の収容環境が標準化された後、最初の数日間はSCP-8980は苦労している様子を見せていましたが、制約の存在に関わらず順応後1週間以内に__当初の__効率性を速やかに達成しました。`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 1487
+        }
+      ],
+      "summary": "内容は通るが、`quickly achieved` の「急速に元の水準へ戻った」感じを残したい。",
+      "why_bad": [],
+      "fix_directions": [
+        "`順応から1週間も経たないうちに` として、回復の速度を見せる",
+        "`similar efficiency` は `同程度の効率` で止めず、元の水準への復帰を匂わせる"
+      ],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-09-02",
+      "severity": "error",
+      "order": 2,
+      "heading": "`\"go around you\"` が先回りの意味にずれている",
+      "en_display_lines": [
+        "`\"I'll just go around you.\"`"
+      ],
+      "line_display_lines": [
+        "`1593`"
+      ],
+      "jp_display_lines": [
+        "`私は一足先に行くつもりです。`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 1593
+        }
+      ],
+      "summary": "ここはバーンズを飛ばして別の窓口へ行く宣言である。",
+      "why_bad": [
+        "競争で先回りする意味に読める",
+        "直後の申立てや RFR と接続しない"
+      ],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "N-09-02",
+      "severity": "note",
+      "order": 2,
+      "heading": "`\"The Foundation often does things to people that they don't agree with.\"` の制度性を落とさない",
+      "en_display_lines": [
+        "`\"The Foundation often does things to people that they don't agree with.\"`"
+      ],
+      "line_display_lines": [
+        "`1559`"
+      ],
+      "jp_display_lines": [
+        "`財団というのはしばしば人々にとって同意できないような真似をする。`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 1559
+        }
+      ],
+      "summary": "`often` と `don't agree with` が、財団の慣常的な加害を指していることを明示しておきたい。",
+      "why_bad": [],
+      "fix_directions": [
+        "`しばしば` を軽く流さず、制度として繰り返される冷たさとして読む",
+        "`同意できない` だけでなく、押しつけの常態を出す"
+      ],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-09-03",
+      "severity": "error",
+      "order": 3,
+      "heading": "`\"get my case off your hands\"` が退去要求に化けている",
+      "en_display_lines": [
+        "`\"get my case off your hands\"`"
+      ],
+      "line_display_lines": [
+        "`1593`"
+      ],
+      "jp_display_lines": [
+        "`この件についてお引き取りいただければ`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 1593
+        }
+      ],
+      "summary": "ここは案件移管の要求であって、相手に帰れと言っているのではない。",
+      "why_bad": [
+        "`case` の制度語が落ちる",
+        "担当替えを求める文として読めない"
+      ],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "N-09-03",
+      "severity": "note",
+      "order": 3,
+      "heading": "`\"You barely talked to us outside of work.\"` の薄さを残す",
+      "en_display_lines": [
+        "`\"You barely talked to us outside of work.\"`"
+      ],
+      "line_display_lines": [
+        "`1535`"
+      ],
+      "jp_display_lines": [
+        "`仕事以外ではほとんど我々と話をしませんでしたよね。`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 1535
+        }
+      ],
+      "summary": "`barely` は単なる「ほとんど」より、関係の薄さを突きつける語である。",
+      "why_bad": [],
+      "fix_directions": [
+        "`ろくに` を使って、接触の少なさを刺す",
+        "仕事外の距離感を、ただの事実ではなく不満として出す"
+      ],
+      "extra_blocks": []
+    },
+    {
+      "id": "N-09-04",
+      "severity": "note",
+      "order": 4,
+      "heading": "`\"motions around wildly\"` の制御喪失を落とさない",
+      "en_display_lines": [
+        "`\"SCP-8980 motions around wildly.\"`"
+      ],
+      "line_display_lines": [
+        "`1545`"
+      ],
+      "jp_display_lines": [
+        "`SCP-8980は激しく動き回る。`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 1545
+        }
+      ],
+      "summary": "`wildly` は単なる強さではなく、制御を失った取り乱し方を示している。",
+      "why_bad": [],
+      "fix_directions": [
+        "`激しく` で止めず、`取り乱して` `無我夢中で` のように様子を出す",
+        "動きの大きさより、感情の崩れを前景化する"
+      ],
+      "extra_blocks": []
+    }
+  ],
+  "extra_sections": [],
+  "conclusions": [
+    "- 再雇用後の回復は、速度と限定性の両方を残す\n- 財団の常態的な加害は、軽い一般論に落とさない\n- `barely` は人間関係の薄さまで含めて訳す"
+  ]
+}

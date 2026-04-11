@@ -1,0 +1,204 @@
+{
+  "segment_id": "12_addendum6_containment_plan",
+  "title": "SCP-8980 該当箇所 12 査読",
+  "source_en_path": "articles/fragment_scp-8980-1/segments/en/12_addendum6_containment_plan.wikidot",
+  "source_jp_path": "`congy.wikidot` 行 2550-2740 付近",
+  "source_range": {
+    "start": 2550,
+    "end": 2740,
+    "note": "`congy.wikidot` 行 2550-2740 付近"
+  },
+  "usage_notes": [
+    "この箇所では、バーンズが規範に従うふりをしながら、同じ方向へ SCP-8980 を押し戻しているかを見抜く。\n今回の 5 件はすべてそのまま採る。"
+  ],
+  "overview": [
+    "要点は、やわらかい語ほど疑って読むことにある。\n`amenable` `save you trouble` `Okay?` `two cents` `comfortable` は、どれも親切そうに見えて支配の滑りをよくしている。"
+  ],
+  "issues": [
+    {
+      "id": "E-12-01",
+      "severity": "error",
+      "order": 1,
+      "heading": "`\"amenable\"` を「働きやすい」にすると善意化しすぎる",
+      "en_display_lines": [
+        "`\"some more amenable conditions\"`"
+      ],
+      "line_display_lines": [
+        "`2092`"
+      ],
+      "jp_display_lines": [
+        "`より働きやすい環境`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2092
+        }
+      ],
+      "summary": "ここは職場改善ではなく、もう少し従わせやすい条件を探る話である。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "N-12-01",
+      "severity": "note",
+      "order": 1,
+      "heading": "`\"Never thought I'd see you act so professional — you didn't even stutter!\"` の嘲りを分ける",
+      "en_display_lines": [
+        "`\"Wow, they must've given you quite the beating, Byrnes! Never thought I'd see you act so professional — you didn't even stutter!\"`"
+      ],
+      "line_display_lines": [
+        "`2054`"
+      ],
+      "jp_display_lines": [
+        "`おお、バーンズ、相当ひどい目に遭ったんですね！あなたがこんなにもプロらしく振舞ってくれるとは思いもよりませんでしたよ。どもりもしなかったではありませんか！`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2054
+        }
+      ],
+      "summary": "驚きと嘲笑の二段があるので、`Never thought` の軽さと `you didn't even stutter` の皮肉を別々に立てたい。",
+      "why_bad": [],
+      "fix_directions": [
+        "`思いもよりませんでした` を、やや軽い驚きとして残す",
+        "`どもりもしなかった` は、バーンズをからかう刺さり方を保つ"
+      ],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-12-02",
+      "severity": "error",
+      "order": 2,
+      "heading": "`\"save you trouble\"` は親切ではなく会話の遮断",
+      "en_display_lines": [
+        "`\"Let me save you trouble Chris.\"`"
+      ],
+      "line_display_lines": [
+        "`2120`"
+      ],
+      "jp_display_lines": [
+        "`あなたの手間を省いてあげましょう。`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2120
+        }
+      ],
+      "summary": "ここは「どうせそう言うつもりでしょうから、先に言います」という遮断である。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "N-12-02",
+      "severity": "note",
+      "order": 2,
+      "heading": "`\"I highly recommend\"` の強さを落とさない",
+      "en_display_lines": [
+        "`\"I highly recommend that you don't file it, though, if you want my two cents.\"`"
+      ],
+      "line_display_lines": [
+        "`2132`"
+      ],
+      "jp_display_lines": [
+        "`ただ、個人的な意見としては、提出しないことを//強く//推奨します。`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2132
+        }
+      ],
+      "summary": "`highly` は強い押しつけで、`if you want my two cents` の軽口と組み合わさることで、丁寧さより介入の強さが立つ。",
+      "why_bad": [],
+      "fix_directions": [
+        "`余計なお世話を承知で` のように、口出しの感じを出す",
+        "`強く` を落とさず、推奨の強圧感を残す"
+      ],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-12-03",
+      "severity": "error",
+      "order": 3,
+      "heading": "最後の `\"Okay?\"` は確認強制である",
+      "en_display_lines": [
+        "`\"I am fine. I am fine. Okay?\"`"
+      ],
+      "line_display_lines": [
+        "`2120`"
+      ],
+      "jp_display_lines": [
+        "`大丈夫でしょうか？`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2120
+        }
+      ],
+      "summary": "これは自分の状態を尋ねる文ではない。会話を閉じるための圧である。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-12-04",
+      "severity": "error",
+      "order": 4,
+      "heading": "`\"if you want my two cents\"` は軽口混じりの差し出口",
+      "en_display_lines": [
+        "`\"if you want my two cents\"`"
+      ],
+      "line_display_lines": [
+        "`2132`"
+      ],
+      "jp_display_lines": [
+        "`個人的な意見としては`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2132
+        }
+      ],
+      "summary": "丁寧な私見ではなく、頼まれてもいない口出しとして訳すべきである。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-12-05",
+      "severity": "error",
+      "order": 5,
+      "heading": "`\"comfortable with its new role\"` を美化しない",
+      "en_display_lines": [
+        "`\"as comfortable as possible with its new role\"`"
+      ],
+      "line_display_lines": [
+        "`2144`"
+      ],
+      "jp_display_lines": [
+        "`新たな役割にできるだけ快く順応`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2144
+        }
+      ],
+      "summary": "ここは役割受容をやわらかく包む嫌な言い方であって、前向きな適応ではない。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    }
+  ],
+  "extra_sections": [],
+  "conclusions": [
+    "- 嘲りと親切ぶりは、同じ日本語に潰さない\n- `highly` は単なる強調ではなく、介入の圧として訳す\n- `Never thought` の軽い驚きを、礼儀正しさに変えすぎない"
+  ]
+}

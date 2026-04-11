@@ -1,0 +1,309 @@
+{
+  "segment_id": "05_addendum1_initial_interview",
+  "title": "SCP-8980 該当箇所 05 査読",
+  "source_en_path": "articles/fragment_scp-8980-1/segments/en/05_addendum1_initial_interview.wikidot",
+  "source_jp_path": "`congy.wikidot` 行 1125-1298 付近",
+  "source_range": {
+    "start": 1125,
+    "end": 1298,
+    "note": "`congy.wikidot` 行 1125-1298 付近"
+  },
+  "usage_notes": [
+    "この箇所は、SCP-8980 とバーンズの声の基準線を決める。\nしたがって、単語対応だけでなく、誰がどんな距離で話しているかを必ず残す。",
+    "- `[ERROR]` はそのまま修正対象\n- `[NOTE]` は補強候補として弱めて残す"
+  ],
+  "overview": [
+    "現行訳は大意は追えているが、初期バーンズの「丁寧な外面」と、SCP-8980 の「知的な怒り」がかなり平らになっている。\n加えて、日付ミスが 1 行目から入っており、これは単純だが重い。",
+    "ここでバーンズを最初から露骨に雑な人間へ寄せると、後半で仮面が剥がれる落差を先に食ってしまう。"
+  ],
+  "issues": [
+    {
+      "id": "E-05-01",
+      "severity": "error",
+      "order": 1,
+      "heading": "日付 `March 10th, 2005` を取り違えない",
+      "en_display_lines": [
+        "`DATE: March 10th, 2005`"
+      ],
+      "line_display_lines": [
+        "`959`"
+      ],
+      "jp_display_lines": [
+        "`日付: 2005年5月10日`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 959
+        }
+      ],
+      "summary": "これは単純な誤訳だが、後続の時系列と一周年対応を壊す。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": [
+        {
+          "label": "修正",
+          "kind": "text",
+          "value": "`2005年3月10日` に戻す。"
+        }
+      ]
+    },
+    {
+      "id": "N-05-01",
+      "severity": "note",
+      "order": 1,
+      "heading": "`Lillian—` のダッシュは中断として残したい",
+      "en_display_lines": [
+        "`Lillian—`"
+      ],
+      "line_display_lines": [
+        "`975`"
+      ],
+      "jp_display_lines": [
+        "`リリアン?`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 975
+        }
+      ],
+      "summary": "このままでも内容は追えるが、疑問符だと呼びかけの語尾に聞こえる。ここは遮られた中断の方が、バーンズの馴れ馴れしさと直後の訂正要求を自然につなげる。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-05-02",
+      "severity": "error",
+      "order": 2,
+      "heading": "`\"my heuristic\"` の所有格を落とさない",
+      "en_display_lines": [
+        "`\"my heuristic for {calculating Ackermann function values for m over 50}\"`"
+      ],
+      "line_display_lines": [
+        "`1009`"
+      ],
+      "jp_display_lines": [
+        "`発見的手法に関するプレゼンテーションの最中でした。`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 1009
+        }
+      ],
+      "summary": "ここは SCP-8980 自身の研究成果であり、所有格を落とすと後続の研究盗用の伏線が弱まる。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "N-05-02",
+      "severity": "note",
+      "order": 2,
+      "heading": "`\"tilts its head upwards\"` の動きはもう少し具体化できる",
+      "en_display_lines": [
+        "`\"tilts its head upwards\"`"
+      ],
+      "line_display_lines": [
+        "`1042`"
+      ],
+      "jp_display_lines": [
+        "`頭を上に向ける`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 1042
+        }
+      ],
+      "summary": "今の訳でも概意は取れるが、ただ上を見るより、後ろにもたれた姿勢のまま天井を仰ぐ動きとして出した方が、閉じ込められた窮屈さと倦みが見えやすい。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-05-03",
+      "severity": "error",
+      "order": 3,
+      "heading": "`\"inane procedures\"` と `\"for someone such as you\"` の裏表を潰さない",
+      "en_display_lines": [
+        "`\"being forced to undergo these inane procedures must be quite troublesome for someone such as you.\"`"
+      ],
+      "line_display_lines": [
+        "`981`"
+      ],
+      "jp_display_lines": [
+        "`このような何の足しにもならないような手順を踏まねばならないということは、あなたのような人にはさぞ迷惑のかかることでしょうから。`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 981
+        }
+      ],
+      "summary": "ここは表向きの敬意と、その下にある軽蔑が同時に出ていなければならない。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "N-05-03",
+      "severity": "note",
+      "order": 3,
+      "heading": "`\"circumstances in which\"` は「時の状況」より「経緯」に寄せたい",
+      "en_display_lines": [
+        "`Next, please describe the circumstances in which you discovered your anomalous properties.`"
+      ],
+      "line_display_lines": [
+        "`997`"
+      ],
+      "jp_display_lines": [
+        "`では次に、自身の異常性に気付いた時の状況について説明してください。`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 997
+        }
+      ],
+      "summary": "ここは単なる発見の瞬間ではなく、どういう場面で、どういう経緯で異常性が見つかったかを聞いている。`時の状況` だけだと、条件や背景が細くなる。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-05-04",
+      "severity": "error",
+      "order": 4,
+      "heading": "`\"Wonderful.\"` を権威的にしない",
+      "en_display_lines": [
+        "`\"Wonderful.\"`"
+      ],
+      "line_display_lines": [
+        "`1058`"
+      ],
+      "jp_display_lines": [
+        "`宜しい。`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 1058
+        }
+      ],
+      "summary": "ここは軽い事務的承認であって、「うむ、許す」の語感ではない。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "N-05-04",
+      "severity": "note",
+      "order": 4,
+      "heading": "`sympathetically` と `audible yawn` はバーンズの作り物の親切を残したい",
+      "en_display_lines": [
+        "`Dr. Byrnes smiles sympathetically, then stretches, letting out an audible yawn.`"
+      ],
+      "line_display_lines": [
+        "`1046`"
+      ],
+      "jp_display_lines": [
+        "`悼ましそうに笑みを浮かべ、それから伸びをして、音を出してあくびをする。`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 1046
+        }
+      ],
+      "summary": "ここは本当に親切な笑顔ではなく、親切に見せる笑顔である。さらに `audible yawn` は、聞こえるあくびとして残さないと、バーンズの気の抜けた支配が弱まる。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-05-05",
+      "severity": "error",
+      "order": 5,
+      "heading": "`\"That\"` の指示対象をずらさない",
+      "en_display_lines": [
+        "`\"That would at least be appreciated.\"`"
+      ],
+      "line_display_lines": [
+        "`1052`"
+      ],
+      "jp_display_lines": [
+        "`あなたのことは恩に着られますね`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 1052
+        }
+      ],
+      "summary": "感謝しているのはバーンズ個人ではなく、読み物を持ち込む提案そのものである。",
+      "why_bad": [],
+      "fix_directions": [
+        "提案自体を指す文に戻す",
+        "バーンズ個人への恩義へずらさない"
+      ],
+      "extra_blocks": []
+    },
+    {
+      "id": "N-05-05",
+      "severity": "note",
+      "order": 5,
+      "heading": "`both blood samples and physical examination` は両方を明示したい",
+      "en_display_lines": [
+        "`SCP-8980 anomalous property testing will proceed using both blood samples and physical examination.`"
+      ],
+      "line_display_lines": [
+        "`1068`"
+      ],
+      "jp_display_lines": [
+        "`SCP-8980の異常性の検査は血液サンプルの使用と身体検査を併せて実施する予定です。`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 1068
+        }
+      ],
+      "summary": "`併せて` でも意味は通るが、`both` は「血液サンプルと身体検査の両方」をわざわざ立てる語である。片方を主、片方を従にしない方がよい。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-05-06",
+      "severity": "error",
+      "order": 6,
+      "heading": "`\"Yes, that should be sufficient.\"` を「はいはい」にしない",
+      "en_display_lines": [
+        "`\"Yes, that should be sufficient.\"`"
+      ],
+      "line_display_lines": [
+        "`1023`"
+      ],
+      "jp_display_lines": [
+        "`はいはい`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 1023
+        }
+      ],
+      "summary": "初期バーンズはまだ丁寧な仮面を維持している。ここで露骨な雑さを先取りしない。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    }
+  ],
+  "extra_sections": [],
+  "conclusions": [
+    "- この箇所ではまず時系列と声の基準線を直す\n- バーンズは最初から露骨に粗暴にしない\n- SCP-8980 の研究者としての主体性を、所有格や言い回しで落とさない"
+  ]
+}

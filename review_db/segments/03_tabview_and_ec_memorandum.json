@@ -1,0 +1,86 @@
+{
+  "segment_id": "03_tabview_and_ec_memorandum",
+  "title": "SCP-8980 該当箇所 03 査読",
+  "source_en_path": "articles/fragment_scp-8980-1/segments/en/03_tabview_and_ec_memorandum.wikidot",
+  "source_jp_path": "`congy.wikidot` 行 896-980 付近",
+  "source_range": {
+    "start": 896,
+    "end": 980,
+    "note": "`congy.wikidot` 行 896-980 付近"
+  },
+  "usage_notes": [
+    "- `[ERROR]` は題名や制度文の基準線を壊しているため優先修正\n- この箇所は入口文なので、弱い日本語や無難な注意文に落とさない"
+  ],
+  "overview": [
+    "ここは題名、内容警告、倫理委員会覚書という「読者の読み方を決める入口」が一度に並ぶ。\n量は短いが、ここで言葉の温度を落とすと本文全体の牙が抜ける。",
+    "今回、強く採るべき論点は 1 つだけである。\nそれが題名後半 `\"Without Regards\"` の処理である。"
+  ],
+  "issues": [
+    {
+      "id": "E-03-01",
+      "severity": "error",
+      "order": 1,
+      "heading": "`\"Without Regards\"` を「気遣いなど無く」で処理すると軽すぎる",
+      "en_display_lines": [
+        "`SCP-8980 — Ergophobia: Without Regards`"
+      ],
+      "line_display_lines": [
+        "`799`"
+      ],
+      "jp_display_lines": [
+        "`SCP-8980 - 仕事恐怖症: 気遣いなど無く`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 799
+        }
+      ],
+      "summary": "この副題は、単なる親切不足ではなく、相手を顧みないこと、そのまま勘定に入れないことを含む。現状訳は軽く、題名として締まらない。",
+      "why_bad": [
+        "`気遣い` だと日常的な親切不足に縮む",
+        "`など` が入ることで広告文句のように軽く見える",
+        "作品全体に通底する「顧みられなさ」「制度的な無視」の重さが出ない"
+      ],
+      "fix_directions": [
+        "`顧慮`",
+        "`顧みられず`",
+        "`何一つ顧みられず`"
+      ],
+      "extra_blocks": []
+    },
+    {
+      "id": "N-03-01",
+      "severity": "note",
+      "order": 1,
+      "heading": "内容警告の強度は公文書調で立てたい",
+      "en_display_lines": [
+        "`\"extremely sensitive material. Viewer discretion is heavily advised.\"`"
+      ],
+      "line_display_lines": [
+        "`802`"
+      ],
+      "jp_display_lines": [
+        "`非常にセンシティブな内容が含まれていますので、閲覧には十分ご注意ください。`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 802
+        }
+      ],
+      "summary": "現状訳でも警告であることは伝わるが、ここは日常的な注意喚起ではなく、強い閲覧警告としてもう一段冷たく立てたい。",
+      "why_bad": [
+        "`センシティブ` と `十分ご注意ください` の組み合わせだと、記事冒頭の告知として少し軽い",
+        "`heavily advised` の強い勧告が、やわらかいお願い文に寄る",
+        "直後の倫理委員会覚書へ接続する公文書トーンが弱まる"
+      ],
+      "fix_directions": [],
+      "extra_blocks": []
+    }
+  ],
+  "extra_sections": [],
+  "conclusions": [
+    "- まず題名後半を差し替える\n- そのうえで内容警告と覚書導入文を同じ温度へ揃える\n- 入口文は「自然」より「読者にどういう作品かを正しく学習させること」を優先する"
+  ]
+}

@@ -1,0 +1,439 @@
+{
+  "segment_id": "14_addendum8_health_crawford",
+  "title": "SCP-8980 該当箇所 14 査読",
+  "source_en_path": "articles/fragment_scp-8980-1/segments/en/14_addendum8_health_crawford.wikidot",
+  "source_jp_path": "`congy.wikidot` 行 3063-3568 付近",
+  "source_range": {
+    "start": 3063,
+    "end": 3568,
+    "note": "`congy.wikidot` 行 3063-3568 付近"
+  },
+  "usage_notes": [
+    "既存査読で大きな論点はかなり拾えている。\nこの改稿では、未収録の論点を原文の登場順で、実際に直すための作業項目として並べ直す。"
+  ],
+  "overview": [
+    "この箇所では、クロフォードの刷り込みが後半のバーンズ面談でそのまま再生される。\nしたがって、前半の身体描写と後半のメタデータ、復唱、退室要求のどれも小粒ではない。"
+  ],
+  "issues": [
+    {
+      "id": "E-14-01",
+      "severity": "error",
+      "order": 1,
+      "heading": "`\"What makes you say that, Lillian?\"` から `\"fidgets in place absentmindedly\"` までを、穏やかな誘導として残す",
+      "en_display_lines": [
+        "`\"What makes you say that, Lillian?\"` / `\"fidgets in place absentmindedly\"` / `\"Dr. Crawford is occupied writing notes at her desk\"`"
+      ],
+      "line_display_lines": [
+        "`2408` / `2440` / `2440`"
+      ],
+      "jp_display_lines": [
+        "`どうしてそう思うんですか、リリアン？` / `ぼんやりとその場で足踏みをしている` / `クロフォード博士は机でメモを取っており`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2408
+        },
+        {
+          "kind": "line",
+          "line": 2440
+        },
+        {
+          "kind": "line",
+          "line": 2440
+        }
+      ],
+      "summary": "ここは雑談の入口ではなく、相手をほどきながら話を引き出す誘導である。`occupied writing notes` を弱めると、クロフォードが話を聞くより記録を優先している嫌さが抜ける。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-14-02",
+      "severity": "error",
+      "order": 2,
+      "heading": "`\"His loss, right?\"` は慰めの軽口であって、確認ではない",
+      "en_display_lines": [
+        "`\"His loss, right?\"`"
+      ],
+      "line_display_lines": [
+        "`2484`"
+      ],
+      "jp_display_lines": [
+        "`彼の損です。いいですね？`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2484
+        }
+      ],
+      "summary": "ここは相手を軽く慰める語り口であり、採点のような確認にするとクロフォードの押しつけが弱まる。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-14-03",
+      "severity": "error",
+      "order": 3,
+      "heading": "`Something new seems to be bothering you today.` と `It's important...` を、やさしい語で丸めない",
+      "en_display_lines": [
+        "`\"Something new seems to be bothering you today.\"`",
+        "`\"It's important for you to be able to communicate your feelings with me if you want me to be able to help you.\"`"
+      ],
+      "line_display_lines": [
+        "`2542`",
+        "`2548`"
+      ],
+      "jp_display_lines": [
+        "`なんだか今日はいつもと違うことがあるみたいですね。` / `私があなたを助けられるようになりたければ、気持ちを私に伝えられることが大事ですよ。`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2542
+        },
+        {
+          "kind": "line",
+          "line": 2548
+        }
+      ],
+      "summary": "ここは相談の顔をした上書きであり、話しやすさを演出しながら相手の拒否権を奪っている。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-14-04",
+      "severity": "error",
+      "order": 4,
+      "heading": "`It's simply awful, isn't it?` から `There's no shame...` までを、慰めの顔をした上書きとして読む",
+      "en_display_lines": [
+        "`\"It's simply awful, isn't it?\"` / `\"Oh, dearie, it's my job to know these things.\"` / `\"There's no shame in feeling upset or angry at the circumstances you've been put in.\"`"
+      ],
+      "line_display_lines": [
+        "`2554` / `2566` / `2588`"
+      ],
+      "jp_display_lines": [
+        "`それは、ひどいことですよね？` / `あら、そういうことを知っておくのは私の仕事なんですから。` / `置かれた状況に腹を立てたり落ち込んだりしても、恥じることはありません。`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2554
+        },
+        {
+          "kind": "line",
+          "line": 2566
+        },
+        {
+          "kind": "line",
+          "line": 2588
+        }
+      ],
+      "summary": "ここは同意を取りながら、相手の受け取り方を全部クロフォード側の枠へ戻している。`It's simply awful, isn't it?` を外すと、同情の口調だけが残って、同意の押しつけが見えなくなる。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-14-05",
+      "severity": "error",
+      "order": 5,
+      "heading": "`\"What's the fucking point, then?\"` と `\"What the hell do I do then?\"` を、追い詰められた行き場のなさとして返す",
+      "en_display_lines": [
+        "`\"What's the fucking point, then?\"`",
+        "`\"(Mumbling) What the hell do I do then?\"`"
+      ],
+      "line_display_lines": [
+        "`2576`",
+        "`2594`"
+      ],
+      "jp_display_lines": [
+        "`じゃあ、何の意味があるんだよ？` / `じゃあ、私は何をすればいいんだよ。`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2576
+        },
+        {
+          "kind": "line",
+          "line": 2594
+        }
+      ],
+      "summary": "ここは説明を求めているのではなく、行き先を失った反発が噴き出している。無難な質問にすると、追い詰められた感じが抜ける。",
+      "why_bad": [
+        "追い詰められた反発が、ただの疑問に見える",
+        "受け身の苦さが弱まり、クロフォードの誘導が軽く見える"
+      ],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-14-06",
+      "severity": "error",
+      "order": 6,
+      "heading": "`\"a challenge\"` は前段で植え付けられた言い換えである",
+      "en_display_lines": [
+        "`\"consider their problems like... a challenge\"` / `\"A challenge...\"` / `\"Yeah... a... a challenge, right? It's a challenge. I can... yeah... yeah...\"`"
+      ],
+      "line_display_lines": [
+        "`2598` / `2610` / `2614`"
+      ],
+      "jp_display_lines": [
+        "`課題のように考える` だけで済ませた訳 / 復唱"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2598
+        },
+        {
+          "kind": "line",
+          "line": 2610
+        },
+        {
+          "kind": "line",
+          "line": 2614
+        }
+      ],
+      "summary": "ここはクロフォードが「乗り越えるもの」という枠へ言い換え、SCP-8980 がそれを呑み込んで自分に言い聞かせる場面である。復唱だけ切り出すと、植え付けの気味悪さが薄れる。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-14-07",
+      "severity": "error",
+      "order": 7,
+      "heading": "`\"SUBJECT: Newfound Motivation\"` は「動機」ではなく、持ち上がった意欲の件名である",
+      "en_display_lines": [
+        "`\"SUBJECT: Newfound Motivation\"`"
+      ],
+      "line_display_lines": [
+        "`2646`"
+      ],
+      "jp_display_lines": [
+        "`新たに見つかった動機`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2646
+        }
+      ],
+      "summary": "件名を説明文にすると、報告書の冷たさではなく質問票みたいに見える。ここは生産性の急上昇を示すラベルとして置く。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-14-08",
+      "severity": "error",
+      "order": 8,
+      "heading": "ログ ID `8980-S12` を崩さない",
+      "en_display_lines": [
+        "`ID 8980-S12`"
+      ],
+      "line_display_lines": [
+        "`2656`"
+      ],
+      "jp_display_lines": [
+        "`IDは8980-W12`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2656
+        }
+      ],
+      "summary": "これは単純だが重大な誤記で、文書追跡性を壊す。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": [
+        {
+          "label": "修正",
+          "kind": "text",
+          "value": "`8980-S12` に戻す。"
+        }
+      ]
+    },
+    {
+      "id": "E-14-09",
+      "severity": "error",
+      "order": 9,
+      "heading": "`\"change of heart\"` と `\"gives a single shit about me\"` で、心境の変化を疑問視するだけに留めない",
+      "en_display_lines": [
+        "`\"we've had such a sudden change of heart\"` / `\"I'm sure Steele gives a single shit about me\"`"
+      ],
+      "line_display_lines": [
+        "`2668` / `2670`"
+      ],
+      "jp_display_lines": [
+        "`あなたがなぜそんなに急に考えを変えたのか` / `ああ、スティールなんかがどうして私のことを気にするんでしょうね`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2668
+        },
+        {
+          "kind": "line",
+          "line": 2670
+        }
+      ],
+      "summary": "ここは、バーンズが生産性の急上昇を「心境の変化」として疑い、SCP-8980 がその見立てを下品に突き返す場面である。`single shit` の汚さを抜くと、苛立ちが丸くなる。",
+      "why_bad": [
+        "`we've had such a sudden change of heart` を単なる心境の変化にすると、バーンズの疑念が薄くなる",
+        "`single shit` の汚さが抜ける",
+        "SCP-8980 の突っぱね方が丸くなる"
+      ],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-14-10",
+      "severity": "error",
+      "order": 10,
+      "heading": "`\"I'm just feeling better, alright?\"` から `\"Can I go?\"` までを、押しつけられた同意として拾う",
+      "en_display_lines": [
+        "`\"I'm just feeling better, alright?\"` / `\"My therapist has been really useful.\"` / `\"I admit it. Therapy was helpful. Can I go?\"`"
+      ],
+      "line_display_lines": [
+        "`2674` / `2674` / `2678`"
+      ],
+      "jp_display_lines": [
+        "`いいですか？私はただ気分がよくなっただけ。セラピストのおかげです。` / `あなたの言う通りでしたよ、いいですか？セラピストが本当に役に立ったんですよ？`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2674
+        },
+        {
+          "kind": "line",
+          "line": 2674
+        },
+        {
+          "kind": "line",
+          "line": 2678
+        }
+      ],
+      "summary": "ここは `alright?` と `okay?` を重ねながら、相手の語彙をなぞって退室を求めている。`I'm just feeling better` を落とすと、前段の刷り込みが終わった後の自動再生が見えなくなる。",
+      "why_bad": [
+        "`I'm just feeling better, alright?` が落ちる",
+        "`I admit it.` が落ちる",
+        "`Can I go?` が落ちる",
+        "退室要求が消えて支配関係の嫌さが弱まる"
+      ],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-14-11",
+      "severity": "error",
+      "order": 11,
+      "heading": "`\"get their act together\"` を、道徳的更生ではなく持ち直しとして読む",
+      "en_display_lines": [
+        "`\"It's not so common for someone to get their act together without fixing the root cause.\"`"
+      ],
+      "line_display_lines": [
+        "`2680`"
+      ],
+      "jp_display_lines": [
+        "`根本的な原因を解決せずに行動が改まるのはあまり宜しいことではないようで。`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2680
+        }
+      ],
+      "summary": "ここは素行の更生を言っているのではなく、異常な持ち直し方の不自然さを見ている。`行動が改まる` にすると、医療的な観察が道徳説教に寄る。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-14-12",
+      "severity": "error",
+      "order": 12,
+      "heading": "`\"I plead the fifth\"` を法廷文言に寄せすぎない",
+      "en_display_lines": [
+        "`\"I plead the fifth.\"`"
+      ],
+      "line_display_lines": [
+        "`2684`"
+      ],
+      "jp_display_lines": [
+        "`黙秘権を行使します。`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2684
+        }
+      ],
+      "summary": "これは本気の法廷答弁ではなく、皮肉を帯びた決まり文句である。硬すぎると、SCP-8980 が Byrnes をかわした冗談の感じが消える。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-14-13",
+      "severity": "error",
+      "order": 13,
+      "heading": "`\"Can't a lady do her fucking job in peace?\"` と `\"Why do you have to worm...\"` を落とさない",
+      "en_display_lines": [
+        "`\"Can't a lady do her fucking job in peace? Why do you have to worm your way into every goddamn thing I do?\"`"
+      ],
+      "line_display_lines": [
+        "`2690`"
+      ],
+      "jp_display_lines": [
+        "なし"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2690
+        }
+      ],
+      "summary": "ここは、SCP-8980 がようやく抑え込んでいた怒りを噴き出す場面である。ここを抜くと、後の切り上げ要求が単なる切り替えに見える。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-14-14",
+      "severity": "error",
+      "order": 14,
+      "heading": "`\"Thanks for wasting my time. Asshole.\"` を落とさない",
+      "en_display_lines": [
+        "`\"Thanks for wasting my time. Asshole.\"`"
+      ],
+      "line_display_lines": [
+        "現行source_en.wikidotに該当行なし"
+      ],
+      "jp_display_lines": [
+        "なし"
+      ],
+      "source_refs": [
+        {
+          "kind": "note",
+          "note": "現行source_en.wikidotに該当行なし"
+        }
+      ],
+      "summary": "この一言で、面談は「終わった会話」ではなく、見せかけの対話を使った消耗戦だったと分かる。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    }
+  ],
+  "extra_sections": [],
+  "conclusions": [
+    "- 前半の誘導は、単なる雑談に整えない\n- 中盤の同情は、相手の受け取り方を上書きしていると明示する\n- 後半の拒絶は、最後まで拒絶として残す\n- 退室要求と罵倒は、抜くと場面の重さが落ちる"
+  ]
+}

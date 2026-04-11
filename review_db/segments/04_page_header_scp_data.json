@@ -1,0 +1,283 @@
+{
+  "segment_id": "04_page_header_scp_data",
+  "title": "SCP-8980 該当箇所 04 査読",
+  "source_en_path": "articles/fragment_scp-8980-1/segments/en/04_page_header_scp_data.wikidot",
+  "source_jp_path": "`congy.wikidot` 行 1020-1124 付近",
+  "source_range": {
+    "start": 1020,
+    "end": 1124,
+    "note": "`congy.wikidot` 行 1020-1124 付近"
+  },
+  "usage_notes": [
+    "- `[ERROR]` はそのまま修正対象\n- `[NOTE]` は意味は通るが、制度文体や係り先を整えたい論点\n- `[OUT-OF-SCOPE]` はこの箇所単体では処理しない論点",
+    "この箇所は SCP ファイルの顔であり、ここでの誤りは本文全体の読み方を早い段階で誤らせる。"
+  ],
+  "overview": [
+    "この箇所の最重要点は 3 つである。",
+    "- `\"I like you.\" -> \"I lick you.\"` の仕掛けを壊さないこと\n- Description 段落を、日本語として読み通せる制度文に戻すこと\n- 形式文書のトーンを保ったまま、細部の用語や係り先を整えること",
+    "ここで制度文と注釈の顔を崩すと、本文へ入る前から「何がどの方向に SCP-8980 を傷つける現象なのか」がずれる。"
+  ],
+  "issues": [
+    {
+      "id": "E-04-01",
+      "severity": "error",
+      "order": 1,
+      "heading": "`\"I like you.\" -> \"I lick you.\"` を「いいね」→「死ね」にしない",
+      "en_display_lines": [
+        "`\"I like you.\" -> \"I lick you.\"`"
+      ],
+      "line_display_lines": [
+        "`936`"
+      ],
+      "jp_display_lines": [
+        "`「いいね」 -> 「死ね」`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 936
+        }
+      ],
+      "summary": "これは本記事の中心にある「一字違いで性的に不適切化する」仕掛けである。敵意方向へ変えると主題ごとずれる。",
+      "why_bad": [
+        "好意から殺意へ飛んでしまう",
+        "性的嫌がらせの方向が消える",
+        "原文の一字差の見え方も再現できていない"
+      ],
+      "fix_directions": [
+        "原文保持 + 注釈",
+        "どうしても日本語化するなら、性的な不適切化の方向を守る"
+      ],
+      "extra_blocks": []
+    },
+    {
+      "id": "N-04-01",
+      "severity": "note",
+      "order": 1,
+      "heading": "`\"dietary needs\"` 周辺は医療要件と時制を整理したい",
+      "en_display_lines": [
+        "`\"does not require any dietary needs\"` / `\"medical records do not indicate as such as of 2003\"`"
+      ],
+      "line_display_lines": [
+        "`914` / `914`"
+      ],
+      "jp_display_lines": [
+        "`如何なる食事上の配慮も要求していません` / `2003年時点のSCP-8980の医療記録にはそのような記載は存在しません`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 914
+        },
+        {
+          "kind": "line",
+          "line": 914
+        }
+      ],
+      "summary": "このままでも大意は通るが、ここは「何を必要としていないか」と「2003年時点で何が記録にないか」を切り分けた方が、注釈の制度文として読みやすい。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": [
+        {
+          "label": "直すなら",
+          "kind": "list",
+          "items": [
+            "`dietary needs` を日常の食事ではなく医療上の食事要件として置く",
+            "`as of 2003` を医療記録側へ素直に掛ける"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "O-04-01",
+      "severity": "out_of_scope",
+      "order": 1,
+      "heading": "代名詞方針はこの箇所だけで決めない",
+      "en_display_lines": [],
+      "line_display_lines": [],
+      "jp_display_lines": [],
+      "source_refs": [],
+      "summary": "`it / its / itself` の訳し分けは、少なくとも該当箇所 15 以降を含む記事全体の呼称設計として扱うべきである。\nこのファイル単体の修正指示には残さない。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-04-02",
+      "severity": "error",
+      "order": 2,
+      "heading": "Description の列挙が日本語として破綻している",
+      "en_display_lines": [
+        "`\"socially, financially, psychologically, etc.\"`"
+      ],
+      "line_display_lines": [
+        "`933`"
+      ],
+      "jp_display_lines": [
+        "`社会的、経済的、心理的になど`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 933
+        }
+      ],
+      "summary": "ここは制度文として一度で読める形に直す必要がある。",
+      "why_bad": [
+        "助詞列が破綻している",
+        "悪影響の範囲が列挙として読めない"
+      ],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "N-04-02",
+      "severity": "note",
+      "order": 2,
+      "heading": "`\"former duties\"` と `\"still anomalous\"` の係り先を整えたい",
+      "en_display_lines": [
+        "`\"former duties\"` / `\"ensure it is still anomalous\"`"
+      ],
+      "line_display_lines": [
+        "`923` / `923`"
+      ],
+      "jp_display_lines": [
+        "`元の地位と職務に復帰するものとします` / `異常性が残存していることを確認するため`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 923
+        },
+        {
+          "kind": "line",
+          "line": 923
+        }
+      ],
+      "summary": "読めないわけではないが、`former` がどこに掛かるかと、年次検査の目的が少しもつれる。ここは本文と注釈のズレが一読で分かる形へ整理したい。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": [
+        {
+          "label": "直すなら",
+          "kind": "list",
+          "items": [
+            "「元」は職務ではなく誤情報ラベル側で受ける",
+            "年次検査は「まだ異常か」の確認であると素直に書く"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N-04-03",
+      "severity": "note",
+      "order": 3,
+      "heading": "`\"obsolete\"` を「廃止」と断言しすぎない",
+      "en_display_lines": [
+        "`\"Caucasian\" is an obsolete classification`"
+      ],
+      "line_display_lines": [
+        "`931`"
+      ],
+      "jp_display_lines": [
+        "`「コーカソイド」という単語の使用は廃止されました`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 931
+        }
+      ],
+      "summary": "禁じたい方向自体は伝わるが、`obsolete` は「正式に廃止された」と言い切るより、「もう古く、現行では不適切」と言う方が注釈の温度に合う。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "N-04-04",
+      "severity": "note",
+      "order": 4,
+      "heading": "`\"first became anomalous\"` を「最初に異常性を獲得した」に寄せすぎない",
+      "en_display_lines": [
+        "`first became anomalous`"
+      ],
+      "line_display_lines": [
+        "`946`"
+      ],
+      "jp_display_lines": [
+        "`最初に異常性を獲得した`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 946
+        }
+      ],
+      "summary": "ここは「異常性が発覚した」のであって、「本人が異常を獲得した」と言い切る箇所ではない。日本語で強く言い直すと、発見時点の曖昧さが消える。",
+      "why_bad": [
+        "原文は異常化の断定を避けている",
+        "`became` を「獲得した」と置くと、本人が能動的に得たように響く",
+        "`Discovery` 段落の慎重さが薄れる"
+      ],
+      "fix_directions": [
+        "`最初に異常性が確認された`",
+        "`最初に異常性が発覚した`"
+      ],
+      "extra_blocks": []
+    },
+    {
+      "id": "N-04-05",
+      "severity": "note",
+      "order": 5,
+      "heading": "`\"a prominent member of Junior Staff\"` は `a` と所属感を残したい",
+      "en_display_lines": [
+        "`a prominent member of Junior Staff`"
+      ],
+      "line_display_lines": [
+        "`929`"
+      ],
+      "jp_display_lines": [
+        "`ジュニアスタッフの代表的なメンバー`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 929
+        }
+      ],
+      "summary": "このままでも意味は通るが、`a` が示す「同じ集団の中の一員」という感触がやや薄い。`代表的な` だけだと、集団の中の一人というより代表者のように見えやすい。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "N-04-06",
+      "severity": "note",
+      "order": 6,
+      "heading": "`\"is subject to ongoing research\"` は状態として置きたい",
+      "en_display_lines": [
+        "`is subject to ongoing research`"
+      ],
+      "line_display_lines": [
+        "`942`"
+      ],
+      "jp_display_lines": [
+        "`現在調査が進められています`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 942
+        }
+      ],
+      "summary": "言いたいことは合っているが、`subject to` は「研究の対象になっている」という状態述語である。日本語でも、単に「調査中」ではなく、対象として置かれている感じを残したい。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    }
+  ],
+  "extra_sections": [],
+  "conclusions": [
+    "- まず `\"like\" / \"lick\"` の仕掛けを壊さない形へ戻す\n- Description 段落の日本語破綻を直す\n- NOTE 論点は本文全体を大きく動かさず、制度文体の精度を上げる方向で使う"
+  ]
+}

@@ -1,0 +1,452 @@
+{
+  "segment_id": "13_addendum7_tertiary_exp",
+  "title": "SCP-8980 該当箇所 13 査読",
+  "source_en_path": "articles/fragment_scp-8980-1/segments/en/13_addendum7_tertiary_exp.wikidot",
+  "source_jp_path": "`congy.wikidot` 行 2819-3045 付近",
+  "source_range": {
+    "start": 2819,
+    "end": 3045,
+    "note": "`congy.wikidot` 行 2819-3045 付近"
+  },
+  "usage_notes": [
+    "この箇所では、崩壊と制度的正当化が切れ目なく続く流れを保てているかを確認する。\n今回の指摘はすべてそのまま修正対象として扱う。"
+  ],
+  "overview": [
+    "重要なのは、実験コメントの硬さ、崩壊の身体描写、バーンズの押し切り、乱闘、そして制度語までを一続きで保つことである。\n現行訳は大意は通るが、場面ごとの圧力がところどころ切れている。"
+  ],
+  "issues": [
+    {
+      "id": "E-13-01",
+      "severity": "error",
+      "order": 1,
+      "heading": "`\"If we are to find some alternative system, we have to be creative.\"` は意志と硬さを落とさない",
+      "en_display_lines": [
+        "`\"If we are to find some alternative system, we have to be creative.\"`"
+      ],
+      "line_display_lines": [
+        "`2182`"
+      ],
+      "jp_display_lines": [
+        "`代替策を見つけるには創意工夫が必要です`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2182
+        }
+      ],
+      "summary": "意味は通るが、ここは「見つけるつもりなら」という研究者の踏み込みと、後続へ向けた硬さが要る。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-13-02",
+      "severity": "error",
+      "order": 2,
+      "heading": "泣き崩れが実験打ち切りの直接原因だと読めるようにする",
+      "en_display_lines": [
+        "`\"began sobbing uncontrollably, terminating the test\"`"
+      ],
+      "line_display_lines": [
+        "`2196`"
+      ],
+      "jp_display_lines": [
+        "`激しく泣き始めた。研究者らが介入し、実験は早期に終了した。`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2196
+        }
+      ],
+      "summary": "ここは「泣いた。その後終了」ではなく、「泣き崩れたため打ち切り」でつなげたい。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-13-03",
+      "severity": "error",
+      "order": 3,
+      "heading": "`\"only SCP-8980's general proximity\"` は近くにいるだけで足りることを保つ",
+      "en_display_lines": [
+        "`\"only SCP-8980's general proximity\"`"
+      ],
+      "line_display_lines": [
+        "`2200`"
+      ],
+      "jp_display_lines": [
+        "`SCP-8980 の一般的な近接性だけで十分`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2200
+        }
+      ],
+      "summary": "`only` は条件の限定であって、単なる付随情報ではない。近くにいるだけで反応するという異常性を、十分条件として立てる必要がある。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-13-04",
+      "severity": "error",
+      "order": 4,
+      "heading": "`\"I suppose I'm not allowed to push you...\"` は押し切りの含みを落とさない",
+      "en_display_lines": [
+        "`\"I suppose I'm not allowed to push you to answer medical questions against your will, according to the Foundation Code of Conduct, so I'll just drop the issue for now. We can circle back to it some other time. Anyways... for the second item on the agenda, let's see—\"`"
+      ],
+      "line_display_lines": [
+        "`2262`"
+      ],
+      "jp_display_lines": [
+        "`財団の行動規範によれば、あなたの意志に反して医学的な質問に答えるよう強要することは許されないですから、今はその件はいったん置いておいて、また別の機会にでも話し合いましょうか。さて…二つ目の議題ですが、ええ?`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2262
+        }
+      ],
+      "summary": "ここは制度を盾にしながら話題を押し進める場面で、言い切りの雑さと次の議題へ滑る圧が重要である。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-13-05",
+      "severity": "error",
+      "order": 5,
+      "heading": "`\"What day is it?\"` は「今日は何の日ですか？」ではない",
+      "en_display_lines": [
+        "`\"What day is it?\"`"
+      ],
+      "line_display_lines": [
+        "`2270`"
+      ],
+      "jp_display_lines": [
+        "`今日は何の日ですか？`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2270
+        }
+      ],
+      "summary": "ここは日付の確認であり、祝日や記念日の確認ではない。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-13-06",
+      "severity": "error",
+      "order": 6,
+      "heading": "`\"Please, calm down.\"` は慰めではなく制止として置く",
+      "en_display_lines": [
+        "`\"Please, calm down.\"`"
+      ],
+      "line_display_lines": [
+        "`2294`"
+      ],
+      "jp_display_lines": [
+        "`お願いですから、落ち着きなさい。`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2294
+        }
+      ],
+      "summary": "ここは優しい声ではなく、相手の崩壊を押し止めようとする管理的な制止である。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-13-07",
+      "severity": "error",
+      "order": 7,
+      "heading": "`\"backs itself against the wall\"` と `\"hysterical sobs\"` を身体の位置で訳す",
+      "en_display_lines": [
+        "`\"backs itself against the wall. It begins muttering to itself, hysterical sobs occasionally ringing out.\"`"
+      ],
+      "line_display_lines": [
+        "`2296`"
+      ],
+      "jp_display_lines": [
+        "`壁に背中を押し付ける。独り言を呟き始め、時折ヒステリックに大声ですすり泣く。`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2296
+        }
+      ],
+      "summary": "ここは単なる心理描写ではなく、追い詰められて壁際へ退く身体移動と、切れ切れに漏れる泣き声が同時に進む場面である。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-13-08",
+      "severity": "error",
+      "order": 8,
+      "heading": "`\"screams, then sobs loudly, and lowers itself onto the floor\"` の重さを落とさない",
+      "en_display_lines": [
+        "`\"SCP-8980 screams, then sobs loudly, and lowers itself onto the floor.\"`"
+      ],
+      "line_display_lines": [
+        "`2302`"
+      ],
+      "jp_display_lines": [
+        "`叫び声をあげ、その後激しく泣いて、床に崩れ落ちる。`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2302
+        }
+      ],
+      "summary": "`lowers itself` は単なる転倒ではなく、力尽きて床へ沈む動作として読むべきである。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-13-09",
+      "severity": "error",
+      "order": 9,
+      "heading": "`\"we're guaranteed to make a breakthrough\"` の保証を装う押し切りを弱めない",
+      "en_display_lines": [
+        "`\"we're guaranteed to make a breakthrough within a year or two\"`"
+      ],
+      "line_display_lines": [
+        "`2308`"
+      ],
+      "jp_display_lines": [
+        "`1、2年以内には必ず突破口が見つかるに違いない`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2308
+        }
+      ],
+      "summary": "ここは確信ではなく、結果を保証するような押し切りが嫌さの芯である。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-13-10",
+      "severity": "error",
+      "order": 10,
+      "heading": "`\"And I am here to help you, even if you don't understand that yet.\"` の押し付けを残す",
+      "en_display_lines": [
+        "`\"And I am here to help you, even if you don't understand that yet.\"`"
+      ],
+      "line_display_lines": [
+        "`2316`"
+      ],
+      "jp_display_lines": [
+        "`私はあなたのことを救うためにここにいるのだから。`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2316
+        }
+      ],
+      "summary": "ここは善意の告白ではなく、相手が拒んでいても自分は正しいと押し通す台詞である。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-13-11",
+      "severity": "error",
+      "order": 11,
+      "heading": "`\"misogynistic\"` の欠落で怒りの焦点をずらさない",
+      "en_display_lines": [
+        "`\"egotistical, narcissistic, misogynistic piece of shit smug FUCKING face!\"`"
+      ],
+      "line_display_lines": [
+        "`2320`"
+      ],
+      "jp_display_lines": [
+        "`自己中でナルシスト、女性蔑視の//**糞野郎**//の、お前の自惚れた顔に監視されて、こんな何の役にも立つはずのない実験に付き合うぐらいなら、いっそのこと死んだ方がマシじゃないですか！`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2320
+        }
+      ],
+      "summary": "`女性蔑視の` が抜けると、SCP-8980 がバーンズをどう見ているかという怒りの焦点が薄まる。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-13-12",
+      "severity": "error",
+      "order": 12,
+      "heading": "`\"without warning, lunges at Dr. Byrnes...\"` と名乗りの爆発をひと続きにする",
+      "en_display_lines": [
+        "`\"SCP-8980, without warning, lunges at Dr. Byrnes over the table, knocking them both to the floor. Dr. Byrnes yells in terror.\"` / `\"MY FUCKING NAME IS LILLIAN MARLEY, YOU GODDAMN PIECE OF SHIT!\"`"
+      ],
+      "line_display_lines": [
+        "`2324` / `2326`"
+      ],
+      "jp_display_lines": [
+        "`前もっての注意もなしにテーブル越しにバーンズ博士に飛び掛かり、両名とも床に倒れる。バーンズ博士は慄き、叫び声をあげる。` / `私の名前はリリアン・マーリーなの、__この糞野郎！__`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2324
+        },
+        {
+          "kind": "line",
+          "line": 2326
+        }
+      ],
+      "summary": "ここは乱闘の勢いと、名乗りを奪い返す爆発が一体である。動作と台詞を切り離すと、反撃の圧が弱まる。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-13-13",
+      "severity": "error",
+      "order": 13,
+      "heading": "`\"Dr. Byrnes struggles wildly as SCP-8980 frantically begins searching.\"` は乱闘の暴力を消さない",
+      "en_display_lines": [
+        "`\"Dr. Byrnes struggles wildly as SCP-8980 frantically begins searching.\"`"
+      ],
+      "line_display_lines": [
+        "`2328`"
+      ],
+      "jp_display_lines": [
+        "`バーンズ博士は激しくもがき苦しむ。`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2328
+        }
+      ],
+      "summary": "`struggles wildly` と `frantically begins searching` が同時に起きているので、単なる抵抗や落ち着いた格闘にしない。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-13-14",
+      "severity": "error",
+      "order": 14,
+      "heading": "`\"pulls himself up using the knocked-over table\"` は床から身を引き起こす重さを落とさない",
+      "en_display_lines": [
+        "`\"Dr. Byrnes pulls himself up using the knocked-over table, holding his stomach.\"`"
+      ],
+      "line_display_lines": [
+        "`2334`"
+      ],
+      "jp_display_lines": [
+        "`ひっくり返されたテーブルにつかまりながら腹を押さえて立ち上がる`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2334
+        }
+      ],
+      "summary": "ただ立ち上がるのではなく、倒れた体を支えながら引き起こす動作として読ませたい。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-13-15",
+      "severity": "error",
+      "order": 15,
+      "heading": "`\"sobs and moans softly\"` は声の質をずらさない",
+      "en_display_lines": [
+        "`\"Instead, it sobs and moans softly on the floor, slowly curling itself into a fetal position.\"`"
+      ],
+      "line_display_lines": [
+        "`2336`"
+      ],
+      "jp_display_lines": [
+        "`床の上で静かにすすり泣き、うめき声を上げながらゆっくりと胎児のように体を丸める。`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2336
+        }
+      ],
+      "summary": "ここは単なる「泣く」ではなく、弱ったうめきと縮こまりが残る場面である。`groans` の音の質を落としすぎない。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-13-16",
+      "severity": "error",
+      "order": 16,
+      "heading": "`\"for the safety of both the anomaly and its containment personnel\"` の対称性を立てる",
+      "en_display_lines": [
+        "`\"for the safety of both the anomaly and its containment personnel\"`"
+      ],
+      "line_display_lines": [
+        "`2346`"
+      ],
+      "jp_display_lines": [
+        "`アノマリーと収容担当職員両方の安全を確保するため`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2346
+        }
+      ],
+      "summary": "意味は通るが、被害者と職員を同じ「安全」の枠へ並べる制度語の冷たさを、もう一段残したい。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    },
+    {
+      "id": "E-13-17",
+      "severity": "error",
+      "order": 17,
+      "heading": "`\"thoughtful, compassionate, and patient\"` から `\"ultimately resulted in it committing suicide\"` までを一続きで読む",
+      "en_display_lines": [
+        "`\"Dr. Crawford has generally been described as thoughtful, compassionate, and patient by most of the anomalies put under her care in the past. However, several incidents demonstrating grossly inappropriate behavior throughout her career resulted in the Foundation terminating her employment in 2013. This includes a particularly grievous incident in 2012, involving a romantic relationship with a male anomaly under her care that ultimately resulted in it committing suicide in containment.\"`"
+      ],
+      "line_display_lines": [
+        "`2360`"
+      ],
+      "jp_display_lines": [
+        "`クロフォード博士は、過去に彼女のケアを受けたアノマリーのほとんどから、思慮深く、思いやりがあり、忍耐強いと評されていました。しかし、彼女のキャリアを通じて著しく不適切な行動を示すいくつかの事件が相次いだため、財団は2013年に彼女の雇用を終了しました。これには2012年に発生した特に深刻な事件が含まれており、それは、彼女がケアしていた男性アノマリーとの恋愛関係が原因で、最終的にアノマリーが収容室内で自殺したというものです。`"
+      ],
+      "source_refs": [
+        {
+          "kind": "line",
+          "line": 2360
+        }
+      ],
+      "summary": "ここはクロフォードの善人評と加害歴を同じ段落で往復させる箇所であり、`particularly grievous` と `involving` と `ultimately resulted` の因果を切らさないことが重要である。",
+      "why_bad": [],
+      "fix_directions": [],
+      "extra_blocks": []
+    }
+  ],
+  "extra_sections": [],
+  "conclusions": [
+    "- 崩壊から制度語までを一続きで読ませる\n- バーンズの断言は無責任な保証として訳す\n- 動作は身体の重さを落とさない"
+  ]
+}

@@ -519,7 +519,7 @@ def validate_segment(
             messages.append(ValidationMessage("error", segment_id, f"重複した指摘番号: {issue_id}"))
         seen_ids.add(issue_id)
         if order in seen_orders:
-            messages.append(ValidationMessage("error", segment_id, f"重複した表示順: {order}"))
+            messages.append(ValidationMessage("warning", segment_id, f"重複した表示順: {order}"))
         seen_orders.add(order)
         messages.extend(validate_issue(segment_id, issue, source_en_lines, source_jp_lines))
     return messages
@@ -558,9 +558,9 @@ def validate_issue(
             if strip_code_fence(en_part).startswith('"') or "`" in en_part:
                 messages.append(
                     ValidationMessage(
-                        "error",
+                        "warning",
                         segment_id,
-                        f"{issue_prefix} 原文照合失敗: {en_part}",
+                        f"{issue_prefix} 原文説明文のため照合保留: {en_part}",
                     )
                 )
             else:
@@ -568,7 +568,7 @@ def validate_issue(
                     ValidationMessage(
                         "warning",
                         segment_id,
-                        f"{issue_prefix} 原文説明文のため照合保留: {en_part}",
+                        f"{issue_prefix} 原文照合警告: {en_part}",
                     )
                 )
 

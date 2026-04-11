@@ -28,12 +28,6 @@ SEVERITY_SECTION_TITLE = {
     "out_of_scope": "このファイルでは採らない論点 [OUT-OF-SCOPE]",
 }
 
-LABEL_MAP = {
-    "EN": "en_display_lines",
-    "行": "line_display_lines",
-    "JP": "jp_display_lines",
-}
-
 ISSUE_ID_RE = re.compile(r"^([A-Z]-[0-9]{2}-[0-9A-Za-z]+)\s+(.*)$")
 HEADING_RE = re.compile(r"^##\s+(.+)$")
 SUBHEADING_RE = re.compile(r"^###\s+(.+)$")
@@ -169,7 +163,7 @@ def parse_markdown_file(path: Path) -> dict[str, Any]:
                 )
                 section_lines = []
             current_section = heading_match.group(1).strip()
-            issue_severity = SECTION_SEVERITY.get(current_section)
+            issue_severity = SECTION_SEVERITY.get(current_section, None)
             i += 1
             continue
 
@@ -269,15 +263,16 @@ def parse_issue_block(heading_text: str, lines: list[str], severity: str, order:
         "severity": severity,
         "order": order,
         "heading": heading,
-        "en_display_lines": [],
-        "line_display_lines": [],
-        "jp_display_lines": [],
-        "source_refs": [],
+        "evidence": [],
         "summary": None,
         "why_bad": [],
         "fix_directions": [],
         "extra_blocks": [],
     }
+
+    en_lines = []
+    line_lines = []
+    jp_lines = []
 
     i = 0
     while i < len(lines):
@@ -299,8 +294,16 @@ def parse_issue_block(heading_text: str, lines: list[str], severity: str, order:
         label = label.strip()
         raw_value = raw_value.rstrip()
 
-        if label in LABEL_MAP:
-            issue[LABEL_MAP[label]].append(raw_value)
+        if label == "EN":
+            en_lines.append(raw_value)
+            i += 1
+            continue
+        if label == "行":
+            line_lines.append(raw_value)
+            i += 1
+            continue
+        if label == "JP":
+            jp_lines.append(raw_value)
             i += 1
             continue
 
@@ -437,13 +440,28 @@ def render_blocks(lines: list[str], blocks: list[str]) -> None:
 def render_issue(lines: list[str], issue: dict[str, Any]) -> None:
     lines.append(f"### {issue['id']} {issue['heading']}")
     lines.append("")
-    for value in issue["en_display_lines"]:
-        lines.append(f"**EN:** {value}")
-    for value in issue["line_display_lines"]:
-        lines.append(f"**行:** {value}")
-    for value in issue["jp_display_lines"]:
-        lines.append(f"**JP:** {value}")
-    if issue["en_display_lines"] or issue["line_display_lines"] or issue["jp_display_lines"]:
+    
+    # Render evidence - group / for display when multiple
+    if issue["evidence"]:
+        en_values = []
+        line_values = []
+        jp_values = []
+        for ev in issue["evidence"]:
+            if ev["en_quote"]:
+                en_values.append(ev["en_quote"])
+            if ev["source_ref"]["kind"] == "line":
+                line_values.append(str(ev["source_ref"]["line"]))
+            elif ev["source_ref"]["kind"] == "note":
+                line_values.append(ev["source_ref"]["note"])
+            if ev["jp_quote"]:
+                jp_values.append(ev["jp_quote"])
+        
+        if en_values:
+            lines.append(f"**EN:** {' / '.join(en_values)}")
+        if line_values:
+            lines.append(f"**行:** {' / '.join(line_values)}")
+        if jp_values:
+            lines.append(f"**JP:** {' / '.join(jp_values)}")
         lines.append("")
 
     for block in issue["extra_blocks"]:
@@ -533,29 +551,20 @@ def validate_issue(
 ) -> list[ValidationMessage]:
     messages: list[ValidationMessage] = []
     issue_prefix = f"{segment_id}:{issue['id']}"
-    en_parts = split_display_parts(issue["en_display_lines"])
-    jp_parts = split_display_parts(issue["jp_display_lines"])
-    line_parts = issue["source_refs"]
-
-    for ref in line_parts:
+    
+    for ev_idx, evidence in enumerate(issue["evidence"]):
+        en_part = evidence["en_quote"]
+        jp_part = evidence["jp_quote"]
+        ref = evidence["source_ref"]
+        
         if ref["kind"] == "line":
             line_no = int(ref["line"])
             if line_no < 1 or line_no > len(source_en_lines):
                 messages.append(ValidationMessage("error", segment_id, f"{issue_prefix} 行番号範囲外: {line_no}"))
 
-    line_number_refs = [ref for ref in line_parts if ref["kind"] == "line"]
-    if en_parts and line_number_refs and len(en_parts) != len(line_number_refs):
-        messages.append(
-            ValidationMessage(
-                "warning",
-                segment_id,
-                f"{issue_prefix} EN引用数と行番号数が一致しません: {len(en_parts)} != {len(line_number_refs)}",
-            )
-        )
-    for en_part, ref in zip(en_parts, line_number_refs):
-        source_line = source_en_lines[ref["line"] - 1]
-        if normalize_text(en_part) != normalize_text(source_line):
-            if strip_code_fence(en_part).startswith('"') or "`" in en_part:
+        if ref["kind"] == "line" and en_part:
+            source_line = source_en_lines[ref["line"] - 1]
+            if normalize_text(en_part) != normalize_text(source_line):
                 messages.append(
                     ValidationMessage(
                         "warning",
@@ -563,43 +572,21 @@ def validate_issue(
                         f"{issue_prefix} 原文説明文のため照合保留: {en_part}",
                     )
                 )
-            else:
+
+        if ref["kind"] == "line" and jp_part:
+            normalized_jp = normalize_text(jp_part)
+            if normalized_jp in {"なし", "当該一文が欠落"}:
+                continue
+            source_line = source_jp_lines[ref["line"] - 1]
+            if normalized_jp != normalize_text(source_line):
                 messages.append(
                     ValidationMessage(
                         "warning",
                         segment_id,
-                        f"{issue_prefix} 原文照合警告: {en_part}",
+                        f"{issue_prefix} 訳文照合差異: {jp_part}",
                     )
                 )
 
-    if jp_parts and line_number_refs:
-        candidate_lines = [source_jp_lines[ref["line"] - 1] for ref in line_number_refs]
-        if len(jp_parts) == len(line_number_refs):
-            pairs = zip(jp_parts, candidate_lines)
-        else:
-            pairs = ((jp_part, None) for jp_part in jp_parts)
-        for jp_part, candidate in pairs:
-            normalized_jp = normalize_text(jp_part)
-            if normalized_jp in {"なし", "当該一文が欠落"}:
-                continue
-            if candidate is not None:
-                if normalized_jp != normalize_text(candidate):
-                    messages.append(
-                        ValidationMessage(
-                            "warning",
-                            segment_id,
-                            f"{issue_prefix} 訳文照合差異: {jp_part}",
-                        )
-                    )
-            else:
-                if all(normalized_jp != normalize_text(line) for line in candidate_lines):
-                    messages.append(
-                        ValidationMessage(
-                            "warning",
-                            segment_id,
-                            f"{issue_prefix} 訳文照合保留: {jp_part}",
-                        )
-                    )
     return messages
 
 
@@ -626,9 +613,52 @@ def command_validate(args: argparse.Namespace) -> int:
         print("source_en.wikidot と bad_translation_jp_single.wikidot の行数が一致しません。", file=sys.stderr)
         return 1
 
+    # Load schema
+    jsonschema = None
+    schema = None
+    try:
+        import jsonschema
+        schema = json.loads((REVIEW_DB_DIR / "schema.json").read_text(encoding="utf-8"))
+    except ImportError:
+        print("jsonschema がインストールされていないためスキーマ検証をスキップします", file=sys.stderr)
+    except FileNotFoundError:
+        print("schema.json が存在しないためスキーマ検証をスキップします", file=sys.stderr)
+
     messages: list[ValidationMessage] = []
+    seen_segment_ids = set()
     for path in sorted(SEGMENTS_DIR.glob("*.json")):
         segment = json.loads(path.read_text(encoding="utf-8"))
+        
+        # Schema validation
+        if jsonschema and schema:
+            try:
+                jsonschema.validate(segment, schema)
+            except jsonschema.ValidationError as e:
+                messages.append(ValidationMessage(
+                    "error", 
+                    segment.get("segment_id", path.stem), 
+                    f"スキーマ不適合: {e.message}"
+                ))
+        
+        # Segment ID uniqueness
+        if segment["segment_id"] in seen_segment_ids:
+            messages.append(ValidationMessage(
+                "error", 
+                segment["segment_id"], 
+                f"重複した segment_id"
+            ))
+        seen_segment_ids.add(segment["segment_id"])
+        
+        # Severity vs ID prefix check
+        for issue in segment["issues"]:
+            expected_prefix = "E-" if issue["severity"] == "error" else "N-"
+            if issue["severity"] in ["error", "note"] and not issue["id"].startswith(expected_prefix):
+                messages.append(ValidationMessage(
+                    "warning",
+                    segment["segment_id"],
+                    f"{issue['id']}: 接頭辞不一致 severity={issue['severity']}"
+                ))
+        
         messages.extend(validate_segment(segment, source_en_lines, source_jp_lines))
 
     errors = [msg for msg in messages if msg.level == "error"]
@@ -693,10 +723,7 @@ def command_issue_add(args: argparse.Namespace) -> int:
             "severity": args.severity,
             "order": next_order,
             "heading": args.heading,
-            "en_display_lines": [],
-            "line_display_lines": [],
-            "jp_display_lines": [],
-            "source_refs": [],
+            "evidence": [],
             "summary": None,
             "why_bad": [],
             "fix_directions": [],
@@ -720,17 +747,21 @@ def command_issue_set(args: argparse.Namespace) -> int:
         issue["heading"] = args.heading
     if args.summary is not None:
         issue["summary"] = args.summary
-    if args.en is not None:
-        issue["en_display_lines"] = [args.en]
-    if args.line is not None:
-        issue["line_display_lines"] = [args.line]
-        issue["source_refs"] = parse_source_refs([args.line])
-    if args.jp is not None:
-        issue["jp_display_lines"] = [args.jp]
     if args.why_bad:
         issue["why_bad"] = args.why_bad
     if args.fix_direction:
         issue["fix_directions"] = args.fix_direction
+    
+    # Add/append evidence
+    if args.en is not None or args.line is not None or args.jp is not None:
+        ref = {"kind": "note", "note": ""}
+        if args.line is not None:
+            ref = parse_source_refs([args.line])[0]
+        issue["evidence"].append({
+            "en_quote": args.en or "",
+            "jp_quote": args.jp or "",
+            "source_ref": ref
+        })
 
     save_segment(path, segment)
     print(f"更新: {args.segment_id} {args.issue_id}")

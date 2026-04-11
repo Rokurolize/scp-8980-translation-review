@@ -90,7 +90,7 @@
     }
   },
   "additionalProperties": false,
-  "$defs": {
+    "$defs": {
     "source_ref": {
       "type": "object",
       "oneOf": [
@@ -128,6 +128,26 @@
         }
       ]
     },
+    "evidence": {
+      "type": "object",
+      "required": [
+        "en_quote",
+        "jp_quote",
+        "source_ref"
+      ],
+      "properties": {
+        "en_quote": {
+          "type": "string"
+        },
+        "jp_quote": {
+          "type": "string"
+        },
+        "source_ref": {
+          "$ref": "#/$defs/source_ref"
+        }
+      },
+      "additionalProperties": false
+    },
     "extra_block": {
       "type": "object",
       "required": [
@@ -159,90 +179,69 @@
     },
     "issue": {
       "type": "object",
-      "required": [
-        "id",
-        "severity",
-        "order",
-        "heading",
-        "en_display_lines",
-        "line_display_lines",
-        "jp_display_lines",
-        "source_refs",
-        "summary",
-        "why_bad",
-        "fix_directions",
-        "extra_blocks"
-      ],
-      "properties": {
-        "id": {
-          "type": "string",
-          "minLength": 1
-        },
-        "severity": {
-          "enum": [
-            "error",
-            "note",
-            "out_of_scope"
-          ]
-        },
-        "order": {
-          "type": "integer",
-          "minimum": 1
-        },
-        "heading": {
-          "type": "string",
-          "minLength": 1
-        },
-        "en_display_lines": {
-          "type": "array",
-          "items": {
-            "type": "string"
+        "required": [
+          "id",
+          "severity",
+          "order",
+          "heading",
+          "summary",
+          "why_bad",
+          "fix_directions",
+          "evidence",
+          "extra_blocks"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "severity": {
+            "enum": [
+              "error",
+              "note",
+              "out_of_scope"
+            ]
+          },
+          "order": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "heading": {
+            "type": "string",
+            "minLength": 1
+          },
+          "summary": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "why_bad": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "fix_directions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/evidence"
+            }
+          },
+          "extra_blocks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/extra_block"
+            }
           }
         },
-        "line_display_lines": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "jp_display_lines": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "source_refs": {
-          "type": "array",
-          "items": {
-            "$ref": "#/$defs/source_ref"
-          }
-        },
-        "summary": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "why_bad": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "fix_directions": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "extra_blocks": {
-          "type": "array",
-          "items": {
-            "$ref": "#/$defs/extra_block"
-          }
-        }
-      },
-      "additionalProperties": false
+        "additionalProperties": false
     },
     "section": {
       "type": "object",

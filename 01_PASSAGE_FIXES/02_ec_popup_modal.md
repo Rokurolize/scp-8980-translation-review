@@ -1,7 +1,7 @@
 # SCP-8980 該当箇所 02 査読
 
-**対象 EN:** `articles/fragment_scp-8980-1/segments/en/02_ec_popup_modal.wikidot`  
-**対象 JP:** `congy.wikidot` 行 657-883 付近
+**対象 EN:** `articles/fragment_scp-8980-1/segments/en/02_ec_popup_modal.wikidot`
+**対象 JP:** `bad_translation_jp_single.wikidot`
 
 ## このファイルの使い方
 
@@ -21,7 +21,7 @@
 
 ### E-02-01 「調査中」を「違反確定」に早めている
 
-**EN:** `"undergoing active Ethics Committee investigation for violation of the SCP Foundation's Code of Conduct"`  
+**EN:** `"undergoing active Ethics Committee investigation for violation of the SCP Foundation's Code of Conduct"`
 **行:** `702`
 **JP:** `SCP財団の行動規範に違反しているため、倫理委員会による調査対象となっています。`
 

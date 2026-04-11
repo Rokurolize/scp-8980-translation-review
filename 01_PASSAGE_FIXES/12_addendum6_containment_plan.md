@@ -1,23 +1,23 @@
 # SCP-8980 該当箇所 12 査読
 
-**対象 EN:** `articles/fragment_scp-8980-1/segments/en/12_addendum6_containment_plan.wikidot`  
-**対象 JP:** `congy.wikidot` 行 2550-2740 付近
+**対象 EN:** `articles/fragment_scp-8980-1/segments/en/12_addendum6_containment_plan.wikidot`
+**対象 JP:** `bad_translation_jp_single.wikidot`
 
 ## このファイルの使い方
 
-この箇所では、バーンズが規範に従うふりをしながら、同じ方向へ SCP-8980 を押し戻しているかを見抜く。  
+この箇所では、バーンズが規範に従うふりをしながら、同じ方向へ SCP-8980 を押し戻しているかを見抜く。
 今回の 5 件はすべてそのまま採る。
 
 ## 総評
 
-要点は、やわらかい語ほど疑って読むことにある。  
+要点は、やわらかい語ほど疑って読むことにある。
 `amenable` `save you trouble` `Okay?` `two cents` `comfortable` は、どれも親切そうに見えて支配の滑りをよくしている。
 
 ## 直すべき箇所 [ERROR]
 
 ### E-12-01 `"amenable"` を「働きやすい」にすると善意化しすぎる
 
-**EN:** `"some more amenable conditions"`  
+**EN:** `"some more amenable conditions"`
 **行:** `2092`
 **JP:** `より働きやすい環境`
 
@@ -25,7 +25,7 @@
 
 ### E-12-02 `"save you trouble"` は親切ではなく会話の遮断
 
-**EN:** `"Let me save you trouble Chris."`  
+**EN:** `"Let me save you trouble Chris."`
 **行:** `2120`
 **JP:** `あなたの手間を省いてあげましょう。`
 
@@ -33,7 +33,7 @@
 
 ### E-12-03 最後の `"Okay?"` は確認強制である
 
-**EN:** `"I am fine. I am fine. Okay?"`  
+**EN:** `"I am fine. I am fine. Okay?"`
 **行:** `2120`
 **JP:** `大丈夫でしょうか？`
 
@@ -41,7 +41,7 @@
 
 ### E-12-04 `"if you want my two cents"` は軽口混じりの差し出口
 
-**EN:** `"if you want my two cents"`  
+**EN:** `"if you want my two cents"`
 **行:** `2132`
 **JP:** `個人的な意見としては`
 
@@ -49,7 +49,7 @@
 
 ### E-12-05 `"comfortable with its new role"` を美化しない
 
-**EN:** `"as comfortable as possible with its new role"`  
+**EN:** `"as comfortable as possible with its new role"`
 **行:** `2144`
 **JP:** `新たな役割にできるだけ快く順応`
 

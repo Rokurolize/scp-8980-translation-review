@@ -1,11 +1,11 @@
 # SCP-8980 該当箇所 16 査読
 
-**対象 EN:** `articles/fragment_scp-8980-1/segments/en/16_addendum9_depression.wikidot`  
-**対象 JP:** `congy.wikidot` 行 3951-4278 付近
+**対象 EN:** `articles/fragment_scp-8980-1/segments/en/16_addendum9_depression.wikidot`
+**対象 JP:** `bad_translation_jp_single.wikidot`
 
 ## このファイルの使い方
 
-この箇所は記事の感情的頂点であり、クロフォードのガスライティングと、バーンズ面会での壊れた懇願が連続する。  
+この箇所は記事の感情的頂点であり、クロフォードのガスライティングと、バーンズ面会での壊れた懇願が連続する。
 したがって、ここでは「意味が通る」では足りない。誰の言葉が誰の頭に住み着いているか、どのくらい壊れているかを、そのまま読める日本語にする必要がある。
 
 - `[ERROR]` はそのまま修正対象
@@ -27,7 +27,7 @@
 
 ### E-16-01 `"Ah, here we go."` は開始宣言ではなく探索完了の独り言
 
-**EN:** `"Ah, here we go."`  
+**EN:** `"Ah, here we go."`
 **行:** `2982`
 **JP:** `では、始めましょう。`
 
@@ -51,7 +51,7 @@
 
 ### E-16-03 `"Here's to many more."` を露骨な脅迫にしない
 
-**EN:** `"Here's to many more."`  
+**EN:** `"Here's to many more."`
 **行:** `3176`
 **JP:** `ここからが本番だよ。`
 
@@ -59,7 +59,7 @@
 
 ### E-16-04 「差し上げましょう」の連打をやめる
 
-**EN:** `"I'll give you everything I own. All of it. You can have everything in my bank account and in my room. I'll draw out loans for you that I can't pay back. I'll give you my paycheck. Everything."` / `"I'll— I'll work whatever assignment you g-give me. I'll let you take credit for all of my papers. I'll be your s— (//SCP-8980 gulps.//) your secretary. I'll bring you your morning coffee and make you your sandwiches. //I'll lick your shoes.//"` / `"I'll... I'll even sleep with you. Please."`  
+**EN:** `"I'll give you everything I own. All of it. You can have everything in my bank account and in my room. I'll draw out loans for you that I can't pay back. I'll give you my paycheck. Everything."` / `"I'll— I'll work whatever assignment you g-give me. I'll let you take credit for all of my papers. I'll be your s— (//SCP-8980 gulps.//) your secretary. I'll bring you your morning coffee and make you your sandwiches. //I'll lick your shoes.//"` / `"I'll... I'll even sleep with you. Please."`
 **行:** `3136` / `3140` / `3146`
 **JP:** `差し上げましょう` の連打
 
@@ -95,7 +95,7 @@
 
 ### E-16-06 `"any other old lady"` の generic singular を落とさない
 
-**EN:** `"any other old lady"`  
+**EN:** `"any other old lady"`
 **行:** `3006`
 **JP:** `他のおばあさんたち`
 
@@ -103,7 +103,7 @@
 
 ### E-16-07 斜体の焦点をずらさない
 
-**EN:** 自発性の真偽に掛かる強調  
+**EN:** 自発性の真偽に掛かる強調
 **行:** `3002`
 **JP:** `自発的にやった`
 
@@ -113,7 +113,7 @@
 
 ### N-16-01 「あらま」は許容だが、声としてはもう一段詰められる
 
-**EN:** `"Oh dear."`  
+**EN:** `"Oh dear."`
 **行:** `3052`
 **JP:** `あらま`
 
@@ -121,7 +121,7 @@
 
 ### N-16-02 `"victim mentality"` 周辺は軽蔑の調子まで拾いたい
 
-**EN:** `"victim mentality"`  
+**EN:** `"victim mentality"`
 **行:** `3020`
 **JP:** `被害者意識`
 
@@ -129,7 +129,7 @@
 
 ### N-16-03 「犯す」は強すぎる可能性がある
 
-**EN:** `"If I wanted to fuck you, I would've done it by now."`  
+**EN:** `"If I wanted to fuck you, I would've done it by now."`
 **行:** `3166`
 **JP:** `あんたのことを犯したいなら、とっくにそうしてるさ。`
 

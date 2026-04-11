@@ -2,11 +2,11 @@
   "segment_id": "09_addendum5_post_reemployment",
   "title": "SCP-8980 該当箇所 09 査読",
   "source_en_path": "articles/fragment_scp-8980-1/segments/en/09_addendum5_post_reemployment.wikidot",
-  "source_jp_path": "`congy.wikidot` 行 1885-2083 付近",
+  "source_jp_path": "bad_translation_jp_single.wikidot",
   "source_range": {
-    "start": 1885,
-    "end": 2083,
-    "note": "`congy.wikidot` 行 1885-2083 付近"
+    "start": 1487,
+    "end": 1593,
+    "note": "参照行 1487 - 1593"
   },
   "usage_notes": [
     "この箇所では、SCP-8980 がバーンズの管轄を抜けようとする方向が見えているかを最優先で確認する。\n今回は 3 件ともそのまま採る。"

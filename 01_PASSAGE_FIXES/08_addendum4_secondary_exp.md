@@ -1,23 +1,23 @@
 # SCP-8980 該当箇所 08 査読
 
-**対象 EN:** `articles/fragment_scp-8980-1/segments/en/08_addendum4_secondary_exp.wikidot`  
-**対象 JP:** `congy.wikidot` 行 1800-1938 付近
+**対象 EN:** `articles/fragment_scp-8980-1/segments/en/08_addendum4_secondary_exp.wikidot`
+**対象 JP:** `bad_translation_jp_single.wikidot`
 
 ## このファイルの使い方
 
-この箇所では、バーンズの雑な言い逃れと、不自然な比喩の直訳を見逃さない。  
+この箇所では、バーンズの雑な言い逃れと、不自然な比喩の直訳を見逃さない。
 今回は 2 件ともそのまま修正対象である。
 
 ## 総評
 
-地味なセグメントだが、後半で本格化する「やわらかい言葉で包む支配」の前振りになっている。  
+地味なセグメントだが、後半で本格化する「やわらかい言葉で包む支配」の前振りになっている。
 ここで雑さと不快さをきれいな論文語に整えると、バーンズの嫌さがかなり薄まる。
 
 ## 直すべき箇所 [ERROR]
 
 ### E-08-01 `"or something of the sort"` の雑な逃げが消えている
 
-**EN:** `"or something of the sort"`  
+**EN:** `"or something of the sort"`
 **行:** `1441`
 **JP:** `あるいはそれに類する`
 
@@ -30,7 +30,7 @@
 
 ### E-08-02 `"laser-targeted"` を文字通りのレーザーへ読んでいる
 
-**EN:** `"laser-targeted"`  
+**EN:** `"laser-targeted"`
 **行:** `1457`
 **JP:** `レーザー銃のように狙いを定めている`
 

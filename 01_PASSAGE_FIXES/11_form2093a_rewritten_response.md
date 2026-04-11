@@ -1,11 +1,11 @@
 # SCP-8980 該当箇所 11 査読
 
-**対象 EN:** `articles/fragment_scp-8980-1/segments/en/11_form2093a_rewritten_response.wikidot`  
-**対象 JP:** `congy.wikidot` 行 2438-2550 付近
+**対象 EN:** `articles/fragment_scp-8980-1/segments/en/11_form2093a_rewritten_response.wikidot`
+**対象 JP:** `bad_translation_jp_single.wikidot`
 
 ## このファイルの使い方
 
-該当箇所 10 と同じく、ここは制度文体の冷たさを守る場である。  
+該当箇所 10 と同じく、ここは制度文体の冷たさを守る場である。
 単に硬い日本語ではなく、「何を認め、何を拒み、どこで責任を限定しているか」が読める文にする。
 
 今回は 3 件ともそのまま採る。
@@ -32,9 +32,10 @@
 
 - 該当箇所 10 と同じ文を戻す
 - 両版の論理を揃える
+
 ### E-11-02 `"either normalcy or monetary/personnel resources"` の切り分けをほどく
 
-**EN:** `"either normalcy or monetary/personnel resources of the SCP Foundation"`  
+**EN:** `"either normalcy or monetary/personnel resources of the SCP Foundation"`
 **行:** `1975`
 **JP:** `正常性または金銭的・人的資源に重大な、または極めて高い確率で損害を与える`
 
@@ -48,7 +49,7 @@
 
 ### E-11-04 最後の警告は「自己責任」では弱すぎる
 
-**EN:** `"Reviewer discretion is heavily advised. Proceed at your own risk."`  
+**EN:** `"Reviewer discretion is heavily advised. Proceed at your own risk."`
 **行:** `2016`
 **JP:** `審査は各自の判断で行ってください。自己責任で進んでください。`
 

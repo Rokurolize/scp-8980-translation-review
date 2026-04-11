@@ -2,11 +2,11 @@
   "segment_id": "14_addendum8_health_crawford",
   "title": "SCP-8980 該当箇所 14 査読",
   "source_en_path": "articles/fragment_scp-8980-1/segments/en/14_addendum8_health_crawford.wikidot",
-  "source_jp_path": "`congy.wikidot` 行 3063-3568 付近",
+  "source_jp_path": "bad_translation_jp_single.wikidot",
   "source_range": {
-    "start": 3063,
-    "end": 3568,
-    "note": "`congy.wikidot` 行 3063-3568 付近"
+    "start": 2408,
+    "end": 2690,
+    "note": "参照行 2408 - 2690"
   },
   "usage_notes": [
     "既存査読で大きな論点はかなり拾えている。\nこの改稿では、未収録の論点を原文の登場順で、実際に直すための作業項目として並べ直す。"

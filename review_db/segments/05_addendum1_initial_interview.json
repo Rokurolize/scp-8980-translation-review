@@ -2,11 +2,11 @@
   "segment_id": "05_addendum1_initial_interview",
   "title": "SCP-8980 該当箇所 05 査読",
   "source_en_path": "articles/fragment_scp-8980-1/segments/en/05_addendum1_initial_interview.wikidot",
-  "source_jp_path": "`congy.wikidot` 行 1125-1298 付近",
+  "source_jp_path": "bad_translation_jp_single.wikidot",
   "source_range": {
-    "start": 1125,
-    "end": 1298,
-    "note": "`congy.wikidot` 行 1125-1298 付近"
+    "start": 959,
+    "end": 1068,
+    "note": "参照行 959 - 1068"
   },
   "usage_notes": [
     "この箇所は、SCP-8980 とバーンズの声の基準線を決める。\nしたがって、単語対応だけでなく、誰がどんな距離で話しているかを必ず残す。",

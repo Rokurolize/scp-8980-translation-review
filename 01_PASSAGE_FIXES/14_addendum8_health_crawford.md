@@ -1,16 +1,16 @@
 # SCP-8980 該当箇所 14 査読
 
-**対象 EN:** `articles/fragment_scp-8980-1/segments/en/14_addendum8_health_crawford.wikidot`  
-**対象 JP:** `congy.wikidot` 行 3063-3568 付近
+**対象 EN:** `articles/fragment_scp-8980-1/segments/en/14_addendum8_health_crawford.wikidot`
+**対象 JP:** `bad_translation_jp_single.wikidot`
 
 ## このファイルの使い方
 
-既存査読で大きな論点はかなり拾えている。  
+既存査読で大きな論点はかなり拾えている。
 この改稿では、未収録の論点を原文の登場順で、実際に直すための作業項目として並べ直す。
 
 ## 総評
 
-この箇所では、クロフォードの刷り込みが後半のバーンズ面談でそのまま再生される。  
+この箇所では、クロフォードの刷り込みが後半のバーンズ面談でそのまま再生される。
 したがって、前半の身体描写と後半のメタデータ、復唱、退室要求のどれも小粒ではない。
 
 ## 直すべき箇所 [ERROR]
@@ -34,8 +34,8 @@
 ### E-14-03 `Something new seems to be bothering you today.` と `It's important...` を、やさしい語で丸めない
 
 **EN:** `"Something new seems to be bothering you today."`
-**行:** `2542`
 **EN:** `"It's important for you to be able to communicate your feelings with me if you want me to be able to help you."`
+**行:** `2542`
 **行:** `2548`
 **JP:** `なんだか今日はいつもと違うことがあるみたいですね。` / `私があなたを助けられるようになりたければ、気持ちを私に伝えられることが大事ですよ。`
 
@@ -52,8 +52,8 @@
 ### E-14-05 `"What's the fucking point, then?"` と `"What the hell do I do then?"` を、追い詰められた行き場のなさとして返す
 
 **EN:** `"What's the fucking point, then?"`
-**行:** `2576`
 **EN:** `"(Mumbling) What the hell do I do then?"`
+**行:** `2576`
 **行:** `2594`
 **JP:** `じゃあ、何の意味があるんだよ？` / `じゃあ、私は何をすればいいんだよ。`
 
@@ -74,7 +74,7 @@
 
 ### E-14-07 `"SUBJECT: Newfound Motivation"` は「動機」ではなく、持ち上がった意欲の件名である
 
-**EN:** `"SUBJECT: Newfound Motivation"`  
+**EN:** `"SUBJECT: Newfound Motivation"`
 **行:** `2646`
 **JP:** `新たに見つかった動機`
 
@@ -82,13 +82,13 @@
 
 ### E-14-08 ログ ID `8980-S12` を崩さない
 
-**EN:** `ID 8980-S12`  
+**EN:** `ID 8980-S12`
 **行:** `2656`
 **JP:** `IDは8980-W12`
 
-**要旨:** これは単純だが重大な誤記で、文書追跡性を壊す。
-
 **修正:** `8980-S12` に戻す。
+
+**要旨:** これは単純だが重大な誤記で、文書追跡性を壊す。
 
 ### E-14-09 `"change of heart"` と `"gives a single shit about me"` で、心境の変化を疑問視するだけに留めない
 

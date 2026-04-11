@@ -1,23 +1,23 @@
 # SCP-8980 該当箇所 18 査読
 
-**対象 EN:** `articles/fragment_scp-8980-1/segments/en/18_investigation_summary.wikidot`  
-**対象 JP:** `congy.wikidot` 行 4341-4506 付近
+**対象 EN:** `articles/fragment_scp-8980-1/segments/en/18_investigation_summary.wikidot`
+**対象 JP:** `bad_translation_jp_single.wikidot`
 
 ## このファイルの使い方
 
-この箇所は、法務語の精度がそのまま作品の倫理的結論になる。  
+この箇所は、法務語の精度がそのまま作品の倫理的結論になる。
 したがって、読みやすさより先に「どの違反を、どの語で名指ししているか」を守る。
 
 ## 総評
 
-見た目は単なる違反一覧だが、実際には「バーンズが何をしたかを、財団が裁ける言葉へ落とし込む」場面である。  
+見た目は単なる違反一覧だが、実際には「バーンズが何をしたかを、財団が裁ける言葉へ落とし込む」場面である。
 今回の 6 件はすべてそのまま採る。
 
 ## 直すべき箇所 [ERROR]
 
 ### E-18-01 `"abuse of an anomaly"` は「濫用」ではなく「虐待」
 
-**EN:** `"Abuse of an anomaly"`  
+**EN:** `"Abuse of an anomaly"`
 **行:** `3264`
 **JP:** `アノマリーの濫用`
 
@@ -25,7 +25,7 @@
 
 ### E-18-02 `"extort, manipulate"` を「脅迫・教唆」にしない
 
-**EN:** `"extort, manipulate"`  
+**EN:** `"extort, manipulate"`
 **行:** `3260`
 **JP:** `脅迫・教唆`
 
@@ -33,7 +33,7 @@
 
 ### E-18-03 `"intimidation"` を前項と同じ「恐喝」に潰さない
 
-**EN:** `"Deliberate intimidation of an anomaly"`  
+**EN:** `"Deliberate intimidation of an anomaly"`
 **行:** `3268`
 **JP:** `意図的な恐喝行為`
 
@@ -45,13 +45,13 @@
 **行:** `3266`
 **JP:** `第2章第2節第2.4.1条: アノマリーに対する重大な過失`
 
-**要旨:** 違反類型ごとの切り分けそのものがこの文書の核心なので、条番号の誤記は小さくない。
-
 **修正:** 怠慢側を `第2章第2節第2.4.1条` に戻す。
+
+**要旨:** 違反類型ごとの切り分けそのものがこの文書の核心なので、条番号の誤記は小さくない。
 
 ### E-18-05 `"experience with Dr. Crawford"` は未来の再接触ではない
 
-**EN:** `"SCP-8980's experience with Dr. Crawford"`  
+**EN:** `"SCP-8980's experience with Dr. Crawford"`
 **行:** `3325`
 **JP:** `クロフォード博士と接することで`
 
@@ -59,7 +59,7 @@
 
 ### E-18-06 `"keep this case open indefinitely"` は案件保留の無力感が芯
 
-**EN:** `"keep this case open indefinitely"`  
+**EN:** `"keep this case open indefinitely"`
 **行:** `3351`
 **JP:** `当面の間継続して調査を行う予定`
 

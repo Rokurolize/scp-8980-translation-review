@@ -2,11 +2,11 @@
   "segment_id": "04_page_header_scp_data",
   "title": "SCP-8980 該当箇所 04 査読",
   "source_en_path": "articles/fragment_scp-8980-1/segments/en/04_page_header_scp_data.wikidot",
-  "source_jp_path": "`congy.wikidot` 行 1020-1124 付近",
+  "source_jp_path": "bad_translation_jp_single.wikidot",
   "source_range": {
-    "start": 1020,
-    "end": 1124,
-    "note": "`congy.wikidot` 行 1020-1124 付近"
+    "start": 914,
+    "end": 946,
+    "note": "参照行 914 - 946"
   },
   "usage_notes": [
     "- `[ERROR]` はそのまま修正対象\n- `[NOTE]` は意味は通るが、制度文体や係り先を整えたい論点\n- `[OUT-OF-SCOPE]` はこの箇所単体では処理しない論点",

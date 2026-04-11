@@ -2,11 +2,11 @@
   "segment_id": "18_investigation_summary",
   "title": "SCP-8980 該当箇所 18 査読",
   "source_en_path": "articles/fragment_scp-8980-1/segments/en/18_investigation_summary.wikidot",
-  "source_jp_path": "`congy.wikidot` 行 4341-4506 付近",
+  "source_jp_path": "bad_translation_jp_single.wikidot",
   "source_range": {
-    "start": 4341,
-    "end": 4506,
-    "note": "`congy.wikidot` 行 4341-4506 付近"
+    "start": 3260,
+    "end": 3351,
+    "note": "参照行 3260 - 3351"
   },
   "usage_notes": [
     "この箇所は、法務語の精度がそのまま作品の倫理的結論になる。\nしたがって、読みやすさより先に「どの違反を、どの語で名指ししているか」を守る。"

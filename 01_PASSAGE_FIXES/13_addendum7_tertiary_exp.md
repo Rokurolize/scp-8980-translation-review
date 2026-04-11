@@ -1,7 +1,7 @@
 # SCP-8980 該当箇所 13 査読
 
 **対象 EN:** `articles/fragment_scp-8980-1/segments/en/13_addendum7_tertiary_exp.wikidot`
-**対象 JP:** `congy.wikidot` 行 2819-3045 付近
+**対象 JP:** `bad_translation_jp_single.wikidot`
 
 ## このファイルの使い方
 

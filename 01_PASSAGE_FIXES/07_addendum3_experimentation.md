@@ -1,16 +1,16 @@
 # SCP-8980 該当箇所 07 査読
 
-**対象 EN:** `articles/fragment_scp-8980-1/segments/en/07_addendum3_experimentation.wikidot`  
-**対象 JP:** `congy.wikidot` 行 1541-1797 付近
+**対象 EN:** `articles/fragment_scp-8980-1/segments/en/07_addendum3_experimentation.wikidot`
+**対象 JP:** `bad_translation_jp_single.wikidot`
 
 ## このファイルの使い方
 
-この箇所のバーンズは、「悪い知らせを丁寧に伝える人」の顔で、実際には財団側の利害を押しつけてくる。  
+この箇所のバーンズは、「悪い知らせを丁寧に伝える人」の顔で、実際には財団側の利害を押しつけてくる。
 ここでの誤りはすべてそのまま採る。
 
 ## 総評
 
-重要なのは、SCP-8980 がどう分類され、誰のために収容が続き、バーンズがどんな内輪理屈でそれを正当化しているかである。  
+重要なのは、SCP-8980 がどう分類され、誰のために収容が続き、バーンズがどんな内輪理屈でそれを正当化しているかである。
 現行訳は意味を拾っている箇所もあるが、暫定診断、反語、財団側の利害、身内論理の 4 点が弱い。
 
 ## 直すべき箇所 [ERROR]
@@ -45,7 +45,7 @@
 
 ### E-07-03 反語の詰問が普通の質問に寄っている
 
-**EN:** `"How in the world am I supposed to be calm about this?"`  
+**EN:** `"How in the world am I supposed to be calm about this?"`
 **行:** `1345`
 **JP:** `一体どうすれば冷静でいられるというんですか？`
 
@@ -58,7 +58,7 @@
 
 ### E-07-04 `"for us"` が落ちている
 
-**EN:** `"the best thing you can do for us"`  
+**EN:** `"the best thing you can do for us"`
 **行:** `1365`
 **JP:** `今のあなたにとっての最善策`
 

@@ -1,11 +1,11 @@
 # SCP-8980 該当箇所 10 査読
 
-**対象 EN:** `articles/fragment_scp-8980-1/segments/en/10_form2093a_first_filing.wikidot`  
-**対象 JP:** `congy.wikidot` 行 2238-2459 付近
+**対象 EN:** `articles/fragment_scp-8980-1/segments/en/10_form2093a_first_filing.wikidot`
+**対象 JP:** `bad_translation_jp_single.wikidot`
 
 ## このファイルの使い方
 
-このフォームは、SCP-8980 側の訴えとバーンズ側の自己弁明が一つの制度書式の中でぶつかる場である。  
+このフォームは、SCP-8980 側の訴えとバーンズ側の自己弁明が一つの制度書式の中でぶつかる場である。
 したがって、文章を読みやすく整えるより、バーンズの自己正当化の気味悪さを消さないことを優先する。
 
 今回は 2 件ともそのまま採る。
@@ -23,7 +23,7 @@
 
 ### E-10-01 `"for all of us — it especially —"` の鈍さを消してはいけない
 
-**EN:** `"painful for all of us — it especially —"`  
+**EN:** `"painful for all of us — it especially —"`
 **行:** `1764`
 **JP:** `私たち全員、特にSCP-8980自身にとって辛い`
 

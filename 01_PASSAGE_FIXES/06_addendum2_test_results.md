@@ -1,23 +1,23 @@
 # SCP-8980 該当箇所 06 査読
 
-**対象 EN:** `articles/fragment_scp-8980-1/segments/en/06_addendum2_test_results.wikidot`  
-**対象 JP:** `congy.wikidot` 行 1335-1516 付近
+**対象 EN:** `articles/fragment_scp-8980-1/segments/en/06_addendum2_test_results.wikidot`
+**対象 JP:** `bad_translation_jp_single.wikidot`
 
 ## このファイルの使い方
 
-この箇所では、バーンズの丁寧さが配慮ではなく圧力として働いているかを確認する。  
+この箇所では、バーンズの丁寧さが配慮ではなく圧力として働いているかを確認する。
 元の 2 件を核にしつつ、周辺の圧力表現もいくつか補強している。
 
 ## 総評
 
-この箇所の芯は、SCP-8980 の疲弊と、バーンズのもっともらしい慰撫が正面衝突することにある。  
+この箇所の芯は、SCP-8980 の疲弊と、バーンズのもっともらしい慰撫が正面衝突することにある。
 現行訳は大意こそ追えているが、検査で絞られる身体感覚と、翌日も検査に入れられる嫌さが弱い。
 
 ## 直すべき箇所 [ERROR]
 
 ### E-06-01 `"being put through the wringer"` が「散々苦労」に平坦化している
 
-**EN:** `"being put through the wringer"`  
+**EN:** `"being put through the wringer"`
 **行:** `1121`
 **JP:** `散々苦労してきた`
 
@@ -37,7 +37,7 @@
 
 ### E-06-06 `"get your testing set up by tomorrow"` が受け手側の不利益をぼかしている
 
-**EN:** `"I'll be sure to get your testing set up by tomorrow."`  
+**EN:** `"I'll be sure to get your testing set up by tomorrow."`
 **行:** `1211`
 **JP:** `明日までには検査の手はずを整えておきますね。`
 

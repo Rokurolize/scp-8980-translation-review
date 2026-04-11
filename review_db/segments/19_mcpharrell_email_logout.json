@@ -2,11 +2,11 @@
   "segment_id": "19_mcpharrell_email_logout",
   "title": "SCP-8980 該当箇所 19 査読",
   "source_en_path": "articles/fragment_scp-8980-1/segments/en/19_mcpharrell_email_logout.wikidot",
-  "source_jp_path": "`congy.wikidot` 行 4563-4645 付近",
+  "source_jp_path": "bad_translation_jp_single.wikidot",
   "source_range": {
-    "start": 4563,
-    "end": 4645,
-    "note": "`congy.wikidot` 行 4563-4645 付近"
+    "start": 3425,
+    "end": 3437,
+    "note": "参照行 3425 - 3437"
   },
   "usage_notes": [
     "この箇所は記事の結語であり、マクファレルの私信とログアウト表示が読後感を決める。\nしたがって、報告書の硬さではなく、「親しい同僚への業務メール」の声を正しく出すことが重要になる。",

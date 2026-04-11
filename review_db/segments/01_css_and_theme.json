@@ -2,10 +2,10 @@
   "segment_id": "01_css_and_theme",
   "title": "SCP-8980 該当箇所 01 査読",
   "source_en_path": "articles/fragment_scp-8980-1/segments/en/01_css_and_theme.wikidot",
-  "source_jp_path": "`congy.wikidot` 冒頭の CSS / theme ブロック",
+  "source_jp_path": "bad_translation_jp_single.wikidot",
   "source_range": {
-    "start": null,
-    "end": null
+    "start": 1,
+    "end": 655
   },
   "usage_notes": [
     "この箇所は本文訳の修正箇所を探す場ではなく、表示層を壊さないための保全メモである。\nこの帯では個別誤訳を量産するより、表示層を壊さないことのほうが重要である。したがって、ここでやるべきことは「訳す」より「壊さない」ことである。"

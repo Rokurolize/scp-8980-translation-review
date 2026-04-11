@@ -1,11 +1,11 @@
 # SCP-8980 該当箇所 17 査読
 
-**対象 EN:** `articles/fragment_scp-8980-1/segments/en/17_addendum10_neutralization.wikidot`  
-**対象 JP:** `congy.wikidot` 行 4279-4335 付近
+**対象 EN:** `articles/fragment_scp-8980-1/segments/en/17_addendum10_neutralization.wikidot`
+**対象 JP:** `bad_translation_jp_single.wikidot`
 
 ## このファイルの使い方
 
-この箇所は短いが、虐待後の症状を制度文書がどう記録するかを決める。  
+この箇所は短いが、虐待後の症状を制度文書がどう記録するかを決める。
 したがって、小さい用語差でも読み筋を変えるものは落とさない。
 
 ## 総評
@@ -16,7 +16,7 @@
 
 ### E-17-01 `"social awareness"` は「社会意識」ではない
 
-**EN:** `"a lack of social awareness"`  
+**EN:** `"a lack of social awareness"`
 **行:** `3200`
 **JP:** `社会意識の欠如`
 

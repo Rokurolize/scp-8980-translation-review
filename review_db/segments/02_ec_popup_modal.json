@@ -2,11 +2,11 @@
   "segment_id": "02_ec_popup_modal",
   "title": "SCP-8980 該当箇所 02 査読",
   "source_en_path": "articles/fragment_scp-8980-1/segments/en/02_ec_popup_modal.wikidot",
-  "source_jp_path": "`congy.wikidot` 行 657-883 付近",
+  "source_jp_path": "bad_translation_jp_single.wikidot",
   "source_range": {
-    "start": 657,
-    "end": 883,
-    "note": "`congy.wikidot` 行 657-883 付近"
+    "start": 702,
+    "end": 702,
+    "note": "参照行 702 - 702"
   },
   "usage_notes": [
     "- `[ERROR]` はそのまま修正対象\n- `[OUT-OF-SCOPE]` は公開面から除去すべき混入物",

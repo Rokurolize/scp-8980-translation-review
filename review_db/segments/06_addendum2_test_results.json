@@ -2,11 +2,11 @@
   "segment_id": "06_addendum2_test_results",
   "title": "SCP-8980 該当箇所 06 査読",
   "source_en_path": "articles/fragment_scp-8980-1/segments/en/06_addendum2_test_results.wikidot",
-  "source_jp_path": "`congy.wikidot` 行 1335-1516 付近",
+  "source_jp_path": "bad_translation_jp_single.wikidot",
   "source_range": {
-    "start": 1335,
-    "end": 1516,
-    "note": "`congy.wikidot` 行 1335-1516 付近"
+    "start": 1103,
+    "end": 1215,
+    "note": "参照行 1103 - 1215"
   },
   "usage_notes": [
     "この箇所では、バーンズの丁寧さが配慮ではなく圧力として働いているかを確認する。\n元の 2 件を核にしつつ、周辺の圧力表現もいくつか補強している。"

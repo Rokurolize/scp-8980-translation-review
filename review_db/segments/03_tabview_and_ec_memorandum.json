@@ -2,11 +2,11 @@
   "segment_id": "03_tabview_and_ec_memorandum",
   "title": "SCP-8980 該当箇所 03 査読",
   "source_en_path": "articles/fragment_scp-8980-1/segments/en/03_tabview_and_ec_memorandum.wikidot",
-  "source_jp_path": "`congy.wikidot` 行 896-980 付近",
+  "source_jp_path": "bad_translation_jp_single.wikidot",
   "source_range": {
-    "start": 896,
-    "end": 980,
-    "note": "`congy.wikidot` 行 896-980 付近"
+    "start": 799,
+    "end": 802,
+    "note": "参照行 799 - 802"
   },
   "usage_notes": [
     "- `[ERROR]` は題名や制度文の基準線を壊しているため優先修正\n- この箇所は入口文なので、弱い日本語や無難な注意文に落とさない"

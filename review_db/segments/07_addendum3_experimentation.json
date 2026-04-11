@@ -20,21 +20,6 @@
       "severity": "error",
       "order": 1,
       "heading": "`\"Like hell it isn't!\"` の強い肯定を外してはいけない",
-      "en_display_lines": [
-        "`\"Like hell it isn't!\"`"
-      ],
-      "line_display_lines": [
-        "`1351`"
-      ],
-      "jp_display_lines": [
-        "`そんなわけがないじゃないですか！`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 1351
-        }
-      ],
       "summary": "ここは否定の否定ではなく、直前の発言を真っ向からひっくり返す強い肯定である。",
       "why_bad": [
         "`like hell` の強い反発が消える",
@@ -42,28 +27,23 @@
         "何に対する反論かが、日本語だけでは見えにくい"
       ],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"Like hell it isn't!\"`",
+          "jp_quote": "`そんなわけがないじゃないですか！`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1351
+          }
+        }
+      ]
     },
     {
       "id": "E-07-02",
       "severity": "error",
       "order": 2,
       "heading": "仮の見立てが説明文に崩れている",
-      "en_display_lines": [
-        "`\"it seems like you're a unique Pattern-Based anomaly\"`"
-      ],
-      "line_display_lines": [
-        "`1331`"
-      ],
-      "jp_display_lines": [
-        "`パターンに基づいた特異なアノマリーということなのでしょう`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 1331
-        }
-      ],
       "summary": "ここは確定診断ではなく、もっともらしく押しつけられる暫定分類である。",
       "why_bad": [
         "`\"it seems like\"` の仮置きが薄い",
@@ -71,56 +51,46 @@
         "バーンズの専門家ぶった見立てに見えにくい"
       ],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"it seems like you're a unique Pattern-Based anomaly\"`",
+          "jp_quote": "`パターンに基づいた特異なアノマリーということなのでしょう`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1331
+          }
+        }
+      ]
     },
     {
       "id": "E-07-03",
       "severity": "error",
       "order": 3,
       "heading": "反語の詰問が普通の質問に寄っている",
-      "en_display_lines": [
-        "`\"How in the world am I supposed to be calm about this?\"`"
-      ],
-      "line_display_lines": [
-        "`1345`"
-      ],
-      "jp_display_lines": [
-        "`一体どうすれば冷静でいられるというんですか？`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 1345
-        }
-      ],
       "summary": "現状訳でも大筋は近いが、方法質問ではなく、命令そのものを突き返す詰問として立てたい。",
       "why_bad": [],
       "fix_directions": [
         "`これでどうやって冷静でいろっていうんですか`",
         "`冷静でいられるわけがない`"
       ],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"How in the world am I supposed to be calm about this?\"`",
+          "jp_quote": "`一体どうすれば冷静でいられるというんですか？`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1345
+          }
+        }
+      ]
     },
     {
       "id": "E-07-04",
       "severity": "error",
       "order": 4,
       "heading": "`\"for us\"` が落ちている",
-      "en_display_lines": [
-        "`\"the best thing you can do for us\"`"
-      ],
-      "line_display_lines": [
-        "`1365`"
-      ],
-      "jp_display_lines": [
-        "`今のあなたにとっての最善策`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 1365
-        }
-      ],
       "summary": "ここは本人利益ではなく、財団側の利益を正面から言っている。",
       "why_bad": [
         "バーンズと財団の利害が隠れる",
@@ -128,56 +98,46 @@
         "本記事の制度的な冷たさが薄まる"
       ],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"the best thing you can do for us\"`",
+          "jp_quote": "`今のあなたにとっての最善策`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1365
+          }
+        }
+      ]
     },
     {
       "id": "E-07-05",
       "severity": "error",
       "order": 5,
       "heading": "`\"one of our own\"` の身内論理が崩れている",
-      "en_display_lines": [
-        "`\"what shouldn't we do for one of our own?\"`"
-      ],
-      "line_display_lines": [
-        "`1403`"
-      ],
-      "jp_display_lines": [
-        "`仲間を助けるためには何をしないことがあるのでしょうか？`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 1403
-        }
-      ],
       "summary": "ここは身内だから何をしてもよい、という内輪の加害理屈である。現行訳は日本語としても立っていない。",
       "why_bad": [],
       "fix_directions": [
         "`身内の一人のためなら、何だってする`",
         "`うちの仲間なんだから、やらない理由はない`"
       ],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"what shouldn't we do for one of our own?\"`",
+          "jp_quote": "`仲間を助けるためには何をしないことがあるのでしょうか？`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1403
+          }
+        }
+      ]
     },
     {
       "id": "E-07-06",
       "severity": "error",
       "order": 6,
       "heading": "`\"This isn't the end of the world or anything.\"` の雑な逃げを消さない",
-      "en_display_lines": [
-        "`\"This isn't the end of the world or anything.\"`"
-      ],
-      "line_display_lines": [
-        "`1349`"
-      ],
-      "jp_display_lines": [
-        "`こんなのは世界の終わりとかそういうことじゃないん?`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 1349
-        }
-      ],
       "summary": "`or anything` は「大したことじゃない」の崩しであり、ただの否定ではない。",
       "why_bad": [
         "相手の不安を軽くいなす雑さが弱まる",
@@ -185,7 +145,17 @@
         "直前の強い反発を受け止めるバーンズの小馬鹿にした口ぶりが立たない"
       ],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"This isn't the end of the world or anything.\"`",
+          "jp_quote": "`こんなのは世界の終わりとかそういうことじゃないん?`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1349
+          }
+        }
+      ]
     }
   ],
   "extra_sections": [],

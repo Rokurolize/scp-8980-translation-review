@@ -690,11 +690,20 @@ def command_render(args: argparse.Namespace) -> int:
             return 1
         targets = [SEGMENTS_DIR / f"{args.segment_id}.json"]
 
-    for path in targets:
-        segment = json.loads(path.read_text(encoding="utf-8"))
-        output_path = PASSAGES_DIR / f"{segment['segment_id']}.md"
-        output_path.write_text(render_markdown(segment), encoding="utf-8")
-        print(f"再生成: {output_path.relative_to(ROOT)}")
+    if args.single_file:
+        lines = []
+        for path in targets:
+            segment = json.loads(path.read_text(encoding="utf-8"))
+            lines.append(render_markdown(segment))
+        output_path = ROOT / "full_review.md"
+        output_path.write_text("\n---\n\n".join(lines), encoding="utf-8")
+        print(f"単一ファイル生成: {output_path.relative_to(ROOT)}")
+    else:
+        for path in targets:
+            segment = json.loads(path.read_text(encoding="utf-8"))
+            output_path = PASSAGES_DIR / f"{segment['segment_id']}.md"
+            output_path.write_text(render_markdown(segment), encoding="utf-8")
+            print(f"再生成: {output_path.relative_to(ROOT)}")
     return 0
 
 
@@ -781,6 +790,7 @@ def build_parser() -> argparse.ArgumentParser:
     render_parser = subparsers.add_parser("render", help="JSON から Markdown を再生成する")
     render_parser.add_argument("segment_id", nargs="?")
     render_parser.add_argument("--all", action="store_true")
+    render_parser.add_argument("--single-file", action="store_true", help="全ての区間を1ファイルにまとめて出力する")
     render_parser.set_defaults(func=command_render)
 
     show_parser = subparsers.add_parser("show", help="区間または個別指摘を表示する")

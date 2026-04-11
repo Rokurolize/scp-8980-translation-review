@@ -23,279 +23,223 @@
       "severity": "error",
       "order": 1,
       "heading": "`\"Ah, here we go.\"` は開始宣言ではなく探索完了の独り言",
-      "en_display_lines": [
-        "`\"Ah, here we go.\"`"
-      ],
-      "line_display_lines": [
-        "`2982`"
-      ],
-      "jp_display_lines": [
-        "`では、始めましょう。`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 2982
-        }
-      ],
       "summary": "直前ト書きがファイル探索で、直後も報告書読解に続くため、ここは会話開始ではない。",
       "why_bad": [],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"Ah, here we go.\"`",
+          "jp_quote": "`では、始めましょう。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 2982
+          }
+        }
+      ]
     },
     {
       "id": "N-16-01",
       "severity": "note",
       "order": 1,
       "heading": "「あらま」は許容だが、声としてはもう一段詰められる",
-      "en_display_lines": [
-        "`\"Oh dear.\"`"
-      ],
-      "line_display_lines": [
-        "`3052`"
-      ],
-      "jp_display_lines": [
-        "`あらま`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 3052
-        }
-      ],
       "summary": "このままでも機能はするが、幼い軽さが少し前に出る。直後に被害の話へ入ることを考えると、もう半歩だけ抑えた声の方がクロフォードのいやらしさが続きやすい。",
       "why_bad": [],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"Oh dear.\"`",
+          "jp_quote": "`あらま`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3052
+          }
+        }
+      ]
     },
     {
       "id": "O-16-01",
       "severity": "out_of_scope",
       "order": 1,
       "heading": "担当医台詞との時系列接続メモ",
-      "en_display_lines": [],
-      "line_display_lines": [],
-      "jp_display_lines": [],
-      "source_refs": [],
       "summary": "これは該当箇所 15 側の論点であり、該当箇所 16 既存訳の当否判定としては対象外である。",
       "why_bad": [],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": []
     },
     {
       "id": "E-16-01a",
       "severity": "error",
       "order": 2,
       "heading": "`\"The amnestics got you down, huh?\"` を真面目な診断にしない",
-      "en_display_lines": [
-        "`\"The amnestics got you down, huh?\"`"
-      ],
-      "line_display_lines": [
-        "`2990`"
-      ],
-      "jp_display_lines": [
-        "`記憶処理のせいで気分が落ち込んでいるんですか？`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 2990
-        }
-      ],
       "summary": "ここは診断でも共感でもなく、相手を軽くからかいながら話題を握るための切り出しである。真面目な病状確認にすると、クロフォードの軽薄さと支配の入り口が弱まる。",
       "why_bad": [],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"The amnestics got you down, huh?\"`",
+          "jp_quote": "`記憶処理のせいで気分が落ち込んでいるんですか？`",
+          "source_ref": {
+            "kind": "line",
+            "line": 2990
+          }
+        }
+      ]
     },
     {
       "id": "N-16-02",
       "severity": "note",
       "order": 2,
       "heading": "`\"victim mentality\"` 周辺は軽蔑の調子まで拾いたい",
-      "en_display_lines": [
-        "`\"victim mentality\"`"
-      ],
-      "line_display_lines": [
-        "`3020`"
-      ],
-      "jp_display_lines": [
-        "`被害者意識`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 3020
-        }
-      ],
       "summary": "`被害者意識` 自体で意味は通るが、この場面は診断名ではなく、相手を見下しながら責任転嫁する言い方である。少し棘を足せるなら、その方がクロフォードの加害が見えやすい。",
       "why_bad": [],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"victim mentality\"`",
+          "jp_quote": "`被害者意識`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3020
+          }
+        }
+      ]
     },
     {
       "id": "E-16-02",
       "severity": "error",
       "order": 3,
       "heading": "`\"turn the other cheek\"` の道徳権威を落とさない",
-      "en_display_lines": [
-        "`\"turn the other cheek\"` / `Only then will you finally be able to get ahead.`"
-      ],
-      "line_display_lines": [
-        "`3048` / `3048`"
-      ],
-      "jp_display_lines": [
-        "`甘んじる`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 3048
-        },
-        {
-          "kind": "line",
-          "line": 3048
-        }
-      ],
       "summary": "ここは聖書由来の定型句を借りて、抵抗せず受け入れろと強要する場面である。続く `Only then...` も、前後を切らずに「そうして初めて」の説教調として拾わないと、服従を道徳化する圧が落ちる。",
       "why_bad": [],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"turn the other cheek\"`",
+          "jp_quote": "`甘んじる`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3048
+          }
+        },
+        {
+          "en_quote": "`Only then will you finally be able to get ahead.`",
+          "jp_quote": "",
+          "source_ref": {
+            "kind": "line",
+            "line": 3048
+          }
+        }
+      ]
     },
     {
       "id": "N-16-03",
       "severity": "note",
       "order": 3,
       "heading": "「犯す」は強すぎる可能性がある",
-      "en_display_lines": [
-        "`\"If I wanted to fuck you, I would've done it by now.\"`"
-      ],
-      "line_display_lines": [
-        "`3166`"
-      ],
-      "jp_display_lines": [
-        "`あんたのことを犯したいなら、とっくにそうしてるさ。`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 3166
-        }
-      ],
       "summary": "このままでも加害性は強く出るが、`犯す` は原文より一段踏み込みすぎる。硬い誤りではないものの、もし距離を戻すなら性交表現の範囲で止める方が原文に近い。",
       "why_bad": [],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"If I wanted to fuck you, I would've done it by now.\"`",
+          "jp_quote": "`あんたのことを犯したいなら、とっくにそうしてるさ。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3166
+          }
+        }
+      ]
     },
     {
       "id": "E-16-03",
       "severity": "error",
       "order": 4,
       "heading": "`\"Here's to many more.\"` を露骨な脅迫にしない",
-      "en_display_lines": [
-        "`\"Here's to many more.\"`"
-      ],
-      "line_display_lines": [
-        "`3176`"
-      ],
-      "jp_display_lines": [
-        "`ここからが本番だよ。`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 3176
-        }
-      ],
       "summary": "ここは祝辞の形式で永続支配を告げるのが嫌さの核心であり、脅迫に寄せすぎるとバーンズの質が変わる。",
       "why_bad": [],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"Here's to many more.\"`",
+          "jp_quote": "`ここからが本番だよ。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3176
+          }
+        }
+      ]
     },
     {
       "id": "N-16-04",
       "severity": "note",
       "order": 4,
       "heading": "バーンズの一人称切替は設計としては有効",
-      "en_display_lines": [],
-      "line_display_lines": [],
-      "jp_display_lines": [],
-      "source_refs": [],
       "summary": "原文の必須条件ではないが、日本語で仮面が剥がれる瞬間を出す案としては使える。このままでも成立するが、採るなら該当箇所 16 だけの思いつきではなく、バーンズ全体の声として揃えたい。",
       "why_bad": [],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": []
     },
     {
       "id": "E-16-04",
       "severity": "error",
       "order": 5,
       "heading": "「差し上げましょう」の連打をやめる",
-      "en_display_lines": [
-        "`\"I'll give you everything I own. All of it. You can have everything in my bank account and in my room. I'll draw out loans for you that I can't pay back. I'll give you my paycheck. Everything.\"` / `\"I'll— I'll work whatever assignment you g-give me. I'll let you take credit for all of my papers. I'll be your s— (//SCP-8980 gulps.//) your secretary. I'll bring you your morning coffee and make you your sandwiches. //I'll lick your shoes.//\"` / `\"I'll... I'll even sleep with you. Please.\"`"
-      ],
-      "line_display_lines": [
-        "`3136` / `3140` / `3146`"
-      ],
-      "jp_display_lines": [
-        "`差し上げましょう` の連打"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 3136
-        },
-        {
-          "kind": "line",
-          "line": 3140
-        },
-        {
-          "kind": "line",
-          "line": 3146
-        }
-      ],
       "summary": "ここは床に崩れた人間の絶望であって、儀礼的な贈与宣言ではない。",
       "why_bad": [],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"I'll give you everything I own. All of it. You can have everything in my bank account and in my room. I'll draw out loans for you that I can't pay back. I'll give you my paycheck. Everything.\"`",
+          "jp_quote": "`差し上げましょう` の連打",
+          "source_ref": {
+            "kind": "line",
+            "line": 3136
+          }
+        },
+        {
+          "en_quote": "`\"I'll— I'll work whatever assignment you g-give me. I'll let you take credit for all of my papers. I'll be your s— (//SCP-8980 gulps.//) your secretary. I'll bring you your morning coffee and make you your sandwiches. //I'll lick your shoes.//\"`",
+          "jp_quote": "",
+          "source_ref": {
+            "kind": "line",
+            "line": 3140
+          }
+        },
+        {
+          "en_quote": "`\"I'll... I'll even sleep with you. Please.\"`",
+          "jp_quote": "",
+          "source_ref": {
+            "kind": "line",
+            "line": 3146
+          }
+        }
+      ]
     },
     {
       "id": "N-16-05",
       "severity": "note",
       "order": 5,
       "heading": "吃音だけでなく言い直し構造も拾いたい",
-      "en_display_lines": [],
-      "line_display_lines": [],
-      "jp_display_lines": [],
-      "source_refs": [],
       "summary": "現状訳でも崩れはあるが、吃音だけでなく言い直しまで残すと、頭の中で言葉が絡まる感じがもう少し出る。直さなくても致命傷ではないが、効く調整ではある。",
       "why_bad": [],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": []
     },
     {
       "id": "E-16-08",
       "severity": "error",
       "order": 6,
       "heading": "`\"There... there's always work to be done.\"` の壊れた復唱を落とさない",
-      "en_display_lines": [
-        "`\"I suppose our emotional little brains are just like the Foundation itself, no? No matter how hard of a job we do, there's always work to be done.\"` / `\"There... there's always work to be done.\"`"
-      ],
-      "line_display_lines": [
-        "`3060` / `3064`"
-      ],
-      "jp_display_lines": [
-        "`私たちの感情を司る小さな脳は、財団そのものとよく似ているとは思いませんか？どんなに大変な仕事をしても、常にやるべきことが常にあるんですから。` / `そう… やるべきことは常にあるのね。`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 3060
-        },
-        {
-          "kind": "line",
-          "line": 3064
-        }
-      ],
       "summary": "ここはクロフォードの説教が SCP-8980 の口の中に入り込んで戻ってくる場面である。単なる同意や要約にすると、ガスライティングの侵入が消える。",
       "why_bad": [
         "`There's always work to be done` を、単なる諭しや感想に薄めてはいけない",
@@ -303,42 +247,42 @@
         "この復唱を落とすと、終盤で SCP-8980 の内面が侵食された事実が弱まる"
       ],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"I suppose our emotional little brains are just like the Foundation itself, no? No matter how hard of a job we do, there's always work to be done.\"`",
+          "jp_quote": "`私たちの感情を司る小さな脳は、財団そのものとよく似ているとは思いませんか？どんなに大変な仕事をしても、常にやるべきことが常にあるんですから。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3060
+          }
+        },
+        {
+          "en_quote": "`\"There... there's always work to be done.\"`",
+          "jp_quote": "`そう… やるべきことは常にあるのね。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3064
+          }
+        }
+      ]
     },
     {
       "id": "N-16-06",
       "severity": "note",
       "order": 6,
       "heading": "深いため息の身体感覚をもう少し出したい",
-      "en_display_lines": [],
-      "line_display_lines": [],
-      "jp_display_lines": [],
-      "source_refs": [],
       "summary": "意味は通るが、聞こえるほど深いため息の質感を補える。細い点ではあるが、SCP-8980 がそれだけで怯む場面なので、音と深さは拾う価値がある。",
       "why_bad": [],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": []
     },
     {
       "id": "E-16-09",
       "severity": "error",
       "order": 7,
       "heading": "末尾の一文欠落を戻す",
-      "en_display_lines": [
-        "`\"SCP-8980 slowly lifts itself off the floor, and gets ready for work.\"`"
-      ],
-      "line_display_lines": [
-        "`3180`"
-      ],
-      "jp_display_lines": [
-        "`午前8:00:03 | 1時間半にわたって何の活動もなかった後、SCP-8980の室内のリモートワーク装置がその日の作業スケジュールを印刷した。SCP-8980はゆっくりと床から身を起こし、仕事の準備を始めた。`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 3180
-        }
-      ],
       "summary": "ここは章の締めそのもので、床から身を起こして仕事に戻る流れまで書かれて初めて終わり方が成立する。時計だけで終わると、絶望の完成が切れる。",
       "why_bad": [
         "床から身を起こす動きが消える",
@@ -346,57 +290,57 @@
         "1時間半の沈黙のあとに来る、完全服従の終止符が消える"
       ],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"SCP-8980 slowly lifts itself off the floor, and gets ready for work.\"`",
+          "jp_quote": "`午前8:00:03 | 1時間半にわたって何の活動もなかった後、SCP-8980の室内のリモートワーク装置がその日の作業スケジュールを印刷した。SCP-8980はゆっくりと床から身を起こし、仕事の準備を始めた。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3180
+          }
+        }
+      ]
     },
     {
       "id": "E-16-06",
       "severity": "error",
       "order": 8,
       "heading": "`\"any other old lady\"` の generic singular を落とさない",
-      "en_display_lines": [
-        "`\"any other old lady\"`"
-      ],
-      "line_display_lines": [
-        "`3006`"
-      ],
-      "jp_display_lines": [
-        "`他のおばあさんたち`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 3006
-        }
-      ],
       "summary": "ここは特定複数の老女ではなく、無害な「そのへんの年寄り」ロールを押しつける言い方である。",
       "why_bad": [],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"any other old lady\"`",
+          "jp_quote": "`他のおばあさんたち`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3006
+          }
+        }
+      ]
     },
     {
       "id": "E-16-07",
       "severity": "error",
       "order": 9,
       "heading": "斜体の焦点をずらさない",
-      "en_display_lines": [
-        "自発性の真偽に掛かる強調"
-      ],
-      "line_display_lines": [
-        "`3002`"
-      ],
-      "jp_display_lines": [
-        "`自発的にやった`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 3002
-        }
-      ],
       "summary": "強調は行為そのものではなく、「本当に自分で選んだのか」に掛かっている。",
       "why_bad": [],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "自発性の真偽に掛かる強調",
+          "jp_quote": "`自発的にやった`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3002
+          }
+        }
+      ]
     }
   ],
   "extra_sections": [],

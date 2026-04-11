@@ -20,77 +20,52 @@
       "severity": "error",
       "order": 1,
       "heading": "`\"or something of the sort\"` の雑な逃げが消えている",
-      "en_display_lines": [
-        "`\"or something of the sort\"`"
-      ],
-      "line_display_lines": [
-        "`1441`"
-      ],
-      "jp_display_lines": [
-        "`あるいはそれに類する`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 1441
-        }
-      ],
       "summary": "ここは雑な言い逃れなので、整った論文語にしてはいけない。",
       "why_bad": [
         "バーンズの説明放棄が見えなくなる",
         "倫理委員会コメントが問題にしている雑さが日本語で消える"
       ],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"or something of the sort\"`",
+          "jp_quote": "`あるいはそれに類する`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1441
+          }
+        }
+      ]
     },
     {
       "id": "N-08-01",
       "severity": "note",
       "order": 1,
       "heading": "`\"I look forward to having it back with us\"` の同僚性は残す",
-      "en_display_lines": [
-        "`\"I look forward to having it back with us\"`"
-      ],
-      "line_display_lines": [
-        "`1477`"
-      ],
-      "jp_display_lines": [
-        "`SCP-8980が我々の元に帰還するのを私は楽しみにしています。`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 1477
-        }
-      ],
       "summary": "訳は大きく外れていないが、`with us` にある「こちら側の一員として戻ってくる」含みを残しておきたい。",
       "why_bad": [],
       "fix_directions": [
         "`我々のもとに戻る` だけで終わらせず、`我々と一緒に` の距離感を保つ",
         "戻ってくる事実だけでなく、バーンズの帰属意識も見せる"
       ],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"I look forward to having it back with us\"`",
+          "jp_quote": "`SCP-8980が我々の元に帰還するのを私は楽しみにしています。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1477
+          }
+        }
+      ]
     },
     {
       "id": "E-08-02",
       "severity": "error",
       "order": 2,
       "heading": "`\"laser-targeted\"` を文字通りのレーザーへ読んでいる",
-      "en_display_lines": [
-        "`\"laser-targeted\"`"
-      ],
-      "line_display_lines": [
-        "`1457`"
-      ],
-      "jp_display_lines": [
-        "`レーザー銃のように狙いを定めている`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 1457
-        }
-      ],
       "summary": "これは具体物ではなく、異様なまでに狙い撃ちであることの比喩である。",
       "why_bad": [
         "日本語で急に漫画的になる",
@@ -98,95 +73,94 @@
         "バーンズの擬人化の調子が崩れる"
       ],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"laser-targeted\"`",
+          "jp_quote": "`レーザー銃のように狙いを定めている`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1457
+          }
+        }
+      ]
     },
     {
       "id": "N-08-02",
       "severity": "note",
       "order": 2,
       "heading": "`\"Following several days...\"` の移行期間を丸めない",
-      "en_display_lines": [
-        "`\"Following several days standardizing SCP-8980's containment arrangement, SCP-8980 began to resume active employment at the SCP Foundation on April 18th, 2005, with special considerations for its anomalous capabilities.\"`"
-      ],
-      "line_display_lines": [
-        "`1481`"
-      ],
-      "jp_display_lines": [
-        "`SCP-8980の収容体制標準化に数日を要した後、異常な能力に対して特別な配慮がなされたうえで、SCP-8980は2005年4月18日付でSCP財団での仕事を再開しました。`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 1481
-        }
-      ],
       "summary": "`Following` の時系列と `began to resume` の立ち上がりを、単なる「後」と「再開した」で丸めない。",
       "why_bad": [],
       "fix_directions": [
         "`数日を経て` のように、調整期間を前景化する",
         "`再開した` だけでなく、段階的な再開を残す"
       ],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"Following several days standardizing SCP-8980's containment arrangement, SCP-8980 began to resume active employment at the SCP Foundation on April 18th, 2005, with special considerations for its anomalous capabilities.\"`",
+          "jp_quote": "`SCP-8980の収容体制標準化に数日を要した後、異常な能力に対して特別な配慮がなされたうえで、SCP-8980は2005年4月18日付でSCP財団での仕事を再開しました。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1481
+          }
+        }
+      ]
     },
     {
       "id": "N-08-03",
       "severity": "note",
       "order": 3,
       "heading": "`\"incorrect options being selected\"` と `\"requested to conclude the experiment\"` は、起動失敗と申告の両方を残す",
-      "en_display_lines": [
-        "`\"high input latency, incorrect options being selected (such as language), and the device randomly restarting. While SCP-8980 was able to eventually set up the device, it was cited as being uncomfortable and requested to conclude the experiment.\"`"
-      ],
-      "line_display_lines": [
-        "`1421`"
-      ],
-      "jp_display_lines": [
-        "`入力遅延の増加、言語設定の際などの誤ったオプションの選択、デバイスのランダムな再起動などに見舞われ、オペレーティングシステムの設定に著しい困難をきたした。SCP-8980は最終的にデバイスの設定を完了できたが、不快感を訴えたため実験の終了を要求した。`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 1421
-        }
-      ],
       "summary": "起動に手間取った事実だけでなく、本人が不快感を訴えて終了を求めた流れまで残しておきたい。",
       "why_bad": [],
       "fix_directions": [
         "`incorrect options` は、単なる不具合ではなく選択の誤りとして読む",
         "`requested to conclude` は、SCP-8980 の主体的な終了要求として残す"
       ],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"high input latency, incorrect options being selected (such as language), and the device randomly restarting. While SCP-8980 was able to eventually set up the device, it was cited as being uncomfortable and requested to conclude the experiment.\"`",
+          "jp_quote": "`入力遅延の増加、言語設定の際などの誤ったオプションの選択、デバイスのランダムな再起動などに見舞われ、オペレーティングシステムの設定に著しい困難をきたした。SCP-8980は最終的にデバイスの設定を完了できたが、不快感を訴えたため実験の終了を要求した。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1421
+          }
+        }
+      ]
     },
     {
       "id": "N-08-04",
       "severity": "note",
       "order": 4,
       "heading": "`\"electronic equipment\"` は訳語を揃える",
-      "en_display_lines": [
-        "`\"with no prior interaction with other electronic equipment\"` / `\"due to its potential risk to nearby electronic equipment\"`"
-      ],
-      "line_display_lines": [
-        "`1419` / `1481`"
-      ],
-      "jp_display_lines": [
-        "`他の電子機器との事前の接触がない` / `近隣の電子機器に潜在的なリスクがあるため`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 1419
-        },
-        {
-          "kind": "line",
-          "line": 1481
-        }
-      ],
       "summary": "`電子機器` と `電子デバイス` の揺れを止めて、同じ語を同じ語で返したい。",
       "why_bad": [],
       "fix_directions": [
         "08 内で `electronic equipment` を `電子機器` に寄せる",
         "似た文脈で `電子デバイス` に逃がさない"
       ],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"with no prior interaction with other electronic equipment\"`",
+          "jp_quote": "`他の電子機器との事前の接触がない`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1419
+          }
+        },
+        {
+          "en_quote": "`\"due to its potential risk to nearby electronic equipment\"`",
+          "jp_quote": "`近隣の電子機器に潜在的なリスクがあるため`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1481
+          }
+        }
+      ]
     }
   ],
   "extra_sections": [],

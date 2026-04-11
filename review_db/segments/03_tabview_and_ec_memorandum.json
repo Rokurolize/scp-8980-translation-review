@@ -21,21 +21,6 @@
       "severity": "error",
       "order": 1,
       "heading": "`\"Without Regards\"` を「気遣いなど無く」で処理すると軽すぎる",
-      "en_display_lines": [
-        "`SCP-8980 — Ergophobia: Without Regards`"
-      ],
-      "line_display_lines": [
-        "`799`"
-      ],
-      "jp_display_lines": [
-        "`SCP-8980 - 仕事恐怖症: 気遣いなど無く`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 799
-        }
-      ],
       "summary": "この副題は、単なる親切不足ではなく、相手を顧みないこと、そのまま勘定に入れないことを含む。現状訳は軽く、題名として締まらない。",
       "why_bad": [
         "`気遣い` だと日常的な親切不足に縮む",
@@ -47,28 +32,23 @@
         "`顧みられず`",
         "`何一つ顧みられず`"
       ],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`SCP-8980 — Ergophobia: Without Regards`",
+          "jp_quote": "`SCP-8980 - 仕事恐怖症: 気遣いなど無く`",
+          "source_ref": {
+            "kind": "line",
+            "line": 799
+          }
+        }
+      ]
     },
     {
       "id": "N-03-01",
       "severity": "note",
       "order": 1,
       "heading": "内容警告の強度は公文書調で立てたい",
-      "en_display_lines": [
-        "`\"extremely sensitive material. Viewer discretion is heavily advised.\"`"
-      ],
-      "line_display_lines": [
-        "`802`"
-      ],
-      "jp_display_lines": [
-        "`非常にセンシティブな内容が含まれていますので、閲覧には十分ご注意ください。`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 802
-        }
-      ],
       "summary": "現状訳でも警告であることは伝わるが、ここは日常的な注意喚起ではなく、強い閲覧警告としてもう一段冷たく立てたい。",
       "why_bad": [
         "`センシティブ` と `十分ご注意ください` の組み合わせだと、記事冒頭の告知として少し軽い",
@@ -76,7 +56,17 @@
         "直後の倫理委員会覚書へ接続する公文書トーンが弱まる"
       ],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"extremely sensitive material. Viewer discretion is heavily advised.\"`",
+          "jp_quote": "`非常にセンシティブな内容が含まれていますので、閲覧には十分ご注意ください。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 802
+          }
+        }
+      ]
     }
   ],
   "extra_sections": [],

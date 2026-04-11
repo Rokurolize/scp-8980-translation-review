@@ -20,183 +20,150 @@
       "severity": "error",
       "order": 1,
       "heading": "`\"abuse of an anomaly\"` は「濫用」ではなく「虐待」",
-      "en_display_lines": [
-        "`\"Abuse of an anomaly\"`"
-      ],
-      "line_display_lines": [
-        "`3264`"
-      ],
-      "jp_display_lines": [
-        "`アノマリーの濫用`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 3264
-        }
-      ],
       "summary": "ここで裁かれているのは物品悪用ではなく、知性ある被害者への虐待である。",
       "why_bad": [],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"Abuse of an anomaly\"`",
+          "jp_quote": "`アノマリーの濫用`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3264
+          }
+        }
+      ]
     },
     {
       "id": "N-18-01",
       "severity": "note",
       "order": 1,
       "heading": "勧告リストは 3 本立ての命令形として保つ",
-      "en_display_lines": [
-        "`1. Provide monetary compensation to SCP-8980 for the abuse it suffered under Dr. Christopher Byrnes. / 2. Provide free parapsychological counseling to SCP-8980 for the remainder of its tenure at the Foundation. / 3. Request the Fire Suppression Department to soft-monitor SCP-8980 in order to properly reintegrate it back into the Foundation's workplace environment.`"
-      ],
-      "line_display_lines": [
-        "`3287` / `3288` / `3289`"
-      ],
-      "jp_display_lines": [
-        "`1. クリストファー・バーンズ博士の下で受けた虐待に対し、SCP-8980に金銭的補償を提供すること。 / 2. SCP-8980の財団在籍期間を通じ、無償の超心理カウンセリングを提供すること。 / 3. SCP-8980を財団の業務環境に適切に再統合するため、火災鎮圧部門にソフトモニタリングを依頼すること。`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 3287
-        },
-        {
-          "kind": "line",
-          "line": 3288
-        },
-        {
-          "kind": "line",
-          "line": 3289
-        }
-      ],
       "summary": "ここは説明文ではなく勧告の列挙である。各項目を命令形のまま並べ、3 本の勧告だと分かる形を崩さない。",
       "why_bad": [],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`1. Provide monetary compensation to SCP-8980 for the abuse it suffered under Dr. Christopher Byrnes.",
+          "jp_quote": "`1. クリストファー・バーンズ博士の下で受けた虐待に対し、SCP-8980に金銭的補償を提供すること。",
+          "source_ref": {
+            "kind": "line",
+            "line": 3287
+          }
+        },
+        {
+          "en_quote": "2. Provide free parapsychological counseling to SCP-8980 for the remainder of its tenure at the Foundation.",
+          "jp_quote": "2. SCP-8980の財団在籍期間を通じ、無償の超心理カウンセリングを提供すること。",
+          "source_ref": {
+            "kind": "line",
+            "line": 3288
+          }
+        },
+        {
+          "en_quote": "3. Request the Fire Suppression Department to soft-monitor SCP-8980 in order to properly reintegrate it back into the Foundation's workplace environment.`",
+          "jp_quote": "3. SCP-8980を財団の業務環境に適切に再統合するため、火災鎮圧部門にソフトモニタリングを依頼すること。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3289
+          }
+        }
+      ]
     },
     {
       "id": "E-18-02",
       "severity": "error",
       "order": 2,
       "heading": "`\"extort, manipulate\"` を「脅迫・教唆」にしない",
-      "en_display_lines": [
-        "`\"extort, manipulate\"`"
-      ],
-      "line_display_lines": [
-        "`3260`"
-      ],
-      "jp_display_lines": [
-        "`脅迫・教唆`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 3260
-        }
-      ],
       "summary": "これは権力を使った圧力と操作であって、犯罪のそそのかしではない。",
       "why_bad": [],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"extort, manipulate\"`",
+          "jp_quote": "`脅迫・教唆`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3260
+          }
+        }
+      ]
     },
     {
       "id": "N-18-02",
       "severity": "note",
       "order": 2,
       "heading": "`as well as requiring three months of remedial therapy` は標準処分の付け足しではない",
-      "en_display_lines": [
-        "`\"the standard escalation of docking one week of pay, as well as requiring three months of remedial therapy\"`"
-      ],
-      "line_display_lines": [
-        "`3277`"
-      ],
-      "jp_display_lines": [
-        "`1週間の給与減額と3か月間の強制療法`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 3277
-        }
-      ],
       "summary": "`as well as` をただの `and` に落とすと、標準処分の内訳であることが弱まる。給与減額と矯正療法を、同じパッケージの中身として見せる。",
       "why_bad": [],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"the standard escalation of docking one week of pay, as well as requiring three months of remedial therapy\"`",
+          "jp_quote": "`1週間の給与減額と3か月間の強制療法`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3277
+          }
+        }
+      ]
     },
     {
       "id": "E-18-03",
       "severity": "error",
       "order": 3,
       "heading": "`\"intimidation\"` を前項と同じ「恐喝」に潰さない",
-      "en_display_lines": [
-        "`\"Deliberate intimidation of an anomaly\"`"
-      ],
-      "line_display_lines": [
-        "`3268`"
-      ],
-      "jp_display_lines": [
-        "`意図的な恐喝行為`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 3268
-        }
-      ],
       "summary": "ここは金品目的の脅しではなく、恒常的な威圧である。",
       "why_bad": [],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"Deliberate intimidation of an anomaly\"`",
+          "jp_quote": "`意図的な恐喝行為`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3268
+          }
+        }
+      ]
     },
     {
       "id": "N-18-03",
       "severity": "note",
       "order": 3,
       "heading": "委員会投票の報告文は結果だけでなく、投票される手続きまで残す",
-      "en_display_lines": [
-        "`\"All three Ethics Committee Proposals presented by the Review Team have passed.\"` / `\"Foundation Motions will be put up for vote at the next annual Inter-Committee Council Session, should they be approved by the Ethics Committee as a whole.\"`"
-      ],
-      "line_display_lines": [
-        "`3320` / `3309`"
-      ],
-      "jp_display_lines": [
-        "`倫理委員会に提出された全ての提案は可決されました。財団の動議については、倫理委員会全体で承認された場合、次回の年次各委員会合同会議において投票が行われる予定です。`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 3320
-        },
-        {
-          "kind": "line",
-          "line": 3309
-        }
-      ],
       "summary": "ここは単なる可決報告ではなく、提案が審査を通って、さらに本会議で投票されるという手続きの段階を示している。`should` と投票の二段構えを残す。",
       "why_bad": [],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"All three Ethics Committee Proposals presented by the Review Team have passed.\"`",
+          "jp_quote": "`倫理委員会に提出された全ての提案は可決されました。財団の動議については、倫理委員会全体で承認された場合、次回の年次各委員会合同会議において投票が行われる予定です。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3320
+          }
+        },
+        {
+          "en_quote": "`\"Foundation Motions will be put up for vote at the next annual Inter-Committee Council Session, should they be approved by the Ethics Committee as a whole.\"`",
+          "jp_quote": "",
+          "source_ref": {
+            "kind": "line",
+            "line": 3309
+          }
+        }
+      ]
     },
     {
       "id": "E-18-04",
       "severity": "error",
       "order": 4,
       "heading": "条番号 `2.4.1` を落とさない",
-      "en_display_lines": [
-        "`\"Gross negligence of an anomaly. (Title 2, Chapter 2 § 2.4.1)\"`"
-      ],
-      "line_display_lines": [
-        "`3266`"
-      ],
-      "jp_display_lines": [
-        "`第2章第2節第2.4.1条: アノマリーに対する重大な過失`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 3266
-        }
-      ],
       "summary": "違反類型ごとの切り分けそのものがこの文書の核心なので、条番号の誤記は小さくない。",
       "why_bad": [],
       "fix_directions": [],
@@ -206,6 +173,16 @@
           "kind": "text",
           "value": "怠慢側を `第2章第2節第2.4.1条` に戻す。"
         }
+      ],
+      "evidence": [
+        {
+          "en_quote": "`\"Gross negligence of an anomaly. (Title 2, Chapter 2 § 2.4.1)\"`",
+          "jp_quote": "`第2章第2節第2.4.1条: アノマリーに対する重大な過失`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3266
+          }
+        }
       ]
     },
     {
@@ -213,75 +190,60 @@
       "severity": "note",
       "order": 4,
       "heading": "`Thank you for your invaluable efforts in this case, Roberts.` は委員長の評語として置く",
-      "en_display_lines": [
-        "`\"Thank you for your invaluable efforts in this case, Roberts.\"`"
-      ],
-      "line_display_lines": [
-        "`3307`"
-      ],
-      "jp_display_lines": [
-        "`この件でのあなたの貴重な尽力に感謝します、ロバーツ。`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 3307
-        }
-      ],
       "summary": "ここは単なる礼ではなく、委員会側が査読結果を認めて閉じる評語である。`invaluable efforts` を軽くしすぎない。",
       "why_bad": [],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"Thank you for your invaluable efforts in this case, Roberts.\"`",
+          "jp_quote": "`この件でのあなたの貴重な尽力に感謝します、ロバーツ。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3307
+          }
+        }
+      ]
     },
     {
       "id": "E-18-05",
       "severity": "error",
       "order": 5,
       "heading": "`\"experience with Dr. Crawford\"` は未来の再接触ではない",
-      "en_display_lines": [
-        "`\"SCP-8980's experience with Dr. Crawford\"`"
-      ],
-      "line_display_lines": [
-        "`3325`"
-      ],
-      "jp_display_lines": [
-        "`クロフォード博士と接することで`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 3325
-        }
-      ],
       "summary": "ここは過去に受けた体験の後遺であり、「また会わせるのは危険だ」に狭めない。",
       "why_bad": [],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"SCP-8980's experience with Dr. Crawford\"`",
+          "jp_quote": "`クロフォード博士と接することで`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3325
+          }
+        }
+      ]
     },
     {
       "id": "E-18-06",
       "severity": "error",
       "order": 6,
       "heading": "`\"keep this case open indefinitely\"` は案件保留の無力感が芯",
-      "en_display_lines": [
-        "`\"keep this case open indefinitely\"`"
-      ],
-      "line_display_lines": [
-        "`3351`"
-      ],
-      "jp_display_lines": [
-        "`当面の間継続して調査を行う予定`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 3351
-        }
-      ],
       "summary": "ここは調査継続ではなく、打つ手がないまま案件だけが開きっぱなしで残ることが重要である。",
       "why_bad": [],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"keep this case open indefinitely\"`",
+          "jp_quote": "`当面の間継続して調査を行う予定`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3351
+          }
+        }
+      ]
     }
   ],
   "extra_sections": [],

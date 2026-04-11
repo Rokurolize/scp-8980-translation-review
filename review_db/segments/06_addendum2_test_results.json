@@ -20,21 +20,6 @@
       "severity": "error",
       "order": 1,
       "heading": "`\"being put through the wringer\"` が「散々苦労」に平坦化している",
-      "en_display_lines": [
-        "`\"being put through the wringer\"`"
-      ],
-      "line_display_lines": [
-        "`1121`"
-      ],
-      "jp_display_lines": [
-        "`散々苦労してきた`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 1121
-        }
-      ],
       "summary": "ここは単に大変だったではなく、検査で絞られ消耗しきっていることを出す必要がある。",
       "why_bad": [
         "慣用句の身体性が落ちる",
@@ -46,53 +31,43 @@
         "`しごかれた`",
         "`くたくたになった`"
       ],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"being put through the wringer\"`",
+          "jp_quote": "`散々苦労してきた`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1121
+          }
+        }
+      ]
     },
     {
       "id": "N-06-01",
       "severity": "note",
       "order": 1,
       "heading": "`visibly agitated` は観察記録として残したい",
-      "en_display_lines": [
-        "`SCP-8980 is seated, though visibly agitated; it repeatedly taps its leg and huffs for an extended period.`"
-      ],
-      "line_display_lines": [
-        "`1103`"
-      ],
-      "jp_display_lines": [
-        "`SCP-8980は着席していたが明らかに動揺しており、長時間にわたって足を繰り返し叩き、息を荒くしている。`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 1103
-        }
-      ],
       "summary": "ここは「動揺している」だけでは足りず、外から見て分かる動揺であることが大事である。`repeatedly` と `for an extended period` も、観察記録の粘りとして残したい。",
       "why_bad": [],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`SCP-8980 is seated, though visibly agitated; it repeatedly taps its leg and huffs for an extended period.`",
+          "jp_quote": "`SCP-8980は着席していたが明らかに動揺しており、長時間にわたって足を繰り返し叩き、息を荒くしている。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1103
+          }
+        }
+      ]
     },
     {
       "id": "E-06-06",
       "severity": "error",
       "order": 2,
       "heading": "`\"get your testing set up by tomorrow\"` が受け手側の不利益をぼかしている",
-      "en_display_lines": [
-        "`\"I'll be sure to get your testing set up by tomorrow.\"`"
-      ],
-      "line_display_lines": [
-        "`1211`"
-      ],
-      "jp_display_lines": [
-        "`明日までには検査の手はずを整えておきますね。`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 1211
-        }
-      ],
       "summary": "ここは段取りの説明ではなく、「明日にはまた検査に入れる」という通知である。",
       "why_bad": [
         "`手はずを整える` では準備側の事務作業に寄る",
@@ -103,53 +78,43 @@
         "`明日には検査に入れるよう手配する`",
         "`次の検査を始められるようにしておく`"
       ],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"I'll be sure to get your testing set up by tomorrow.\"`",
+          "jp_quote": "`明日までには検査の手はずを整えておきますね。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1211
+          }
+        }
+      ]
     },
     {
       "id": "N-06-02",
       "severity": "note",
       "order": 2,
       "heading": "`it seems like` は診断のクッションとして機能している",
-      "en_display_lines": [
-        "`Well... it seems like the anomaly is trying to humiliate you.`"
-      ],
-      "line_display_lines": [
-        "`1155`"
-      ],
-      "jp_display_lines": [
-        "`ええ、どうやら件の異常現象はあなたの自尊心を傷つけようと試みているみたいなんです。`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 1155
-        }
-      ],
       "summary": "`it seems like` は断定を避けるクッションであり、`humiliate` は単なる「傷つける」ではない。ここは、バーンズが丁寧に見せかけて決めつけている嫌さを残したい。",
       "why_bad": [],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`Well... it seems like the anomaly is trying to humiliate you.`",
+          "jp_quote": "`ええ、どうやら件の異常現象はあなたの自尊心を傷つけようと試みているみたいなんです。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1155
+          }
+        }
+      ]
     },
     {
       "id": "E-06-07",
       "severity": "error",
       "order": 3,
       "heading": "`\"Just consider this a... an extended vacation, alright?\"` を段取り説明にしない",
-      "en_display_lines": [
-        "`\"Just consider this a... an extended vacation, alright?\"`"
-      ],
-      "line_display_lines": [
-        "`1195`"
-      ],
-      "jp_display_lines": [
-        "`長期休暇の類であると思ってください。いいですね？`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 1195
-        }
-      ],
       "summary": "これは中立な予定説明ではなく、次の検査を「休暇」と呼んで丸めた支配の言い方である。`alright?` も確認ではなく、やわらかい圧として残したい。",
       "why_bad": [
         "`extended vacation` の皮肉が弱まる",
@@ -160,82 +125,77 @@
         "`しばらくの長期休暇`",
         "`とでも思っておいてください`"
       ],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"Just consider this a... an extended vacation, alright?\"`",
+          "jp_quote": "`長期休暇の類であると思ってください。いいですね？`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1195
+          }
+        }
+      ]
     },
     {
       "id": "N-06-03",
       "severity": "note",
       "order": 3,
       "heading": "`no disciplinary action will be taken at this time` は決定の温度を落とさない",
-      "en_display_lines": [
-        "`While the incident in question was found to be a violation of the Foundation Citation Policy, no disciplinary action will be taken at this time.`"
-      ],
-      "line_display_lines": [
-        "`1203`"
-      ],
-      "jp_display_lines": [
-        "`この件は財団の引用規定に違反していると判断されましたが、現時点では懲戒処分は行われません。`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 1203
-        }
-      ],
       "summary": "ここは「現時点では」が核であり、単なる説明ではなく委員会の決定である。`will be taken` の決定性を、ぼかしすぎないようにしたい。",
       "why_bad": [],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`While the incident in question was found to be a violation of the Foundation Citation Policy, no disciplinary action will be taken at this time.`",
+          "jp_quote": "`この件は財団の引用規定に違反していると判断されましたが、現時点では懲戒処分は行われません。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1203
+          }
+        }
+      ]
     },
     {
       "id": "N-06-04",
       "severity": "note",
       "order": 4,
       "heading": "`Great! I always appreciate it when a meeting goes smoothly.` は満足の押しつけになっている",
-      "en_display_lines": [
-        "`Great! I always appreciate it when a meeting goes smoothly.`"
-      ],
-      "line_display_lines": [
-        "`1211`"
-      ],
-      "jp_display_lines": [
-        "`良いね！話がスムーズに進むといつも嬉しくなるね。`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 1211
-        }
-      ],
       "summary": "`Great!` は単なる相づちではなく、手続きがうまく進んだことへの満足である。`いつも嬉しくなる` だけだと、圧のある達成感が少し弱い。",
       "why_bad": [],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`Great! I always appreciate it when a meeting goes smoothly.`",
+          "jp_quote": "`良いね！話がスムーズに進むといつも嬉しくなるね。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1211
+          }
+        }
+      ]
     },
     {
       "id": "N-06-05",
       "severity": "note",
       "order": 5,
       "heading": "`on time, next time!` は軽い冗談ではなく釘刺し",
-      "en_display_lines": [
-        "`Alright, I'll see you bright and early tomorrow — on time, next time!`"
-      ],
-      "line_display_lines": [
-        "`1215`"
-      ],
-      "jp_display_lines": [
-        "`わかりました。じゃあ、明日の朝早くに会いましょう。今度は時間通りに行きますよ！`"
-      ],
-      "source_refs": [
-        {
-          "kind": "line",
-          "line": 1215
-        }
-      ],
       "summary": "ここは親しげな締めではなく、遅刻を釘刺しする台詞である。`on time, next time!` の嫌味を落とすと、最後の一刺しがなくなる。",
       "why_bad": [],
       "fix_directions": [],
-      "extra_blocks": []
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`Alright, I'll see you bright and early tomorrow — on time, next time!`",
+          "jp_quote": "`わかりました。じゃあ、明日の朝早くに会いましょう。今度は時間通りに行きますよ！`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1215
+          }
+        }
+      ]
     }
   ],
   "extra_sections": [],

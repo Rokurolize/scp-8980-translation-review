@@ -22,6 +22,7 @@
 ### E-02-01 「調査中」を「違反確定」に早めている
 
 **EN:** `"undergoing active Ethics Committee investigation for violation of the SCP Foundation's Code of Conduct"`  
+**行:** `702`
 **JP:** `SCP財団の行動規範に違反しているため、倫理委員会による調査対象となっています。`
 
 **要旨:** この書き方は強すぎる。ここで必要なのは有罪宣告ではなく、調査中の警告である。

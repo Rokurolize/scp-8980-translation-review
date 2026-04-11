@@ -28,6 +28,7 @@
 ### E-16-01 `"Ah, here we go."` は開始宣言ではなく探索完了の独り言
 
 **EN:** `"Ah, here we go."`  
+**行:** `2982`
 **JP:** `では、始めましょう。`
 
 **要旨:** 直前ト書きがファイル探索で、直後も報告書読解に続くため、ここは会話開始ではない。
@@ -35,6 +36,7 @@
 ### E-16-01a `"The amnestics got you down, huh?"` を真面目な診断にしない
 
 **EN:** `"The amnestics got you down, huh?"`
+**行:** `2990`
 **JP:** `記憶処理のせいで気分が落ち込んでいるんですか？`
 
 **要旨:** ここは診断でも共感でもなく、相手を軽くからかいながら話題を握るための切り出しである。真面目な病状確認にすると、クロフォードの軽薄さと支配の入り口が弱まる。
@@ -42,6 +44,7 @@
 ### E-16-02 `"turn the other cheek"` の道徳権威を落とさない
 
 **EN:** `"turn the other cheek"` / `Only then will you finally be able to get ahead.`
+**行:** `3048` / `3048`
 **JP:** `甘んじる`
 
 **要旨:** ここは聖書由来の定型句を借りて、抵抗せず受け入れろと強要する場面である。続く `Only then...` も、前後を切らずに「そうして初めて」の説教調として拾わないと、服従を道徳化する圧が落ちる。
@@ -49,6 +52,7 @@
 ### E-16-03 `"Here's to many more."` を露骨な脅迫にしない
 
 **EN:** `"Here's to many more."`  
+**行:** `3176`
 **JP:** `ここからが本番だよ。`
 
 **要旨:** ここは祝辞の形式で永続支配を告げるのが嫌さの核心であり、脅迫に寄せすぎるとバーンズの質が変わる。
@@ -56,6 +60,7 @@
 ### E-16-04 「差し上げましょう」の連打をやめる
 
 **EN:** `"I'll give you everything I own. All of it. You can have everything in my bank account and in my room. I'll draw out loans for you that I can't pay back. I'll give you my paycheck. Everything."` / `"I'll— I'll work whatever assignment you g-give me. I'll let you take credit for all of my papers. I'll be your s— (//SCP-8980 gulps.//) your secretary. I'll bring you your morning coffee and make you your sandwiches. //I'll lick your shoes.//"` / `"I'll... I'll even sleep with you. Please."`  
+**行:** `3136` / `3140` / `3146`
 **JP:** `差し上げましょう` の連打
 
 **要旨:** ここは床に崩れた人間の絶望であって、儀礼的な贈与宣言ではない。
@@ -63,6 +68,7 @@
 ### E-16-08 `"There... there's always work to be done."` の壊れた復唱を落とさない
 
 **EN:** `"I suppose our emotional little brains are just like the Foundation itself, no? No matter how hard of a job we do, there's always work to be done."` / `"There... there's always work to be done."`
+**行:** `3060` / `3064`
 **JP:** `私たちの感情を司る小さな脳は、財団そのものとよく似ているとは思いませんか？どんなに大変な仕事をしても、常にやるべきことが常にあるんですから。` / `そう… やるべきことは常にあるのね。`
 
 **要旨:** ここはクロフォードの説教が SCP-8980 の口の中に入り込んで戻ってくる場面である。単なる同意や要約にすると、ガスライティングの侵入が消える。
@@ -76,6 +82,7 @@
 ### E-16-09 末尾の一文欠落を戻す
 
 **EN:** `"SCP-8980 slowly lifts itself off the floor, and gets ready for work."`
+**行:** `3180`
 **JP:** `午前8:00:03 | 1時間半にわたって何の活動もなかった後、SCP-8980の室内のリモートワーク装置がその日の作業スケジュールを印刷した。SCP-8980はゆっくりと床から身を起こし、仕事の準備を始めた。`
 
 **要旨:** ここは章の締めそのもので、床から身を起こして仕事に戻る流れまで書かれて初めて終わり方が成立する。時計だけで終わると、絶望の完成が切れる。
@@ -89,6 +96,7 @@
 ### E-16-06 `"any other old lady"` の generic singular を落とさない
 
 **EN:** `"any other old lady"`  
+**行:** `3006`
 **JP:** `他のおばあさんたち`
 
 **要旨:** ここは特定複数の老女ではなく、無害な「そのへんの年寄り」ロールを押しつける言い方である。
@@ -96,6 +104,7 @@
 ### E-16-07 斜体の焦点をずらさない
 
 **EN:** 自発性の真偽に掛かる強調  
+**行:** `3002`
 **JP:** `自発的にやった`
 
 **要旨:** 強調は行為そのものではなく、「本当に自分で選んだのか」に掛かっている。
@@ -105,6 +114,7 @@
 ### N-16-01 「あらま」は許容だが、声としてはもう一段詰められる
 
 **EN:** `"Oh dear."`  
+**行:** `3052`
 **JP:** `あらま`
 
 **要旨:** このままでも機能はするが、幼い軽さが少し前に出る。直後に被害の話へ入ることを考えると、もう半歩だけ抑えた声の方がクロフォードのいやらしさが続きやすい。
@@ -112,6 +122,7 @@
 ### N-16-02 `"victim mentality"` 周辺は軽蔑の調子まで拾いたい
 
 **EN:** `"victim mentality"`  
+**行:** `3020`
 **JP:** `被害者意識`
 
 **要旨:** `被害者意識` 自体で意味は通るが、この場面は診断名ではなく、相手を見下しながら責任転嫁する言い方である。少し棘を足せるなら、その方がクロフォードの加害が見えやすい。
@@ -119,6 +130,7 @@
 ### N-16-03 「犯す」は強すぎる可能性がある
 
 **EN:** `"If I wanted to fuck you, I would've done it by now."`  
+**行:** `3166`
 **JP:** `あんたのことを犯したいなら、とっくにそうしてるさ。`
 
 **要旨:** このままでも加害性は強く出るが、`犯す` は原文より一段踏み込みすぎる。硬い誤りではないものの、もし距離を戻すなら性交表現の範囲で止める方が原文に近い。

@@ -18,6 +18,7 @@
 ### E-06-01 `"being put through the wringer"` が「散々苦労」に平坦化している
 
 **EN:** `"being put through the wringer"`  
+**行:** `1121`
 **JP:** `散々苦労してきた`
 
 **要旨:** ここは単に大変だったではなく、検査で絞られ消耗しきっていることを出す必要がある。
@@ -37,6 +38,7 @@
 ### E-06-06 `"get your testing set up by tomorrow"` が受け手側の不利益をぼかしている
 
 **EN:** `"I'll be sure to get your testing set up by tomorrow."`  
+**行:** `1211`
 **JP:** `明日までには検査の手はずを整えておきますね。`
 
 **要旨:** ここは段取りの説明ではなく、「明日にはまた検査に入れる」という通知である。
@@ -55,6 +57,7 @@
 ### E-06-07 `"Just consider this a... an extended vacation, alright?"` を段取り説明にしない
 
 **EN:** `"Just consider this a... an extended vacation, alright?"`
+**行:** `1195`
 **JP:** `長期休暇の類であると思ってください。いいですね？`
 
 **要旨:** これは中立な予定説明ではなく、次の検査を「休暇」と呼んで丸めた支配の言い方である。`alright?` も確認ではなく、やわらかい圧として残したい。
@@ -75,6 +78,7 @@
 ### N-06-01 `visibly agitated` は観察記録として残したい
 
 **EN:** `SCP-8980 is seated, though visibly agitated; it repeatedly taps its leg and huffs for an extended period.`
+**行:** `1103`
 **JP:** `SCP-8980は着席していたが明らかに動揺しており、長時間にわたって足を繰り返し叩き、息を荒くしている。`
 
 **要旨:** ここは「動揺している」だけでは足りず、外から見て分かる動揺であることが大事である。`repeatedly` と `for an extended period` も、観察記録の粘りとして残したい。
@@ -82,6 +86,7 @@
 ### N-06-02 `it seems like` は診断のクッションとして機能している
 
 **EN:** `Well... it seems like the anomaly is trying to humiliate you.`
+**行:** `1155`
 **JP:** `ええ、どうやら件の異常現象はあなたの自尊心を傷つけようと試みているみたいなんです。`
 
 **要旨:** `it seems like` は断定を避けるクッションであり、`humiliate` は単なる「傷つける」ではない。ここは、バーンズが丁寧に見せかけて決めつけている嫌さを残したい。
@@ -89,6 +94,7 @@
 ### N-06-03 `no disciplinary action will be taken at this time` は決定の温度を落とさない
 
 **EN:** `While the incident in question was found to be a violation of the Foundation Citation Policy, no disciplinary action will be taken at this time.`
+**行:** `1203`
 **JP:** `この件は財団の引用規定に違反していると判断されましたが、現時点では懲戒処分は行われません。`
 
 **要旨:** ここは「現時点では」が核であり、単なる説明ではなく委員会の決定である。`will be taken` の決定性を、ぼかしすぎないようにしたい。
@@ -96,6 +102,7 @@
 ### N-06-04 `Great! I always appreciate it when a meeting goes smoothly.` は満足の押しつけになっている
 
 **EN:** `Great! I always appreciate it when a meeting goes smoothly.`
+**行:** `1211`
 **JP:** `良いね！話がスムーズに進むといつも嬉しくなるね。`
 
 **要旨:** `Great!` は単なる相づちではなく、手続きがうまく進んだことへの満足である。`いつも嬉しくなる` だけだと、圧のある達成感が少し弱い。
@@ -103,6 +110,7 @@
 ### N-06-05 `on time, next time!` は軽い冗談ではなく釘刺し
 
 **EN:** `Alright, I'll see you bright and early tomorrow — on time, next time!`
+**行:** `1215`
 **JP:** `わかりました。じゃあ、明日の朝早くに会いましょう。今度は時間通りに行きますよ！`
 
 **要旨:** ここは親しげな締めではなく、遅刻を釘刺しする台詞である。`on time, next time!` の嫌味を落とすと、最後の一刺しがなくなる。

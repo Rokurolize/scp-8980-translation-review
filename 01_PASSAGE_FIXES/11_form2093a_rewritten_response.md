@@ -23,6 +23,7 @@
 ### E-11-01 接触制限と暫定収容延長の一文をここでも落としてはいけない
 
 **EN:** `"both for its safety and for ours"` / `"This is also why its provisional containment has been extended."`
+**行:** `1936`
 **JP:** `これは、アノマリーの安全と我々の安全の両方を守るためであり、また、暫定的な収容期間が延長された理由でもあります。`
 
 **要旨:** 該当箇所 10 と同じ欠落を、改稿版でも繰り返してはならない。
@@ -34,6 +35,7 @@
 ### E-11-02 `"either normalcy or monetary/personnel resources"` の切り分けをほどく
 
 **EN:** `"either normalcy or monetary/personnel resources of the SCP Foundation"`  
+**行:** `1975`
 **JP:** `正常性または金銭的・人的資源に重大な、または極めて高い確率で損害を与える`
 
 **要旨:** 現状訳は、何にどの種の損害が及ぶのかが読みづらい。
@@ -47,6 +49,7 @@
 ### E-11-04 最後の警告は「自己責任」では弱すぎる
 
 **EN:** `"Reviewer discretion is heavily advised. Proceed at your own risk."`  
+**行:** `2016`
 **JP:** `審査は各自の判断で行ってください。自己責任で進んでください。`
 
 **要旨:** ここはネット上の断り書きではなく、倫理委員会文書としての強い閲覧警告である。
@@ -61,6 +64,7 @@
 ### N-11-01 `"I suppose you could say that I'm a changed man now."` の婉曲を残す
 
 **EN:** `"Yes, well, I suppose you could say that I'm a changed man now."`
+**行:** `2058`
 **JP:** `ああ、そうですね。私は今や生まれ変わったと言えるでしょう。`
 
 **要旨:** `I suppose you could say` の婉曲さを消さず、自己弁明の照れ隠しを残したい。
@@ -73,6 +77,7 @@
 ### N-11-02 `"As a former non-anomalous member of Foundation staff..."` をここでも落とさない
 
 **EN:** `"As a former non-anomalous member of Foundation staff who has worked closely with containment specialists in the past, I am of the opinion I am being deprived of certain rights and subject to improper containment, including (but not limited to):"`
+**行:** `1868`
 **JP:** `私は、現在担当中の収容スタッフによる私の収容対応に対して非常に不満を抱いています。過去に収容スペシャリストと密接に協力してきた財団の元非異常職員として、私は特定の権利を?奪され、不適切な収容を受けていると考えられます。`
 
 **要旨:** 10 と同じく、`former` は申立ての資格を支える立場表明である。

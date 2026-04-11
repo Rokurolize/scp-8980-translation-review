@@ -1,0 +1,268 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "scp-8980-review-segment",
+  "type": "object",
+  "required": [
+    "segment_id",
+    "title",
+    "source_en_path",
+    "source_jp_path",
+    "source_range",
+    "usage_notes",
+    "overview",
+    "issues",
+    "extra_sections",
+    "conclusions"
+  ],
+  "properties": {
+    "segment_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_en_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_jp_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_range": {
+      "type": "object",
+      "required": [
+        "start",
+        "end"
+      ],
+      "properties": {
+        "start": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "end": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "usage_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "overview": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/issue"
+      }
+    },
+    "extra_sections": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/section"
+      }
+    },
+    "conclusions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "source_ref": {
+      "type": "object",
+      "oneOf": [
+        {
+          "required": [
+            "kind",
+            "line"
+          ],
+          "properties": {
+            "kind": {
+              "const": "line"
+            },
+            "line": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "required": [
+            "kind",
+            "note"
+          ],
+          "properties": {
+            "kind": {
+              "const": "note"
+            },
+            "note": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "extra_block": {
+      "type": "object",
+      "required": [
+        "label",
+        "kind"
+      ],
+      "properties": {
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "text",
+            "list"
+          ]
+        },
+        "value": {
+          "type": "string"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "issue": {
+      "type": "object",
+      "required": [
+        "id",
+        "severity",
+        "order",
+        "heading",
+        "en_display_lines",
+        "line_display_lines",
+        "jp_display_lines",
+        "source_refs",
+        "summary",
+        "why_bad",
+        "fix_directions",
+        "extra_blocks"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "severity": {
+          "enum": [
+            "error",
+            "note",
+            "out_of_scope"
+          ]
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "heading": {
+          "type": "string",
+          "minLength": 1
+        },
+        "en_display_lines": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "line_display_lines": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "jp_display_lines": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/source_ref"
+          }
+        },
+        "summary": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "why_bad": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "fix_directions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "extra_blocks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/extra_block"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "section": {
+      "type": "object",
+      "required": [
+        "title",
+        "blocks"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "blocks": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

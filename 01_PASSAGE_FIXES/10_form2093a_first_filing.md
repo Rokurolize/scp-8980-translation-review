@@ -24,6 +24,7 @@
 ### E-10-01 `"for all of us — it especially —"` の鈍さを消してはいけない
 
 **EN:** `"painful for all of us — it especially —"`  
+**行:** `1764`
 **JP:** `私たち全員、特にSCP-8980自身にとって辛い`
 
 **要旨:** ここはバーンズがまず自分たちを先に置き、あとから本人を足している。その鈍さが重要である。
@@ -36,6 +37,7 @@
 ### E-10-02 接触制限と暫定収容延長の一文が欠けている
 
 **EN:** `"For this reason, we've had to take extra precaution regarding who SCP-8980 interacts with, both for its safety and for ours. This is also why its provisional containment has been extended."`
+**行:** `1766`
 **JP:** 当該一文が欠落
 
 **要旨:** これは言い回しの問題ではなく、自己弁明の核心が一文ごと落ちている。
@@ -51,6 +53,7 @@
 ### N-10-01 `"As a former non-anomalous member of Foundation staff..."` は申立人の資格根拠である
 
 **EN:** `"As a former non-anomalous member of Foundation staff who has worked closely with containment specialists in the past, I am of the opinion I am being deprived of certain rights and subject to improper containment, including (but not limited to):"`
+**行:** `1698`
 **JP:** `私は、現在担当中の収容スタッフによる私の収容対応に対して非常に不満を抱いています。過去に収容スペシャリストと密接に協力してきた財団の元非異常職員として、私は特定の権利を?奪され、不適切な収容を受けていると考えられます。`
 
 **要旨:** `former non-anomalous member` を単なる肩書きで終わらせず、申立ての資格を支える立場表明として読ませたい。

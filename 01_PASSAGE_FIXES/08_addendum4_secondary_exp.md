@@ -18,6 +18,7 @@
 ### E-08-01 `"or something of the sort"` の雑な逃げが消えている
 
 **EN:** `"or something of the sort"`  
+**行:** `1441`
 **JP:** `あるいはそれに類する`
 
 **要旨:** ここは雑な言い逃れなので、整った論文語にしてはいけない。
@@ -30,6 +31,7 @@
 ### E-08-02 `"laser-targeted"` を文字通りのレーザーへ読んでいる
 
 **EN:** `"laser-targeted"`  
+**行:** `1457`
 **JP:** `レーザー銃のように狙いを定めている`
 
 **要旨:** これは具体物ではなく、異様なまでに狙い撃ちであることの比喩である。
@@ -45,6 +47,7 @@
 ### N-08-01 `"I look forward to having it back with us"` の同僚性は残す
 
 **EN:** `"I look forward to having it back with us"`
+**行:** `1477`
 **JP:** `SCP-8980が我々の元に帰還するのを私は楽しみにしています。`
 
 **要旨:** 訳は大きく外れていないが、`with us` にある「こちら側の一員として戻ってくる」含みを残しておきたい。
@@ -57,6 +60,7 @@
 ### N-08-02 `"Following several days..."` の移行期間を丸めない
 
 **EN:** `"Following several days standardizing SCP-8980's containment arrangement, SCP-8980 began to resume active employment at the SCP Foundation on April 18th, 2005, with special considerations for its anomalous capabilities."`
+**行:** `1481`
 **JP:** `SCP-8980の収容体制標準化に数日を要した後、異常な能力に対して特別な配慮がなされたうえで、SCP-8980は2005年4月18日付でSCP財団での仕事を再開しました。`
 
 **要旨:** `Following` の時系列と `began to resume` の立ち上がりを、単なる「後」と「再開した」で丸めない。
@@ -69,6 +73,7 @@
 ### N-08-03 `"incorrect options being selected"` と `"requested to conclude the experiment"` は、起動失敗と申告の両方を残す
 
 **EN:** `"high input latency, incorrect options being selected (such as language), and the device randomly restarting. While SCP-8980 was able to eventually set up the device, it was cited as being uncomfortable and requested to conclude the experiment."`
+**行:** `1421`
 **JP:** `入力遅延の増加、言語設定の際などの誤ったオプションの選択、デバイスのランダムな再起動などに見舞われ、オペレーティングシステムの設定に著しい困難をきたした。SCP-8980は最終的にデバイスの設定を完了できたが、不快感を訴えたため実験の終了を要求した。`
 
 **要旨:** 起動に手間取った事実だけでなく、本人が不快感を訴えて終了を求めた流れまで残しておきたい。
@@ -81,6 +86,7 @@
 ### N-08-04 `"electronic equipment"` は訳語を揃える
 
 **EN:** `"with no prior interaction with other electronic equipment"` / `"due to its potential risk to nearby electronic equipment"`
+**行:** `1419` / `1481`
 **JP:** `他の電子機器との事前の接触がない` / `近隣の電子機器に潜在的なリスクがあるため`
 
 **要旨:** `電子機器` と `電子デバイス` の揺れを止めて、同じ語を同じ語で返したい。

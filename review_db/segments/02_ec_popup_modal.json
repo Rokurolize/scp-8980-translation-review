@@ -1,0 +1,77 @@
+{
+  "segment_id": "02_ec_popup_modal",
+  "title": "SCP-8980 該当箇所 02 査読",
+  "source_en_path": "articles/fragment_scp-8980-1/segments/en/02_ec_popup_modal.wikidot",
+  "source_jp_path": "`congy.wikidot` 行 657-883 付近",
+  "source_range": {
+    "start": 657,
+    "end": 883,
+    "note": "`congy.wikidot` 行 657-883 付近"
+  },
+  "usage_notes": [
+    "- `[ERROR]` はそのまま修正対象\n- `[OUT-OF-SCOPE]` は公開面から除去すべき混入物",
+    "この箇所は読者の最初の入口なので、声の強度を落とさないことと、公開面に作業メモを残さないことが最優先になる。"
+  ],
+  "overview": [
+    "現行稿はレイアウト自体は大崩れしていないが、次の 2 点は修正必須である。",
+    "- 倫理委員会の調査中というレジスターが、違反確定の断定に早まっている\n- 原文にない作業用の折り畳みメモと sandbox URL がそのまま残っている"
+  ],
+  "issues": [
+    {
+      "id": "E-02-01",
+      "severity": "error",
+      "order": 1,
+      "heading": "「調査中」を「違反確定」に早めている",
+      "summary": "この書き方は強すぎる。ここで必要なのは有罪宣告ではなく、調査中の警告である。",
+      "why_bad": [
+        "`\"for violation of ...\"` は調査理由であって、有罪認定ではない",
+        "`違反しているため` と言い切ると、読者は委員会が最初から結論を出していると読む",
+        "以後の注釈付き本文が「検証」ではなく「処分済み文書」に見えてしまう"
+      ],
+      "fix_directions": [
+        "`違反の疑い`",
+        "`継続調査の対象`",
+        "`信頼できる情報源として扱うべきではない`"
+      ],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"undergoing active Ethics Committee investigation for violation of the SCP Foundation's Code of Conduct\"`",
+          "jp_quote": "`SCP財団の行動規範に違反しているため、倫理委員会による調査対象となっています。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 702
+          }
+        }
+      ]
+    },
+    {
+      "id": "E-02-02",
+      "severity": "error",
+      "order": 2,
+      "heading": "公開面に原文にない作業メモが混入している",
+      "summary": "これは訳文の良し悪し以前の公開事故であり、本文から完全に外す。",
+      "why_bad": [
+        "原文記事に存在しない",
+        "Congy 氏の作業メモであって、作品本文でも訳注でもない",
+        "sandbox URL と内部運用情報が公開面に露出する"
+      ],
+      "fix_directions": [
+        "折り畳みブロック全体を公開用原稿から除去する",
+        "本文修正の主導線には残さない"
+      ],
+      "extra_blocks": [
+        {
+          "label": "混入箇所",
+          "kind": "text",
+          "value": "`[[collapsible show=\"+ 査読の前に必ずご一読ください\" ...]]`、sandbox URL、アクセシビリティ未対応メモ"
+        }
+      ],
+      "evidence": []
+    }
+  ],
+  "extra_sections": [],
+  "conclusions": [
+    "- ポップアップ本文は「調査中」で止める\n- 作業メモは該当箇所 02 から一掃する\n- この箇所では、訳の巧拙よりまず公開面の混入物除去を優先する"
+  ]
+}

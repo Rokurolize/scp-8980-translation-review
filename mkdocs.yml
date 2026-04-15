@@ -1,0 +1,5 @@
+site_name: SCP-8980 日本語訳査読レビュー
+docs_dir: docs
+theme:
+  name: material
+  language: ja

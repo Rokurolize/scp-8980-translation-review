@@ -1,0 +1,171 @@
+{
+  "segment_id": "07_addendum3_experimentation",
+  "title": "SCP-8980 該当箇所 07 査読",
+  "source_en_path": "articles/fragment_scp-8980-1/segments/en/07_addendum3_experimentation.wikidot",
+  "source_jp_path": "`congy.wikidot` 行 1541-1797 付近",
+  "source_range": {
+    "start": 1541,
+    "end": 1797,
+    "note": "`congy.wikidot` 行 1541-1797 付近"
+  },
+  "usage_notes": [
+    "この箇所のバーンズは、「悪い知らせを丁寧に伝える人」の顔で、実際には財団側の利害を押しつけてくる。\nここでの誤りはすべてそのまま採る。"
+  ],
+  "overview": [
+    "重要なのは、SCP-8980 がどう分類され、誰のために収容が続き、バーンズがどんな内輪理屈でそれを正当化しているかである。\n現行訳は意味を拾っている箇所もあるが、暫定診断、反語、財団側の利害、身内論理の 4 点が弱い。"
+  ],
+  "issues": [
+    {
+      "id": "E-07-01",
+      "severity": "error",
+      "order": 1,
+      "heading": "`\"Like hell it isn't!\"` の強い肯定を外してはいけない",
+      "summary": "ここは否定の否定ではなく、直前の発言を真っ向からひっくり返す強い肯定である。",
+      "why_bad": [
+        "`like hell` の強い反発が消える",
+        "`it isn't` をそのまま否定として処理すると、バーンズの発言を受けた切迫感が落ちる",
+        "何に対する反論かが、日本語だけでは見えにくい"
+      ],
+      "fix_directions": [],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"Like hell it isn't!\"`",
+          "jp_quote": "`そんなわけがないじゃないですか！`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1351
+          }
+        }
+      ]
+    },
+    {
+      "id": "E-07-02",
+      "severity": "error",
+      "order": 2,
+      "heading": "仮の見立てが説明文に崩れている",
+      "summary": "ここは確定診断ではなく、もっともらしく押しつけられる暫定分類である。",
+      "why_bad": [
+        "`\"it seems like\"` の仮置きが薄い",
+        "分類ラベルとしての押しつけが弱い",
+        "バーンズの専門家ぶった見立てに見えにくい"
+      ],
+      "fix_directions": [],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"it seems like you're a unique Pattern-Based anomaly\"`",
+          "jp_quote": "`パターンに基づいた特異なアノマリーということなのでしょう`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1331
+          }
+        }
+      ]
+    },
+    {
+      "id": "E-07-03",
+      "severity": "error",
+      "order": 3,
+      "heading": "反語の詰問が普通の質問に寄っている",
+      "summary": "現状訳でも大筋は近いが、方法質問ではなく、命令そのものを突き返す詰問として立てたい。",
+      "why_bad": [
+        "`How in the world am I supposed to be calm about this?` は反語的な詰問であり、「冷静でいる方法を教えてほしい」という問いではない。`How in the world` は「世界中を探してもどうやって」という強い強調・不信の表現であり、`am I supposed to` は「誰がそんなことを要求しているのか」という義務の拒絶を含む。全体として「こんな状況で冷静でいろとでも言うのか」という命令への反発・否認として機能する。",
+        "Congy 訳「一体どうすれば冷静でいられるというんですか？」は意味としては近いが、「どうすれば〜できるか」という方法問題として読まれる余地がある。本来は「冷静でいることを求められている命令そのものを突き返す詰問」であり、SCP-8980 が感情的に爆発していることの語勢が必要である。バーンズの要求に従わないという抵抗の宣言として訳す必要がある。"
+      ],
+      "fix_directions": [
+        "`これでどうやって冷静でいろっていうんですか`",
+        "`冷静でいられるわけがない`"
+      ],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"How in the world am I supposed to be calm about this?\"`",
+          "jp_quote": "`一体どうすれば冷静でいられるというんですか？`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1345
+          }
+        }
+      ]
+    },
+    {
+      "id": "E-07-04",
+      "severity": "error",
+      "order": 4,
+      "heading": "`\"for us\"` が落ちている",
+      "summary": "ここは本人利益ではなく、財団側の利益を正面から言っている。",
+      "why_bad": [
+        "バーンズと財団の利害が隠れる",
+        "収容継続が医療的助言のように見える",
+        "本記事の制度的な冷たさが薄まる"
+      ],
+      "fix_directions": [],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"the best thing you can do for us\"`",
+          "jp_quote": "`今のあなたにとっての最善策`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1365
+          }
+        }
+      ]
+    },
+    {
+      "id": "E-07-05",
+      "severity": "error",
+      "order": 5,
+      "heading": "`\"one of our own\"` の身内論理が崩れている",
+      "summary": "ここは身内だから何をしてもよい、という内輪の加害理屈である。現行訳は日本語としても立っていない。",
+      "why_bad": [
+        "`what shouldn't we do for one of our own?` は反語構造であり、答えは「何だってやる（やらないことはない）」である。`for one of our own`（身内のためなら）という内輪理屈を前提として、いかなる行為も正当化されるという論理を提示している。財団が SCP-8980 を「仲間・身内」と呼びながら同時に監禁・実験対象として扱うことの矛盾をバーンズが開き直った論理でくるんでいるのがこの台詞の構造である。",
+        "Congy 訳「仲間を助けるためには何をしないことがあるのでしょうか？」は「助ける」という動詞を使っており、バーンズが SCP-8980 のために善意の行為をしているかのような語感になる。原文の `what shouldn't we do` は「やってはいけないことが何かある？（いや、ない）」という加害許可の論理であり、「助ける」という被管理者への支援として読まれてしまう訳とは根本的に意味の方向が違う。また「何をしないことがあるのでしょうか」という表現は日本語として不自然で意味を取りにくい。"
+      ],
+      "fix_directions": [
+        "`身内の一人のためなら、何だってする`",
+        "`うちの仲間なんだから、やらない理由はない`"
+      ],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"what shouldn't we do for one of our own?\"`",
+          "jp_quote": "`仲間を助けるためには何をしないことがあるのでしょうか？`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1403
+          }
+        }
+      ]
+    },
+    {
+      "id": "E-07-06",
+      "severity": "error",
+      "order": 6,
+      "heading": "`\"This isn't the end of the world or anything.\"` の雑な逃げを消さない",
+      "summary": "`or anything` は「大したことじゃない」の崩しであり、ただの否定ではない。",
+      "why_bad": [
+        "相手の不安を軽くいなす雑さが弱まる",
+        "`world` と `anything` の落差が消える",
+        "直前の強い反発を受け止めるバーンズの小馬鹿にした口ぶりが立たない"
+      ],
+      "fix_directions": [],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"This isn't the end of the world or anything—\"`",
+          "jp_quote": "`こんなのは世界の終わりとかそういうことじゃないん—`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1349
+          }
+        }
+      ]
+    }
+  ],
+  "extra_sections": [],
+  "conclusions": [
+    "- バーンズの利害は必ず「私たち」の側で訳す\n- SCP-8980 の反発は反語の強さを残す\n- afterword の内輪理屈は、きれいな善意へ言い換えない"
+  ]
+}

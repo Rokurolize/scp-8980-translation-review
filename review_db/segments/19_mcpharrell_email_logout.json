@@ -1,0 +1,446 @@
+{
+  "segment_id": "19_mcpharrell_email_logout",
+  "title": "SCP-8980 該当箇所 19 査読",
+  "source_en_path": "articles/fragment_scp-8980-1/segments/en/19_mcpharrell_email_logout.wikidot",
+  "source_jp_path": "`congy.wikidot` 行 4563-4645 付近",
+  "source_range": {
+    "start": 4563,
+    "end": 4645,
+    "note": "`congy.wikidot` 行 4563-4645 付近"
+  },
+  "usage_notes": [
+    "この箇所は記事の結語であり、マクファレルの私信とログアウト表示が読後感を決める。\nしたがって、報告書の硬さではなく、「親しい同僚への業務メール」の声を正しく出すことが重要になる。",
+    "- `[ERROR]` はそのまま修正対象\n- `[NOTE]` は本文の断定を弱めたうえで残す"
+  ],
+  "overview": [
+    "現行訳は、慣用句の字義分解と、メールの言葉遣いのずれが集中している。\nここで私信らしい疲弊、罪悪感、苛立ちが消えると、記事全体が「報告書で終わった」ように見えてしまう。",
+    "ここは制度文の余韻ではなく、制度に擦り切れた同僚の私信で終わるべき箇所である。"
+  ],
+  "issues": [
+    {
+      "id": "E-19-01",
+      "severity": "error",
+      "order": 1,
+      "heading": "`\"sir\"` を「旦那様」にしない",
+      "summary": "ここは男性権威一般への反射的服従であり、婚姻・主従・接客の含意を持つ語へずらさない。\nこの文脈では、自然さと症状の読みやすさの両方を考えると `先生` が使いやすい。",
+      "why_bad": [
+        "`sir` は英語で目上の男性や上官への汎用的な敬語であり、婚姻関係の有無も主従関係の性質も問わない一般的な敬称である。`SCP-8980 が反射的に「sir」と呼んでいた` という症状記述（マクファレルへのメール）は、SCP-8980 が権威ある男性を認識した際に条件反射的に服従の敬称を発してしまう PTSD 的な言語症状として書かれている。Congy 訳「旦那様」は既婚・主従・接客業の語感を持つ語であり、このような症状の性質（男性権威への反射的服従）とずれる。",
+        "「旦那様」は SCP-8980 がマクファレルを自分の主人として認識しているという解釈を与え、症状が「条件反射的な服従」ではなく「個人への礼儀」として見えてしまう。記事の中で SCP-8980 の状態が「手続き的・制度的な服従の刷り込み」から来ていることが重要であり、この場面の訳語はその症状の性質を正確に示す必要がある。",
+        "また「旦那様」は現代語では古風な女性語であり、SCP-8980 のキャラクターとも合わない。財団で科学者として勤務していた人物が、権威男性に向かって「旦那様」と反射的に呼ぶという語感は、症状の病理よりも人物設定の問題として読まれる危険がある。"
+      ],
+      "fix_directions": [
+        "`先生`",
+        "`マクファレル様`",
+        "必要なら原語保持 + 注記"
+      ],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"sir\"`",
+          "jp_quote": "`旦那様`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3433
+          }
+        }
+      ]
+    },
+    {
+      "id": "N-19-01",
+      "severity": "note",
+      "order": 1,
+      "heading": "`\"At least I get overtime pay.\"` は疑問にしすぎない",
+      "summary": "`せめてもの救い` まではよいが、`でしょうか` で締めると自嘲より不確かな疑問に寄る。断定寄りの自嘲に寄せた方がよい。",
+      "why_bad": [
+        "`At least I get overtime pay.` はピリオドで終わる平叙文であり、断定的な自嘲である。「せめて残業代はもらえる」というマクファレルが自分の状況に苦笑いしながら言い聞かせているトーンである。Congy 訳「せめてもの救いは、残業代をもらえることでしょうか。」の「でしょうか」は話者が自分の言葉を疑っているような語感になり、自嘲ではなく不確かな自問になってしまう。"
+      ],
+      "fix_directions": [
+        "「せめて残業代はもらえますよね。」「まあ、残業代は出るからいいか。」のように断定的な自嘲で締める。「でしょうか」という疑問語尾は使わない。"
+      ],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"At least I get overtime pay.\"`",
+          "jp_quote": "`せめてもの救いは、残業代をもらえることでしょうか。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3431
+          }
+        }
+      ]
+    },
+    {
+      "id": "E-19-02",
+      "severity": "error",
+      "order": 2,
+      "heading": "メール冒頭を会話文にしない",
+      "summary": "ここは親しい同僚宛ての業務メールであり、挨拶は会話文ではなくメール体裁で置くべきである。",
+      "why_bad": [
+        "`Good afternoon Flora,` は英語のビジネスメールの挨拶行であり、宛名＋時候の挨拶という定型形式を持つ。Congy 訳「こんにちは、フローラさん。」は口語的な会話調であり、メールの書き出しとしての形式性が失われる。書き出しの語感一つで、このメール全体が「送信済みの業務私信」ではなく「声に出した会話」のように読まれてしまう。",
+        "このメールは記事の最後に配置される重要な書類文書であり、前半の SCP 査読書類・面談記録・倫理委員会文書と同じ「書類として存在する文書」として機能する。日本語のメール体裁（「フローラさん、こんにちは。」または「フローラ様、お疲れ様です。」）で書き出すことで、文書としての格式を保つ。"
+      ],
+      "fix_directions": [
+        "`Good afternoon Flora,` は「フローラさん、お疲れ様です。」「フローラさん、こんにちは。」のようなメールの書き出し形式に訳す。「こんにちは、フローラさん。」という語順（挨拶先行・宛名後置）は日本語のメール書き出しとして不自然。"
+      ],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"Good afternoon Flora,\"`",
+          "jp_quote": "`こんにちは、フローラさん。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3425
+          }
+        }
+      ]
+    },
+    {
+      "id": "N-19-02",
+      "severity": "note",
+      "order": 2,
+      "heading": "`For one` と `random bouts of screaming` は進捗報告の口調を崩さない",
+      "summary": "`For one` は列挙の入口であり、`bouts` は発作的な反復である。単発の動作に畳み込まず、症状の持続を残す。",
+      "why_bad": [
+        "`For one,` は列挙の開始を示す副詞句であり、「まず一つ目に言うと」という流れ整理の機能を持つ。省略または中立語に置き換えると、マクファレルが複数の改善点と残存症状を整理しながら報告しているというメールの構成が読みにくくなる。",
+        "`random bouts of screaming` の `bouts`（発作・繰り返しのまとまり）は、叫び声が一回起きるのではなく断続的に繰り返す発作として記録されていることを示す。Congy 訳「突然叫び出す」は単発の動作として読めてしまい、症状が持続・反復しているという医療観察の記録としての語感が薄れる。"
+      ],
+      "fix_directions": [
+        "`For one,` は「まず、」「一点目として、」と明示的な列挙開始語で訳す。",
+        "`random bouts of screaming` は「突発的な叫び声の発作」「不規則に繰り返す叫びの発作」のように、反復・発作性を示す語感を保つ。"
+      ],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"For one, she's finally stopped compulsively calling me \"sir\". It was a bit funny at first, but it got weird really quick, so I'm glad we can finally move past that. The random bouts of screaming haven't stopped though, and neither has her tendency to stare at me while I sleep, but they've become less frequent.\"`",
+          "jp_quote": "`一つに、私のことを反射的に「先生」と呼ぶのがようやく止まりました。最初は少し可笑しかったんですが、すぐに不気味になったので、ようやくこれが終わってくれてほっとしています。突然叫び出すのはまだ続いていますし、私が寝ている間にじっと見つめるのも相変わらずですが、頻度は減っています。`",
+          "source_ref": {
+            "kind": "note",
+            "note": "JP訳文はcongy版と内容が異なる（「旦那様」→「先生」等）ため実文照合不可"
+          }
+        }
+      ]
+    },
+    {
+      "id": "E-19-03",
+      "severity": "error",
+      "order": 3,
+      "heading": "`basically infeasible` の「事実上不可能」を落とさない",
+      "summary": "`basically infeasible` は「たぶん無理」ではなく、実務上もう回らないという強い判断である。ここは事実上不可能の温度で置く。",
+      "why_bad": [
+        "`basically infeasible` は「実務的に見て実現不可能」という技術的判断の語であり、`infeasible` は「実行可能でない」の断定語である。`basically` はここでは「ほとんどの点で/実質的に」という副詞として強度を微調整するが、否定の意味を弱めるのではなく実務的な現実として強く断言している。",
+        "Congy 訳「事実上不可能です」は意味として正確であるが、原文 `basically infeasible` の口語的な疲労感（メールの砕けた語感）が失われる。「まず無理です」「現実的には不可能な状況です」のように、マクファレルが疲れながらも実務判断を下しているトーンを保つことが望ましい。"
+      ],
+      "fix_directions": [
+        "`basically infeasible` は「まず無理です」「現実的には不可能です」のような、断定的でありながら口語的な疲労感のある語に訳す。「難しいかもしれません」のように可能性を残す語は使わない。"
+      ],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"Long-distance is basically infeasible until we can stabilize her technophobia enough to get her on a computer for more than an hour at time.\"`",
+          "jp_quote": "`テクノフォビアをある程度安定させて一度に一時間以上パソコンに向かえるようにならない限り、遠隔カウンセリングは事実上不可能です。`",
+          "source_ref": {
+            "kind": "note",
+            "note": "JP訳文はcongy版と内容が異なる（「科学技術恐怖症」→「テクノフォビア」等）ため実文照合不可"
+          }
+        }
+      ]
+    },
+    {
+      "id": "N-19-03",
+      "severity": "note",
+      "order": 3,
+      "heading": "`we've still got a ways to go` は先の長さを残す",
+      "summary": "意味は合うが、`we've still got` の主観的な疲れが薄い。`まだ先は長い` だけでなく、話者が自分の手で抱えている感じを残す。",
+      "why_bad": [
+        "`we've still got a ways to go` の `we've got`（私たちは〜を抱えている）は、話者が先の道のりを重さとして今自分が持っているという感覚を込める。`まだまだ道のりは長い` という訳は客観的な見立てを述べているだけであり、それを自分が背負っているという一人称的な疲労感が出にくい。"
+      ],
+      "fix_directions": [
+        "「まだまだやることは山積みですよ」「先はまだ長そうです」のように、マクファレル自身が進捗を手の内に抱えているという一人称の重みを出す。"
+      ],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"we've still got a ways to go.\"`",
+          "jp_quote": "`まだまだ道のりは長い`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3433
+          }
+        }
+      ]
+    },
+    {
+      "id": "E-19-04",
+      "severity": "error",
+      "order": 4,
+      "heading": "`get Director Thompson off my case` を「お叱り」にしない",
+      "summary": "ここは小言を受ける話ではなく、Thompson を自分の件から引き剥がせないという方向の慣用句である。`off my case` の主語関係を戻す。",
+      "why_bad": [
+        "`get X off my case` は「X に自分の件への干渉をやめさせる」「X を自分に付きまとわせないようにする」という慣用句であり、話者がトンプソン管理官を自分から引き剥がしたいという方向性を持つ。Congy 訳「トンプソン管理官のお叱りは止まらない」は受け身の構図になっており、マクファレルがお叱りを受け続けている被害者として描かれている。",
+        "原文では「SCP-8980 の仕事が終わらない限り、トンプソンを自分のことから離せない」という構造であり、マクファレルが Thompson の管理から逃れるための行動原理として SCP-8980 の仕事を代行することを選んだことが示されている。この選択の動機が「お叱りを受けたくない」から「Thompson に干渉されないようにするため」へ変わるだけで、マクファレルの立場と主体性の表現が変わる。"
+      ],
+      "fix_directions": [
+        "`can't get Director Thompson off my case` は「トンプソン管理官がうるさく言ってくるのを止めさせることができない」「トンプソン管理官を自分の件から離すことができない」のように、マクファレルが Thompson の干渉を排除できないという方向で訳す。受け身の「お叱りを受ける」ではなく、マクファレルが能動的に Thompson を切り離したいという意志を示す語にする。"
+      ],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"But I can't get Director Thompson off my case unless her work gets done, so I've bit the bullet and just started doing her work for her.\"`",
+          "jp_quote": "`でも、彼女の仕事が終わらない限りトンプソン管理官のお叱りは止まらないので、仕方なく彼女の代わりに仕事を引き受けることにしました。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3431
+          }
+        }
+      ]
+    },
+    {
+      "id": "N-19-04",
+      "severity": "note",
+      "order": 4,
+      "heading": "`I really needed to get this off my chest.` と `the Committee's hands were tied` を打ち明けとして処理する",
+      "summary": "ここは単なる不満ではなく、打ち明けの独白である。`get this off my chest` は胸の内を明かすことで、`hands were tied` は手が縛られている比喩を保つ。",
+      "why_bad": [
+        "`get this off my chest` は「胸のうちを誰かに打ち明けて楽になる」という体感的な慣用句である。Congy 訳「どうしてもこの気持ちのはけ口を見つけたかったのです」は「はけ口」という語で感情を外に排出する語感になっているが、`off my chest`（胸の重荷を下ろす）の打ち明けの親密さより「発散」の語感が強い。",
+        "`the Committee's hands were tied` は「手が縛られた」という体感的な比喩であり、委員会が行動の自由を制限された状態を物理的な縛りの比喩で示す。「どうすることもできないと言われた」という訳は意味は通るが、比喩の体感的な硬さが消える。"
+      ],
+      "fix_directions": [
+        "`get this off my chest` は「どうしても胸の内を話したかった」「ずっと言えずにいたことを言わせてもらいたかった」のように、打ち明けの親密な緊張を保つ。「はけ口を見つける」より打ち明けの一歩踏み込む語感にする。",
+        "`the Committee's hands were tied` は「委員会は手を縛られている」「委員会にはどうにもできない、と言われている」のように比喩の物理感を保つか、「委員会には対応の余地がないとのことですが」と制度的な拘束感として処理する。"
+      ],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"I really needed to get this off my chest. I know you said the Committee's hands were tied, but if there's anything you can do, please help me out here.\"`",
+          "jp_quote": "`このメールを送ることは恐らく、私のキャリアの中で最も馬鹿な行為かもしれませんが、どうしてもこの気持ちのはけ口を見つけたかったのです。委員会にはどうすることもできないと言われましたが、もし何かできることがあれば、どうか私のことをお助けください。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3437
+          }
+        }
+      ]
+    },
+    {
+      "id": "E-19-05",
+      "severity": "error",
+      "order": 5,
+      "heading": "`\"bite the bullet\"` の覚悟を決める感じを落とさない",
+      "summary": "受動的な諦めではなく、嫌なことに腹をくくって踏み切る感じが必要である。",
+      "why_bad": [
+        "`bite the bullet` は「嫌なことでも腹をくくってやる・覚悟を決めて踏み切る」という慣用句であり、痛みを耐えながら決断する意思が含まれる。Congy 訳「仕方なく」は受動的な諦めの語感であり、「どうせやるしかない」という受け身の態度で処理している。",
+        "`bit the bullet` は話者の能動的な意思決定（嫌だと分かっていてあえて踏み切った）を示す。「仕方なく」ではその踏み切りの主体性が消え、マクファレルが状況に流されて代行を始めたように見える。実際には状況への対応として能動的に腹をくくった判断が入っている。"
+      ],
+      "fix_directions": [
+        "`bit the bullet` は「腹をくくって」「えいやっと決断して」「覚悟を決めて」のように、嫌な決断を自分から踏み切った語感で訳す。「仕方なく」「やむを得ず」という受け身語は避ける。"
+      ],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"bit the bullet\"`",
+          "jp_quote": "`仕方なく`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3431
+          }
+        }
+      ]
+    },
+    {
+      "id": "N-19-05",
+      "severity": "note",
+      "order": 5,
+      "heading": "`psychotic woman` は臨床語ではなく罵倒として置く",
+      "summary": "ここは診断ではなく、私信の愚痴としての粗い言葉である。上品な語へ逃がさず、話者の苛立ちを残す。",
+      "why_bad": [
+        "`psychotic woman` はマクファレルが私信の愚痴の中で使った口語的な罵倒語であり、医学的な精神病診断を指しているのではなく「頭がおかしい女」という感情的な罵りである。Congy 訳「この精神異常な女性」は「精神異常」という臨床用語に近い語を使っており、マクファレルが冷静に医学的判断を述べているような語感になってしまう。私信の疲れきった怒りが臨床記録に近づいてしまう。"
+      ],
+      "fix_directions": [
+        "`psychotic woman` は「この気が狂った女」「この異常な女」「この頭のおかしな人」など、口語的で感情的な罵倒として訳す。「精神異常な」のような臨床的な語感の語は避ける。"
+      ],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"I'm not sure how much longer I can handle this psychotic woman.\"`",
+          "jp_quote": "`この精神異常な女性に私はこれ以上耐えられないのかもしれません。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3437
+          }
+        }
+      ]
+    },
+    {
+      "id": "E-19-06",
+      "severity": "error",
+      "order": 6,
+      "heading": "`\"Between A and B\"` の並列を保つ",
+      "summary": "ここは二種類の負担が並列してマクファレルを摩耗させているのであって、片方を副次化しない。",
+      "why_bad": [
+        "`Between doing her work and chores for her and dealing with her severe neuroses` は「A と B の間で（両方を抱えながら）」という並列負担の構造を持つ。`Between A and B` という構文は二つの重みが同時にかかっていることを示し、どちらかが従属的な付加物ではなく対等に話者を消耗させていることを表す。Congy 訳「それに加えて彼女の重い神経症に付き合わされて」の「それに加えて」は二番目の要素を付加要素として副次化しており、本来対等な並列構造が失われる。",
+        "二つの負担が対等に並列されているからこそ、その両方にさらされたマクファレルの消耗が読み取れる。片方を「加えて」にすると、もう一方が主要な負担として見え、全体の疲弊の構造が崩れる。"
+      ],
+      "fix_directions": [
+        "`Between doing her work and chores for her and dealing with her severe neuroses` は「毎日毎日、彼女の仕事や家事を代行することと、彼女の重い神経症に付き合うこと、その両方に挟まれて」のように、二つの負担を対等に並べる。「それに加えて」という副次化語は使わない。"
+      ],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"Between A and B\"`",
+          "jp_quote": "`それに加えて`",
+          "source_ref": {
+            "kind": "note",
+            "note": "en_quoteはメタ表現（Between A and B）のため照合不可"
+          }
+        }
+      ]
+    },
+    {
+      "id": "N-19-06",
+      "severity": "note",
+      "order": 6,
+      "heading": "`de facto co-opted into being her full-time caretaker` と `she's completely worn me down` を一つの被害として読む",
+      "summary": "ここは「面倒を見るようになった」では弱い。本人の意思に反して介護役へ組み込まれ、摩耗させられた、という被害の向きを残す。",
+      "why_bad": [
+        "`de facto co-opted into being her full-time caretaker` は「事実上（正式な手続きなしに）専属介護人として組み込まれた」という受動的な被害の語である。`co-opted`（組み込まれた・取り込まれた）は話者の意思に反して構造に取り込まれたことを示し、`de facto`（事実上の・公式ではないが現実として）という法律・行政用語が加わることで、非公式に義務を押しつけられた制度的被害の性格が出る。",
+        "`she's completely worn me down` は「彼女が自分を完全に摩耗させた・擦り切らせた」という因果の語であり、SCP-8980 が能動的にマクファレルを消耗させた構造を持つ。「疲れ果てた」という自動詞化では、SCP-8980 が消耗の原因であるという関係が薄れる。"
+      ],
+      "fix_directions": [
+        "`de facto co-opted into being her full-time caretaker` は「事実上、彼女の専属介護人へと組み込まれてしまいました」のように、話者の意思に反して制度的に取り込まれた受動性を保つ。",
+        "`she's completely worn me down` は「彼女に完全に擦り切らされてしまいました」「彼女のせいで完全に消耗しました」のように、SCP-8980 を摩耗の能動的原因として示す。"
+      ],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"I've been de facto co-opted into being her full-time caretaker, and frankly she's being a real pain in my ass. Between doing her work and chores for her and dealing with her severe neuroses all day every day, she's completely worn me down to the point that I can't even respect her as a person anymore, much less a coworker.\"`",
+          "jp_quote": "`誰にもこんなことを言えないでしょうが… フローラさん、私は本当に彼女に腹が立ってきました。私は事実上彼女の専属介護人になってしまいました。正直に言って、彼女は本当に厄介な存在です。毎日毎日、彼女の仕事や家事を代わりにやって、//それに加えて//彼女の重い神経症に付き合わされて、彼女のことを人間として尊重できないぐらいに疲れ果ててしまいました。ましてや一同僚として彼女に敬意を払うだなんて無理でしょう。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3435
+          }
+        }
+      ]
+    },
+    {
+      "id": "E-19-07",
+      "severity": "error",
+      "order": 7,
+      "heading": "`\"pain in my ass\"` の私信らしい毒気を落とさない",
+      "summary": "ここは業務文ではなく愚痴の私信であり、もっと砕けた苛立ちが要る。",
+      "why_bad": [
+        "`pain in my ass` は英語の口語的な罵倒表現であり、「うんざりする存在・面倒な奴」という強い苛立ちを伴う口語語である。Congy 訳「厄介な存在」は意味としては近いが、書き言葉的・中立的な語感であり、マクファレルが親しい同僚へのメールの中で感情を崩して愚痴っているトーンが消える。",
+        "このメールは全体として「表向きは業務報告だが実質は疲弊した同僚への打ち明け話」という二重の性格を持っている。`pain in my ass` のような口語的な汚語は、その「プロの外皮が剥げて本音が漏れた瞬間」として機能する。上品な語に置き換えると、その瞬間の漏れが消えてしまう。"
+      ],
+      "fix_directions": [
+        "`pain in my ass` は「本当に厄介この上ない」「こっちにとっては大迷惑です」「正直、目障りで仕方がない」のように、口語的で感情的な毒気を保つ語に訳す。「厄介な存在」という語は書き言葉的すぎる。"
+      ],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"pain in my ass\"`",
+          "jp_quote": "`厄介な存在`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3435
+          }
+        }
+      ]
+    },
+    {
+      "id": "N-19-07",
+      "severity": "note",
+      "order": 7,
+      "heading": "`Something's gonna give.` は限界ではなく破綻予告として置く",
+      "summary": "`Something` の漠然さが大事で、何が折れるかはまだ決まっていない。`限界` に収束させず、何かが壊れる予告として訳す。",
+      "why_bad": [
+        "`Something's gonna give.` は「何かが折れる・壊れる・決壊する（それが何かはまだ分からない）」という漠然とした破綻の予告文である。`give`（突っ張っていたものが緩む・折れる）という動詞が示すのは、どこかに圧力がかかり続けており近いうちに何かが破断するという予感である。Congy 訳「もう限界は近いのかもしれません」は、マクファレル自身の限界として収束させており、`Something` の漠然さ（何が・誰が折れるのか分からない）が失われる。"
+      ],
+      "fix_directions": [
+        "`Something's gonna give.` は「何かが近いうちに壊れます。」「どこかでいつか限界が来る。」「何かがいずれ折れますよ。」のように、主体が「何か（something）」であることを保ち、話者自身ではなく状況全体の破綻を予告する語感にする。"
+      ],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"Something's gonna give.\"`",
+          "jp_quote": "`もう限界は近いのかもしれません。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3435
+          }
+        }
+      ]
+    },
+    {
+      "id": "N-19-08",
+      "severity": "note",
+      "order": 8,
+      "heading": "`calling it quits and letting her rot` は放置の残酷さを落とさない",
+      "summary": "`calling it quits` と `letting her rot` は別動作で、後者には朽ち果てるまで放置する残酷さがある。`放っておく` だけでは弱い。",
+      "why_bad": [
+        "`calling it quits` は「もうやめにする・撤退する」という決断の語であり、`letting her rot`（彼女を腐らせて放置する）という文字通りには残酷な放棄の語と接続されている。`let X rot` は物（木材・果物・建物）が徐々に腐っていくという生物的な比喩であり、人に使うと「目も向けずに衰えて朽ち果てるに任せる」という放棄の残酷さが出る。Congy 訳「諦めて放っておこうか」は「放っておく」という中立語に落とされており、腐敗・朽ちるという生物的な比喩の残酷さが消えている。"
+      ],
+      "fix_directions": [
+        "`calling it quits and letting her rot` は「手を引いて、あとは腐るに任せておこうか」「もうやめにして、あとは朽ち果てるに任せておこうか」のように、`rot`（腐る・朽ちる）の生物的な放棄の残酷さを保つ語で訳す。"
+      ],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"calling it quits and letting her rot\"`",
+          "jp_quote": "`諦めて放っておこうか`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3435
+          }
+        }
+      ]
+    },
+    {
+      "id": "N-19-09",
+      "severity": "note",
+      "order": 9,
+      "heading": "結語で `Lillian` を出すかどうかは細い調整点",
+      "summary": "人物の残余の見え方に関わるので注記として残すが、硬い誤りではない。このままでも話は通るが、最後まで `her` で押すか、どこかで `Lillian` を戻すかで、マクファレルの情の残り方は少し変わる。",
+      "why_bad": [
+        "メール全体を通じてマクファレルが `her`（彼女）という三人称で SCP-8980 を指し続ける場合、Lillian という個人名が一度も出てこないまま記事が終わる。これは制度的な距離感を保つ語り口として一貫しているともいえるが、どこかで `Lillian` という名前を一度出すことで、マクファレルが SCP-8980 を制度上の番号でも案件でもなく固有名詞を持つ人物として認識している感情的な文脈を示せる。どちらの方針を取るかは翻訳者の判断の余地がある。"
+      ],
+      "fix_directions": [
+        "Lillian を最後に出すか `her` のみで通すかは訳者の判断で選択する。出す場合は「リリアン」を、マクファレルの感情が最も漏れる文（例: `Something's gonna give` の付近や最後の退路を悩む箇所）に置くと効果的である。"
+      ],
+      "extra_blocks": [],
+      "evidence": []
+    },
+    {
+      "id": "N-19-10",
+      "severity": "note",
+      "order": 10,
+      "heading": "`Director` の肩書き訳は記事全体で揃えたい",
+      "summary": "このファイル単独で壊れているわけではないが、制度語の統一として見直す価値がある。いまのままでも大意は崩れないので、本文の必須修正とは分けて扱いたい。",
+      "why_bad": [
+        "`Director` は財団の役職名であり、記事全体で統一した訳語（「管理官」「ディレクター」「所長」など）を使うことが文書の制度語としての整合性を保つ。このセグメント単独では `Director Thompson` の訳として「トンプソン管理官」が使われているが、他のセグメントで異なる訳が使われている場合、制度語としての統一が崩れる。"
+      ],
+      "fix_directions": [
+        "記事全体で `Director` の訳語を統一する際にこの箇所も合わせて見直す。このセグメント単独での必須修正ではなく、全体の制度語統一の際に対応する。"
+      ],
+      "extra_blocks": [],
+      "evidence": []
+    },
+    {
+      "id": "N-19-11",
+      "severity": "note",
+      "order": 11,
+      "heading": "署名の肩書き表記は書式上の判断幅がある",
+      "summary": "修正候補ではあるが、即座の必須修正ではない。署名欄だけ英語肩書きを残すか、日本語本文に合わせるかは書式判断として最後に揃えればよい。",
+      "why_bad": [
+        "英語メールの署名形式を日本語本文に合わせて全訳するか、メール書式として英語肩書きを一部残すかは文書デザイン上の判断である。SCP 記事としての「架空文書」の書式整合性と翻訳文書としての日本語統一のどちらを優先するかによって選択が変わる。"
+      ],
+      "fix_directions": [
+        "全文日本語で統一する場合は肩書き・署名欄も日本語に訳す。原文のメール書式の視覚的特徴を残す場合は署名行のみ英語を維持してもよい。本文との統一感を確認した上で書式判断する。"
+      ],
+      "extra_blocks": [],
+      "evidence": []
+    }
+  ],
+  "extra_sections": [],
+  "conclusions": [
+    "- マクファレルの声は「親しい同僚への疲れたメール」として訳す\n- 慣用句は辞書第一義へ崩さない\n- NOTE 論点は、メール文体の仕上げとして二段目に回す"
+  ]
+}

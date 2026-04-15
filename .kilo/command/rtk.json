@@ -1,0 +1,7 @@
+description = Run Python script
+
+[definition]
+command = "python3"
+
+[definition.flags]
+ignore-shell = true

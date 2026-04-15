@@ -1,0 +1,150 @@
+{
+  "segment_id": "11_form2093a_rewritten_response",
+  "title": "SCP-8980 該当箇所 11 査読",
+  "source_en_path": "articles/fragment_scp-8980-1/segments/en/11_form2093a_rewritten_response.wikidot",
+  "source_jp_path": "`congy.wikidot` 行 2438-2550 付近",
+  "source_range": {
+    "start": 2438,
+    "end": 2550,
+    "note": "`congy.wikidot` 行 2438-2550 付近"
+  },
+  "usage_notes": [
+    "該当箇所 10 と同じく、ここは制度文体の冷たさを守る場である。\n単に硬い日本語ではなく、「何を認め、何を拒み、どこで責任を限定しているか」が読める文にする。",
+    "今回は 3 件ともそのまま採る。"
+  ],
+  "overview": [
+    "危険なのは次の 3 点である。",
+    "- 該当箇所 10 と同じ欠落が再掲版でも放置されている\n- 長い法務文の論理が日本語でほどけていない\n- 最後の警告文が、制度警告ではなく日常的な注意書きに落ちている"
+  ],
+  "issues": [
+    {
+      "id": "E-11-01",
+      "severity": "error",
+      "order": 1,
+      "heading": "接触制限と暫定収容延長の一文をここでも落としてはいけない",
+      "summary": "該当箇所 10 と同じ欠落を、改稿版でも繰り返してはならない。",
+      "why_bad": [
+        "この文書は初版フォーム（該当箇所 10）の改稿版であり、両版は実質的に同じ主張を異なる書き方で提示している。`both for its safety and for ours` は接触制限の根拠を SCP-8980 側の安全と財団側の安全の両方として提示する `both...and` 対称構造であり、片方に偏らない理由付けとして機能している。この文が欠落すると、接触制限がなぜ設けられているかの論拠が文書から消える。",
+        "`This is also why its provisional containment has been extended.` は「安全上の理由→暫定収容延長」という制度的帰結の一文であり、フォームが申立内容を棄却する根拠の一部をなしている。この文が落ちると、収容延長という事実は残っても、それがなぜ正当化されるかの理由が文書から消え、行政判断の論理的連鎖が断ち切られる。初版でも欠落していたこの文が改稿版でも再び欠落しているということは、訳者がこの因果の説明文を意図的または反射的に省略する傾向があることを示しており、改稿版では必ず戻す必要がある。"
+      ],
+      "fix_directions": [
+        "該当箇所 10 と同じ文を戻す",
+        "両版の論理を揃える"
+      ],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"both for its safety and for ours\"` / `\"This is also why its provisional containment has been extended.\"`",
+          "jp_quote": "`これは、アノマリーの安全と我々の安全の両方を守るためであり、また、暫定的な収容期間が延長された理由でもあります。`",
+          "source_ref": {
+            "kind": "note",
+            "note": "en_quoteは複合引用（2文）、jp_quoteは欠落テキストの訳例のため照合保留"
+          }
+        }
+      ]
+    },
+    {
+      "id": "N-11-01",
+      "severity": "note",
+      "order": 1,
+      "heading": "`\"I suppose you could say that I'm a changed man now.\"` の婉曲を残す",
+      "summary": "`I suppose you could say` の婉曲さを消さず、自己弁明の照れ隠しを残したい。",
+      "why_bad": [
+        "`I suppose you could say` は「そう言えると思うんですが」「そう言っていいとすれば」という語であり、話者が自分の発言を確信を持って断言せず、「そう解釈してもいいかもしれない」という距離を置いた提示の仕方をしている。これは自己改革の自信ある宣言ではなく、自分に都合のよい解釈を相手に向けて恐る恐る差し出すような自己弁明の照れ隠しである。",
+        "Congy 訳「私は今や生まれ変わったと言えるでしょう。」の「生まれ変わった」は「complete spiritual rebirth」の語感を持つ強い変容表現であり、`I suppose`（たぶん・思うに）+ `you could say`（あなたがそう言うなら、と言えるとすれば）という二重の距離感が消える。バーンズが改革を証明できないままにもかかわらず、自らに都合のよい自己評価を相手に向けて軽く押し付けている調子が失われる。"
+      ],
+      "fix_directions": [
+        "`まあ、そう言えるかもしれません` のように、断定しすぎない",
+        "自己改革の宣言ではなく、言い逃れに近い調子を保つ"
+      ],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"Yes, well, I suppose you could say that I'm a changed man now.\"`",
+          "jp_quote": "`ああ、そうですね。私は今や生まれ変わったと言えるでしょう。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 2058
+          }
+        }
+      ]
+    },
+    {
+      "id": "E-11-02",
+      "severity": "error",
+      "order": 2,
+      "heading": "`\"either normalcy or monetary/personnel resources\"` の切り分けをほどく",
+      "summary": "現状訳は、何にどの種の損害が及ぶのかが読みづらい。",
+      "why_bad": [
+        "`either A or B` の切り分けが曖昧",
+        "`重大` と `極めて高い確率` の係り先が見えにくい",
+        "法務文書としての冷たさではなく、ただの読みにくさになっている"
+      ],
+      "fix_directions": [],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"either normalcy or monetary/personnel resources of the SCP Foundation\"`",
+          "jp_quote": "`正常性または金銭的・人的資源に重大な、または極めて高い確率で損害を与える`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1975
+          }
+        }
+      ]
+    },
+    {
+      "id": "N-11-02",
+      "severity": "note",
+      "order": 2,
+      "heading": "`\"As a former non-anomalous member of Foundation staff...\"` をここでも落とさない",
+      "summary": "10 と同じく、`former` は申立ての資格を支える立場表明である。",
+      "why_bad": [
+        "`As a former non-anomalous member of Foundation staff who has worked closely with containment specialists in the past` は申立書の冒頭に置かれた立場表明であり、SCP-8980 が申立てを行う権利・資格の根拠として機能している。`former non-anomalous member`（過去に非異常職員だった）という経歴が、収容手続きに関する専門的知識と財団規則への精通を示す資格根拠として使われている。",
+        "改稿版（該当箇所 11）においても、この申立書が初版の再提出・再申立てであるため、立場表明は同じ機能を担う。これを単なる経歴説明として扱うと、申立書の構造として「なぜこの申立てが正式な権利主張として受け取られるべきか」という論理的基盤が崩れる。改稿版でこの立場表明節が落ちたり弱くなったりしている場合は、初版と同様に申立資格の根拠として読める形に戻す。"
+      ],
+      "fix_directions": [
+        "申立書の資格根拠として、かつての職歴を明示する",
+        "`元非異常職員` を単なる説明で終わらせず、主張の足場として見せる"
+      ],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"As a former non-anomalous member of Foundation staff who has worked closely with containment specialists in the past, I am of the opinion I am being deprived of certain rights and subject to improper containment, including (but not limited to):\"`",
+          "jp_quote": "`私は、現在担当中の収容スタッフによる私の収容対応に対して非常に不満を抱いています。過去に収容スペシャリストと密接に協力してきた財団の元非異常職員として、私は特定の権利を剝奪され、不適切な収容を受けていると考えられます。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 1868
+          }
+        }
+      ]
+    },
+    {
+      "id": "E-11-04",
+      "severity": "error",
+      "order": 3,
+      "heading": "最後の警告は「自己責任」では弱すぎる",
+      "summary": "ここはネット上の断り書きではなく、倫理委員会文書としての強い閲覧警告である。",
+      "why_bad": [
+        "`自己責任` が日常語に見える",
+        "制度文書としての重さが足りない"
+      ],
+      "fix_directions": [],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"Reviewer discretion is heavily advised.\"`",
+          "jp_quote": "`審査は各自の判断で行ってください。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 2016
+          }
+        }
+      ]
+    }
+  ],
+  "extra_sections": [],
+  "conclusions": [
+    "- 改稿版でも、申立人の立場表明を落とさない\n- 婉曲な自己弁明は、断定に潰さず残す\n- 収容に対する不満は、制度文の硬さの中で立てる"
+  ]
+}

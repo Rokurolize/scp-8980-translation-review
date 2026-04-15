@@ -1,0 +1,45 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
+
+      - name: Install MkDocs
+        run: pip install mkdocs mkdocs-material
+
+      - name: Regenerate Markdown from JSON
+        run: python3 review_registry.py render --all
+
+      - name: Prepare docs/
+        run: |
+          mkdir -p docs
+          cp 01_PASSAGE_FIXES/*.md docs/
+          cat > docs/index.md << 'EOF'
+          # SCP-8980 日本語訳査読レビュー
+
+          英語原文からの日本語翻訳を精査したセグメント別査読結果です。
+
+          左のナビゲーションから各セグメントを参照してください。
+          EOF
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Deploy
+        run: mkdocs gh-deploy --force

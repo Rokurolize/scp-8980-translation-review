@@ -1,0 +1,124 @@
+{
+  "segment_id": "17_addendum10_neutralization",
+  "title": "SCP-8980 該当箇所 17 査読",
+  "source_en_path": "articles/fragment_scp-8980-1/segments/en/17_addendum10_neutralization.wikidot",
+  "source_jp_path": "`congy.wikidot` 行 4279-4335 付近",
+  "source_range": {
+    "start": 4279,
+    "end": 4335,
+    "note": "`congy.wikidot` 行 4279-4335 付近"
+  },
+  "usage_notes": [
+    "この箇所は短いが、虐待後の症状を制度文書がどう記録するかを決める。\nしたがって、小さい用語差でも読み筋を変えるものは落とさない。"
+  ],
+  "overview": [
+    "ここで大事なのは、マクファレルが Lillian を道徳的に批評しているのではなく、虐待後の対人機能の崩れを臨床的に観察していることを守ることである。"
+  ],
+  "issues": [
+    {
+      "id": "E-17-01",
+      "severity": "error",
+      "order": 1,
+      "heading": "`\"social awareness\"` は「社会意識」ではない",
+      "summary": "ここは公共心や社会問題への関心ではなく、対人文脈の把握や社会性の崩れである。",
+      "why_bad": [
+        "道徳的・政治的な意味に滑る",
+        "虐待後の症候としての読みが弱くなる"
+      ],
+      "fix_directions": [],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"a lack of social awareness\"`",
+          "jp_quote": "`社会意識の欠如`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3200
+          }
+        }
+      ]
+    },
+    {
+      "id": "N-17-01",
+      "severity": "note",
+      "order": 1,
+      "heading": "`\"none of its stated anomalous properties\"` は「いずれも」を落とさない",
+      "summary": "意味は通るが、列挙された異常性質を一つずつ確認していった感じが弱い。ここは「いずれも」で、項目ごとの全否定を見せた方がよい。",
+      "why_bad": [
+        "`none of its stated anomalous properties` は、文書に記載されている個々の異常性質のどれひとつとして保持されていなかった、という項目ごとの全否定を含んでいる。`stated`（記載された・明示された）は、評価に先立って文書化されていた複数の異常性質の一覧があることを前提としており、それらを一項目ずつ確認した上での「ゼロ」を意味する。",
+        "Congy 訳「記載されている異常性を一切保持していない」の「一切」は網羅的な否定として意味的には正しいが、「一切」という語は項目を一つひとつ確認していく感触ではなく、包括的に全体を否定する語感を持つ。「いずれも保持していない」であれば、列挙されていた各項目に対して個別に「なし」と確認されたという評価の手続きが感じられる。"
+      ],
+      "fix_directions": [
+        "`none of its stated anomalous properties` は「記載されている異常性質のいずれも保持していない」のように、個別項目への全否定として訳す。",
+        "「一切」ではなく「いずれも」を使い、異常性質のリストを一項目ずつ確認した結果としての全否定という文脈を保つ。"
+      ],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"possessed none of its stated anomalous properties\"`",
+          "jp_quote": "`記載されている異常性を一切保持していない`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3198
+          }
+        }
+      ]
+    },
+    {
+      "id": "N-17-02",
+      "severity": "note",
+      "order": 2,
+      "heading": "`noted that the entity possessed several alarming features` は「察知した」ではない",
+      "summary": "`noted` は勘で見抜く語ではない。観察した、記録した、所見として認めた、という事務的な向きに寄せる。",
+      "why_bad": [
+        "`noted` は「観察・記録した、所見として記す」という事務的・臨床的な語であり、評価者が対象を観察し、その内容を記録する行為を指す。受動形「it was noted that」でも能動形「she noted that」でも、「観察の上で記録に残す」という客観的な記述行為が前提にある。",
+        "Congy 訳「察知した」は直感や感覚的知覚によって何かを感じ取る語であり、見えにくいものを気づく・感じ取るという主観的な知覚の語感を持つ。臨床評価や査定記録では、評価者が対象を系統的に観察した結果を記述する語（「観察した」「認めた」「確認した」）が適切であり、「察知した」は評価者が直感で感じ取ったかのような読みになって記録の客観性が弱まる。"
+      ],
+      "fix_directions": [
+        "`noted` は「観察した」「所見として認めた」「確認した」のように、臨床・事務的な観察記録の語感で訳す。",
+        "「察知した」「気づいた」「感じ取った」のような主観的知覚・直感の語は使わない。評価者が手続きに従って対象を観察し記録したという文脈を保つ。"
+      ],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"noted that the entity possessed several alarming features\"`",
+          "jp_quote": "`いくつかの憂慮すべき特徴を保持していることを察知しました`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3200
+          }
+        }
+      ]
+    },
+    {
+      "id": "N-17-03",
+      "severity": "note",
+      "order": 3,
+      "heading": "`As of January 19th, 2015` は状態更新の時点を先に固定する",
+      "summary": "過去の発効点と、文書が今述べている現在の状態が混ざっている。ここは「付で」「保留中」で、過去の開始と現在の保留を分けて置く。",
+      "why_bad": [
+        "原文は二つの時制を持つ文が並んでいる。`As of January 19th, 2015, SCP-8980 began rehabilitation` は過去の出来事（2015年1月19日に開始した）を示し、`SCP-8980 is pending reclassification` は現在の状態（現在も分類変更待ち）を示している。前文は過去の起点を `As of [date]` で固定し、後文は現在進行の状態を独立して述べている。",
+        "Congy 訳「2015年1月19日現在、〜を開始しています。」は「〜現在」という語を使っており、日本語ではこの表現が「記録時点での現状」または「文書の今」として読まれやすい。さらに「開始しています」（現在進行形）を使うことで、2015年1月19日という過去の起点が「今この瞬間」として扱われ、時制が混濁する。過去に始まったことを過去形で記し、現在保留中という状態は別文として現在形で記す、という二分割を保つ必要がある。"
+      ],
+      "fix_directions": [
+        "`As of January 19th, 2015, SCP-8980 began rehabilitation` は「2015年1月19日付で、SCP-8980 はリハビリを開始した」のように、過去の開始点を過去形で固定する。",
+        "`SCP-8980 is pending reclassification` は「SCP-8980 は現在 Neutralized への再分類保留中である」のように、過去の開始とは独立した現在の状態として別文で示す。"
+      ],
+      "extra_blocks": [],
+      "evidence": [
+        {
+          "en_quote": "`\"As of January 19th, 2015, SCP-8980 began rehabilitation and reintegration into the wider Foundation workplace under direct supervision from Dr. Morgan McPharrell. SCP-8980 is pending reclassification to Neutralized.\"`",
+          "jp_quote": "`2015年1月19日現在、モーガン・マクファレル博士の直接の監督の下、SCP-8980はリハビリテーションと財団の職場への再統合を開始しています。SCP-8980は現在、Neutralizedへの再分類待ちです。`",
+          "source_ref": {
+            "kind": "line",
+            "line": 3202
+          }
+        }
+      ]
+    }
+  ],
+  "extra_sections": [],
+  "conclusions": [
+    "- symptom を moral な語へずらさない\n- この箇所では、短さより用語の向きを優先する"
+  ]
+}

@@ -4,7 +4,7 @@ SCP-8980（SCP Foundation 架空文書）の英語原文から日本語訳への
 
 ## 概要
 
-- 英語原文（`source_en.wikidot`）と日本語訳（`bad_translation_jp_single.wikidot`）を 1 行単位で対応付け
+- 英語原文（`source_en.wikidot`）と日本語訳（`source_jp.wikidot`）を 1 行単位で対応付け
 - 誤訳・訳抜け・ニュアンスの歪みを `review_db/segments/*.json` に記録
 - `review_registry.py render --all` で `01_PASSAGE_FIXES/` 配下の Markdown を自動生成
 - GitHub Pages でレビュー結果を公開：<https://Rokurolize.github.io/scp-8980-translation-review/>
@@ -40,4 +40,4 @@ python3 extract_parallel_range.py 1335,1516
 | ファイル | 出典 | ライセンス |
 |---|---|---|
 | `source_en.wikidot` | <https://scp-wiki.wikidot.com/scp-8980> | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
-| `bad_translation_jp_single.wikidot` | <http://scp-jp-sandbox3.wikidot.com/draft:9832594-90-d929> | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+| `source_jp.wikidot` | <http://scp-jp-sandbox3.wikidot.com/draft:9832594-90-d929> | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |

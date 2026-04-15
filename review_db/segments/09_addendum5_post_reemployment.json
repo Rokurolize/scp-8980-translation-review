@@ -2,11 +2,11 @@
   "segment_id": "09_addendum5_post_reemployment",
   "title": "SCP-8980 該当箇所 09 査読",
   "source_en_path": "articles/fragment_scp-8980-1/segments/en/09_addendum5_post_reemployment.wikidot",
-  "source_jp_path": "`congy.wikidot` 行 1885-2083 付近",
+  "source_jp_path": "source_jp.wikidot 行 1485-1612",
   "source_range": {
-    "start": 1885,
-    "end": 2083,
-    "note": "`congy.wikidot` 行 1885-2083 付近"
+    "start": 1485,
+    "end": 1612,
+    "note": "source_en.wikidot 行 1485-1612"
   },
   "usage_notes": [
     "この箇所で最重要なのは、SCP-8980 がバーンズの管轄を抜けようとする方向を訳文で再現することである。\nこの箇所の指摘はすべて修正が必要である。"

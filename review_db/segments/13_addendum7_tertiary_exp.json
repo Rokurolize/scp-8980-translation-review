@@ -2,11 +2,11 @@
   "segment_id": "13_addendum7_tertiary_exp",
   "title": "SCP-8980 該当箇所 13 査読",
   "source_en_path": "articles/fragment_scp-8980-1/segments/en/13_addendum7_tertiary_exp.wikidot",
-  "source_jp_path": "`congy.wikidot` 行 2819-3045 付近",
+  "source_jp_path": "source_jp.wikidot 行 2150-2365",
   "source_range": {
-    "start": 2819,
-    "end": 3045,
-    "note": "`congy.wikidot` 行 2819-3045 付近"
+    "start": 2150,
+    "end": 2365,
+    "note": "source_en.wikidot 行 2150-2365"
   },
   "usage_notes": [
     "崩壊と制度的正当化が切れ目なく続く流れを訳文で再現すること。\nこの箇所の指摘はすべて修正が必要である。"

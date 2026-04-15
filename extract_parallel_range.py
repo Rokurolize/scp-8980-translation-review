@@ -13,11 +13,11 @@ RANGE_RE = re.compile(r"^(?P<start>\d+)(?:(?P<sep>[,-])(?P<end>\d+))?$")
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="source_en.wikidot と bad_translation_jp_single.wikidot から指定行範囲の対訳を抽出します。"
+        description="source_en.wikidot と source_jp.wikidot から指定行範囲の対訳を抽出します。"
     )
     parser.add_argument("line_range", help="単独行 '1335'、または範囲 '1335,1516' / '1335-1516'")
     parser.add_argument("--source", default="source_en.wikidot", help="原文ファイル")
-    parser.add_argument("--jp", default="bad_translation_jp_single.wikidot", help="日本語ファイル")
+    parser.add_argument("--jp", default="source_jp.wikidot", help="日本語ファイル")
     return parser.parse_args()
 
 

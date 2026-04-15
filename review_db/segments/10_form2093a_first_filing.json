@@ -2,11 +2,11 @@
   "segment_id": "10_form2093a_first_filing",
   "title": "SCP-8980 該当箇所 10 査読",
   "source_en_path": "articles/fragment_scp-8980-1/segments/en/10_form2093a_first_filing.wikidot",
-  "source_jp_path": "`congy.wikidot` 行 2238-2459 付近",
+  "source_jp_path": "source_jp.wikidot 行 1613-1784",
   "source_range": {
-    "start": 2238,
-    "end": 2459,
-    "note": "`congy.wikidot` 行 2238-2459 付近"
+    "start": 1613,
+    "end": 1784,
+    "note": "source_en.wikidot 行 1613-1784"
   },
   "usage_notes": [
     "このフォームは、SCP-8980 側の訴えとバーンズ側の自己弁明が一つの制度書式の中でぶつかる場である。\nしたがって、文章を読みやすく整えるより、バーンズの自己正当化の気味悪さを消さないことを優先する。",

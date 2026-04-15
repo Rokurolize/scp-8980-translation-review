@@ -2,11 +2,11 @@
   "segment_id": "17_addendum10_neutralization",
   "title": "SCP-8980 該当箇所 17 査読",
   "source_en_path": "articles/fragment_scp-8980-1/segments/en/17_addendum10_neutralization.wikidot",
-  "source_jp_path": "`congy.wikidot` 行 4279-4335 付近",
+  "source_jp_path": "source_jp.wikidot 行 3194-3249",
   "source_range": {
-    "start": 4279,
-    "end": 4335,
-    "note": "`congy.wikidot` 行 4279-4335 付近"
+    "start": 3194,
+    "end": 3249,
+    "note": "source_en.wikidot 行 3194-3249"
   },
   "usage_notes": [
     "この箇所は短いが、虐待後の症状を制度文書がどう記録するかを決める。\nしたがって、小さい用語差でも読み筋を変えるものは落とさない。"

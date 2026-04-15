@@ -2,11 +2,11 @@
   "segment_id": "12_addendum6_containment_plan",
   "title": "SCP-8980 該当箇所 12 査読",
   "source_en_path": "articles/fragment_scp-8980-1/segments/en/12_addendum6_containment_plan.wikidot",
-  "source_jp_path": "`congy.wikidot` 行 2550-2740 付近",
+  "source_jp_path": "source_jp.wikidot 行 2024-2149",
   "source_range": {
-    "start": 2550,
-    "end": 2740,
-    "note": "`congy.wikidot` 行 2550-2740 付近"
+    "start": 2024,
+    "end": 2149,
+    "note": "source_en.wikidot 行 2024-2149"
   },
   "usage_notes": [
     "バーンズが規範に従うふりをしながら、同じ方向へ SCP-8980 を押し戻していることを訳文で再現すること。\nこの箇所の指摘はすべて修正が必要である。"

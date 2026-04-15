@@ -14,7 +14,7 @@ PASSAGES_DIR = ROOT / "01_PASSAGE_FIXES"
 REVIEW_DB_DIR = ROOT / "review_db"
 SEGMENTS_DIR = REVIEW_DB_DIR / "segments"
 SOURCE_EN_PATH = ROOT / "source_en.wikidot"
-SOURCE_JP_PATH = ROOT / "bad_translation_jp_single.wikidot"
+SOURCE_JP_PATH = ROOT / "source_jp.wikidot"
 
 SECTION_SEVERITY = {
     "直すべき箇所 [ERROR]": "error",
@@ -114,7 +114,7 @@ def parse_markdown_file(path: Path) -> dict[str, Any]:
 
     title = lines[0][2:].strip()
     source_en_path = ""
-    source_jp_path = "bad_translation_jp_single.wikidot"
+    source_jp_path = "source_jp.wikidot"
     source_range = {"start": None, "end": None}
     usage_notes: list[str] = []
     overview: list[str] = []
@@ -621,7 +621,7 @@ def command_validate(args: argparse.Namespace) -> int:
     source_en_lines = load_text_lines(SOURCE_EN_PATH)
     source_jp_lines = load_text_lines(SOURCE_JP_PATH)
     if len(source_en_lines) != len(source_jp_lines):
-        print("source_en.wikidot と bad_translation_jp_single.wikidot の行数が一致しません。", file=sys.stderr)
+        print("source_en.wikidot と source_jp.wikidot の行数が一致しません。", file=sys.stderr)
         return 1
 
     # Load schema

@@ -5,7 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## このリポジトリの概要
 
 SCP-8980（SCP Foundation 架空文書）の英語原文 → 日本語訳を査読するプロジェクト。
-`source_en.wikidot`（英語原文）と `bad_translation_jp_single.wikidot`（問題訳文）は **両ファイルとも 3505 行で行番号が 1 対 1 に対応している**。
+`source_en.wikidot`（英語原文）と `source_jp.wikidot`（問題訳文）は **両ファイルとも 3505 行で行番号が 1 対 1 に対応している**。
 
 リポジトリはパブリック公開済み。査読結果は GitHub Pages でも閲覧できる：
 <https://rokurolize.github.io/scp-8980-translation-review/>
@@ -107,4 +107,4 @@ jq '[.issues[] | select(.severity == "note")] | length' review_db/segments/14_ad
 
 - **コード・査読データ**（`review_registry.py`、`review_db/`、`01_PASSAGE_FIXES/` 等）: MIT License（権利者: Rokurolize）
 - **`source_en.wikidot`**: CC BY-SA 3.0（出典: <https://scp-wiki.wikidot.com/scp-8980>）
-- **`bad_translation_jp_single.wikidot`**: CC BY-SA 3.0（出典: <http://scp-jp-sandbox3.wikidot.com/draft:9832594-90-d929>）
+- **`source_jp.wikidot`**: CC BY-SA 3.0（出典: <http://scp-jp-sandbox3.wikidot.com/draft:9832594-90-d929>）

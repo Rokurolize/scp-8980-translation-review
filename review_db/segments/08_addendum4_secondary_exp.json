@@ -2,11 +2,11 @@
   "segment_id": "08_addendum4_secondary_exp",
   "title": "SCP-8980 該当箇所 08 査読",
   "source_en_path": "articles/fragment_scp-8980-1/segments/en/08_addendum4_secondary_exp.wikidot",
-  "source_jp_path": "`congy.wikidot` 行 1800-1938 付近",
+  "source_jp_path": "source_jp.wikidot 行 1409-1484",
   "source_range": {
-    "start": 1800,
-    "end": 1938,
-    "note": "`congy.wikidot` 行 1800-1938 付近"
+    "start": 1409,
+    "end": 1484,
+    "note": "source_en.wikidot 行 1409-1484"
   },
   "usage_notes": [
     "バーンズの雑な言い逃れと、不自然な比喩の直訳を見逃さないこと。\nこの箇所の指摘はいずれも修正が必要である。"

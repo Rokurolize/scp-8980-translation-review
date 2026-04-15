@@ -2,11 +2,11 @@
   "segment_id": "07_addendum3_experimentation",
   "title": "SCP-8980 該当箇所 07 査読",
   "source_en_path": "articles/fragment_scp-8980-1/segments/en/07_addendum3_experimentation.wikidot",
-  "source_jp_path": "`congy.wikidot` 行 1541-1797 付近",
+  "source_jp_path": "source_jp.wikidot 行 1229-1408",
   "source_range": {
-    "start": 1541,
-    "end": 1797,
-    "note": "`congy.wikidot` 行 1541-1797 付近"
+    "start": 1229,
+    "end": 1408,
+    "note": "source_en.wikidot 行 1229-1408"
   },
   "usage_notes": [
     "この箇所のバーンズは、「悪い知らせを丁寧に伝える人」の顔で、実際には財団側の利害を押しつけてくる。\nこの箇所の指摘はすべて修正が必要である。"

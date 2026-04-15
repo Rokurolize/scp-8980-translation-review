@@ -2,11 +2,11 @@
   "segment_id": "11_form2093a_rewritten_response",
   "title": "SCP-8980 該当箇所 11 査読",
   "source_en_path": "articles/fragment_scp-8980-1/segments/en/11_form2093a_rewritten_response.wikidot",
-  "source_jp_path": "`congy.wikidot` 行 2438-2550 付近",
+  "source_jp_path": "source_jp.wikidot 行 1785-2023",
   "source_range": {
-    "start": 2438,
-    "end": 2550,
-    "note": "`congy.wikidot` 行 2438-2550 付近"
+    "start": 1785,
+    "end": 2023,
+    "note": "source_en.wikidot 行 1785-2023"
   },
   "usage_notes": [
     "該当箇所 10 と同じく、ここは制度文体の冷たさを守る場である。\n単に硬い日本語ではなく、「何を認め、何を拒み、どこで責任を限定しているか」が読める文にする。",

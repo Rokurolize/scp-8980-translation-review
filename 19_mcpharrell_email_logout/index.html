@@ -1,0 +1,1670 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../18_investigation_summary/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>SCP-8980 該当箇所 19 査読 - SCP-8980 日本語訳査読レビュー</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#scp-8980-19" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href=".." title="SCP-8980 日本語訳査読レビュー" class="md-header__button md-logo" aria-label="SCP-8980 日本語訳査読レビュー" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SCP-8980 日本語訳査読レビュー
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              SCP-8980 該当箇所 19 査読
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="検索">
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="SCP-8980 日本語訳査読レビュー" class="md-nav__button md-logo" aria-label="SCP-8980 日本語訳査読レビュー" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    SCP-8980 日本語訳査読レビュー
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 日本語訳査読レビュー
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_css_and_theme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 01 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_ec_popup_modal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 02 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_tabview_and_ec_memorandum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 03 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_page_header_scp_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 04 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_addendum1_initial_interview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 05 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_addendum2_test_results/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 06 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_addendum3_experimentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 07 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_addendum4_secondary_exp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 08 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_addendum5_post_reemployment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 09 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_form2093a_first_filing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 10 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11_form2093a_rewritten_response/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 11 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12_addendum6_containment_plan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 12 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13_addendum7_tertiary_exp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 13 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14_addendum8_health_crawford/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 14 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15_incident2_ace_exploit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 15 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16_addendum9_depression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 16 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17_addendum10_neutralization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 17 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18_investigation_summary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 18 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 19 査読
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 19 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        このファイルの使い方
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        総評
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        直すべき箇所 [ERROR]
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="直すべき箇所 [ERROR]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#e-19-01-sir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-19-01 "sir" を「旦那様」にしない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-19-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-19-02 メール冒頭を会話文にしない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-19-03-basically-infeasible" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-19-03 basically infeasible の「事実上不可能」を落とさない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-19-04-get-director-thompson-off-my-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-19-04 get Director Thompson off my case を「お叱り」にしない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-19-05-bite-the-bullet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-19-05 "bite the bullet" の覚悟を決める感じを落とさない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-19-06-between-a-and-b" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-19-06 "Between A and B" の並列を保つ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-19-07-pain-in-my-ass" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-19-07 "pain in my ass" の私信らしい毒気を落とさない
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        補強したい箇所 [NOTE]
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="補強したい箇所 [NOTE]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#n-19-01-at-least-i-get-overtime-pay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-19-01 "At least I get overtime pay." は疑問にしすぎない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-19-02-for-one-random-bouts-of-screaming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-19-02 For one と random bouts of screaming は進捗報告の口調を崩さない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-19-03-weve-still-got-a-ways-to-go" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-19-03 we've still got a ways to go は先の長さを残す
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-19-04-i-really-needed-to-get-this-off-my-chest-the-committees-hands-were-tied" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-19-04 I really needed to get this off my chest. と the Committee's hands were tied を打ち明けとして処理する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-19-05-psychotic-woman" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-19-05 psychotic woman は臨床語ではなく罵倒として置く
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-19-06-de-facto-co-opted-into-being-her-full-time-caretaker-shes-completely-worn-me-down" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-19-06 de facto co-opted into being her full-time caretaker と she's completely worn me down を一つの被害として読む
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-19-07-somethings-gonna-give" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-19-07 Something's gonna give. は限界ではなく破綻予告として置く
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-19-08-calling-it-quits-and-letting-her-rot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-19-08 calling it quits and letting her rot は放置の残酷さを落とさない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-19-09-lillian" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-19-09 結語で Lillian を出すかどうかは細い調整点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-19-10-director" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-19-10 Director の肩書き訳は記事全体で揃えたい
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-19-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-19-11 署名の肩書き表記は書式上の判断幅がある
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        実務上の結論
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        このファイルの使い方
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        総評
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        直すべき箇所 [ERROR]
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="直すべき箇所 [ERROR]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#e-19-01-sir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-19-01 "sir" を「旦那様」にしない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-19-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-19-02 メール冒頭を会話文にしない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-19-03-basically-infeasible" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-19-03 basically infeasible の「事実上不可能」を落とさない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-19-04-get-director-thompson-off-my-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-19-04 get Director Thompson off my case を「お叱り」にしない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-19-05-bite-the-bullet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-19-05 "bite the bullet" の覚悟を決める感じを落とさない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-19-06-between-a-and-b" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-19-06 "Between A and B" の並列を保つ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-19-07-pain-in-my-ass" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-19-07 "pain in my ass" の私信らしい毒気を落とさない
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        補強したい箇所 [NOTE]
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="補強したい箇所 [NOTE]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#n-19-01-at-least-i-get-overtime-pay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-19-01 "At least I get overtime pay." は疑問にしすぎない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-19-02-for-one-random-bouts-of-screaming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-19-02 For one と random bouts of screaming は進捗報告の口調を崩さない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-19-03-weve-still-got-a-ways-to-go" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-19-03 we've still got a ways to go は先の長さを残す
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-19-04-i-really-needed-to-get-this-off-my-chest-the-committees-hands-were-tied" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-19-04 I really needed to get this off my chest. と the Committee's hands were tied を打ち明けとして処理する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-19-05-psychotic-woman" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-19-05 psychotic woman は臨床語ではなく罵倒として置く
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-19-06-de-facto-co-opted-into-being-her-full-time-caretaker-shes-completely-worn-me-down" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-19-06 de facto co-opted into being her full-time caretaker と she's completely worn me down を一つの被害として読む
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-19-07-somethings-gonna-give" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-19-07 Something's gonna give. は限界ではなく破綻予告として置く
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-19-08-calling-it-quits-and-letting-her-rot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-19-08 calling it quits and letting her rot は放置の残酷さを落とさない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-19-09-lillian" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-19-09 結語で Lillian を出すかどうかは細い調整点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-19-10-director" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-19-10 Director の肩書き訳は記事全体で揃えたい
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-19-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-19-11 署名の肩書き表記は書式上の判断幅がある
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        実務上の結論
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="scp-8980-19">SCP-8980 該当箇所 19 査読</h1>
+<p><strong>対象 EN:</strong> <code>articles/fragment_scp-8980-1/segments/en/19_mcpharrell_email_logout.wikidot</code>
+<strong>対象 JP:</strong> <code>source_jp.wikidot 行 3418-3505</code></p>
+<h2 id="_1">このファイルの使い方</h2>
+<p>この箇所は記事の結語であり、マクファレルの私信とログアウト表示が読後感を決める。
+したがって、報告書の硬さではなく、「親しい同僚への業務メール」の声を正しく出すことが重要になる。</p>
+<ul>
+<li><code>[ERROR]</code> はそのまま修正対象</li>
+<li><code>[NOTE]</code> は必須ではないが、メール文体の仕上げとして対応を検討できる論点</li>
+</ul>
+<h2 id="_2">総評</h2>
+<p>現行訳は、慣用句の字義分解と、メールの言葉遣いのずれが集中している。
+ここで私信らしい疲弊、罪悪感、苛立ちが消えると、記事全体が「報告書で終わった」ように見えてしまう。</p>
+<p>ここは制度文の余韻ではなく、制度に擦り切れた同僚の私信で終わるべき箇所である。</p>
+<h2 id="error">直すべき箇所 [ERROR]</h2>
+<h3 id="e-19-01-sir">E-19-01 <code>"sir"</code> を「旦那様」にしない</h3>
+<p><strong>EN:</strong> <code>"sir"</code>
+<strong>行:</strong> <code>3433</code>
+<strong>JP:</strong> <code>旦那様</code></p>
+<p><strong>要旨:</strong> ここは男性権威一般への反射的服従であり、婚姻・主従・接客の含意を持つ語へずらさない。
+この文脈では、自然さと症状の読みやすさの両方を考えると <code>先生</code> が使いやすい。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>sir</code> は英語で目上の男性や上官への汎用的な敬語であり、婚姻関係の有無も主従関係の性質も問わない一般的な敬称である。<code>SCP-8980 が反射的に「sir」と呼んでいた</code> という症状記述（マクファレルへのメール）は、SCP-8980 が権威ある男性を認識した際に条件反射的に服従の敬称を発してしまう PTSD 的な言語症状として書かれている。Congy 訳「旦那様」は既婚・主従・接客業の語感を持つ語であり、このような症状の性質（男性権威への反射的服従）とずれる。</li>
+<li>「旦那様」は SCP-8980 がマクファレルを自分の主人として認識しているという解釈を与え、症状が「条件反射的な服従」ではなく「個人への礼儀」として見えてしまう。記事の中で SCP-8980 の状態が「手続き的・制度的な服従の刷り込み」から来ていることが重要であり、この場面の訳語はその症状の性質を正確に示す必要がある。</li>
+<li>また「旦那様」は現代語では古風な女性語であり、SCP-8980 のキャラクターとも合わない。財団で科学者として勤務していた人物が、権威男性に向かって「旦那様」と反射的に呼ぶという語感は、症状の病理よりも人物設定の問題として読まれる危険がある。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>先生</code></li>
+<li><code>マクファレル様</code></li>
+<li>必要なら原語保持 + 注記</li>
+</ul>
+<h3 id="e-19-02">E-19-02 メール冒頭を会話文にしない</h3>
+<p><strong>EN:</strong> <code>"Good afternoon Flora,"</code>
+<strong>行:</strong> <code>3425</code>
+<strong>JP:</strong> <code>こんにちは、フローラさん。</code></p>
+<p><strong>要旨:</strong> ここは親しい同僚宛ての業務メールであり、挨拶は会話文ではなくメール体裁で置くべきである。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>Good afternoon Flora,</code> は英語のビジネスメールの挨拶行であり、宛名＋時候の挨拶という定型形式を持つ。Congy 訳「こんにちは、フローラさん。」は口語的な会話調であり、メールの書き出しとしての形式性が失われる。書き出しの語感一つで、このメール全体が「送信済みの業務私信」ではなく「声に出した会話」のように読まれてしまう。</li>
+<li>このメールは記事の最後に配置される重要な書類文書であり、前半の SCP 査読書類・面談記録・倫理委員会文書と同じ「書類として存在する文書」として機能する。日本語のメール体裁（「フローラさん、こんにちは。」または「フローラ様、お疲れ様です。」）で書き出すことで、文書としての格式を保つ。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>Good afternoon Flora,</code> は「フローラさん、お疲れ様です。」「フローラさん、こんにちは。」のようなメールの書き出し形式に訳す。「こんにちは、フローラさん。」という語順（挨拶先行・宛名後置）は日本語のメール書き出しとして不自然。</li>
+</ul>
+<h3 id="e-19-03-basically-infeasible">E-19-03 <code>basically infeasible</code> の「事実上不可能」を落とさない</h3>
+<p><strong>EN:</strong> <code>"Long-distance is basically infeasible until we can stabilize her technophobia enough to get her on a computer for more than an hour at time."</code>
+<strong>行:</strong> <code>JP訳文はcongy版と内容が異なる（「科学技術恐怖症」→「テクノフォビア」等）ため実文照合不可</code>
+<strong>JP:</strong> <code>テクノフォビアをある程度安定させて一度に一時間以上パソコンに向かえるようにならない限り、遠隔カウンセリングは事実上不可能です。</code></p>
+<p><strong>要旨:</strong> <code>basically infeasible</code> は「たぶん無理」ではなく、実務上もう回らないという強い判断である。ここは事実上不可能の温度で置く。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>basically infeasible</code> は「実務的に見て実現不可能」という技術的判断の語であり、<code>infeasible</code> は「実行可能でない」の断定語である。<code>basically</code> はここでは「ほとんどの点で/実質的に」という副詞として強度を微調整するが、否定の意味を弱めるのではなく実務的な現実として強く断言している。</li>
+<li>Congy 訳「事実上不可能です」は意味として正確であるが、原文 <code>basically infeasible</code> の口語的な疲労感（メールの砕けた語感）が失われる。「まず無理です」「現実的には不可能な状況です」のように、マクファレルが疲れながらも実務判断を下しているトーンを保つことが望ましい。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>basically infeasible</code> は「まず無理です」「現実的には不可能です」のような、断定的でありながら口語的な疲労感のある語に訳す。「難しいかもしれません」のように可能性を残す語は使わない。</li>
+</ul>
+<h3 id="e-19-04-get-director-thompson-off-my-case">E-19-04 <code>get Director Thompson off my case</code> を「お叱り」にしない</h3>
+<p><strong>EN:</strong> <code>"But I can't get Director Thompson off my case unless her work gets done, so I've bit the bullet and just started doing her work for her."</code>
+<strong>行:</strong> <code>3431</code>
+<strong>JP:</strong> <code>でも、彼女の仕事が終わらない限りトンプソン管理官のお叱りは止まらないので、仕方なく彼女の代わりに仕事を引き受けることにしました。</code></p>
+<p><strong>要旨:</strong> ここは小言を受ける話ではなく、Thompson を自分の件から引き剥がせないという方向の慣用句である。<code>off my case</code> の主語関係を戻す。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>get X off my case</code> は「X に自分の件への干渉をやめさせる」「X を自分に付きまとわせないようにする」という慣用句であり、話者がトンプソン管理官を自分から引き剥がしたいという方向性を持つ。Congy 訳「トンプソン管理官のお叱りは止まらない」は受け身の構図になっており、マクファレルがお叱りを受け続けている被害者として描かれている。</li>
+<li>原文では「SCP-8980 の仕事が終わらない限り、トンプソンを自分のことから離せない」という構造であり、マクファレルが Thompson の管理から逃れるための行動原理として SCP-8980 の仕事を代行することを選んだことが示されている。この選択の動機が「お叱りを受けたくない」から「Thompson に干渉されないようにするため」へ変わるだけで、マクファレルの立場と主体性の表現が変わる。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>can't get Director Thompson off my case</code> は「トンプソン管理官がうるさく言ってくるのを止めさせることができない」「トンプソン管理官を自分の件から離すことができない」のように、マクファレルが Thompson の干渉を排除できないという方向で訳す。受け身の「お叱りを受ける」ではなく、マクファレルが能動的に Thompson を切り離したいという意志を示す語にする。</li>
+</ul>
+<h3 id="e-19-05-bite-the-bullet">E-19-05 <code>"bite the bullet"</code> の覚悟を決める感じを落とさない</h3>
+<p><strong>EN:</strong> <code>"bit the bullet"</code>
+<strong>行:</strong> <code>3431</code>
+<strong>JP:</strong> <code>仕方なく</code></p>
+<p><strong>要旨:</strong> 受動的な諦めではなく、嫌なことに腹をくくって踏み切る感じが必要である。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>bite the bullet</code> は「嫌なことでも腹をくくってやる・覚悟を決めて踏み切る」という慣用句であり、痛みを耐えながら決断する意思が含まれる。Congy 訳「仕方なく」は受動的な諦めの語感であり、「どうせやるしかない」という受け身の態度で処理している。</li>
+<li><code>bit the bullet</code> は話者の能動的な意思決定（嫌だと分かっていてあえて踏み切った）を示す。「仕方なく」ではその踏み切りの主体性が消え、マクファレルが状況に流されて代行を始めたように見える。実際には状況への対応として能動的に腹をくくった判断が入っている。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>bit the bullet</code> は「腹をくくって」「えいやっと決断して」「覚悟を決めて」のように、嫌な決断を自分から踏み切った語感で訳す。「仕方なく」「やむを得ず」という受け身語は避ける。</li>
+</ul>
+<h3 id="e-19-06-between-a-and-b">E-19-06 <code>"Between A and B"</code> の並列を保つ</h3>
+<p><strong>EN:</strong> <code>"Between A and B"</code>
+<strong>行:</strong> <code>en_quoteはメタ表現（Between A and B）のため照合不可</code>
+<strong>JP:</strong> <code>それに加えて</code></p>
+<p><strong>要旨:</strong> ここは二種類の負担が並列してマクファレルを摩耗させているのであって、片方を副次化しない。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>Between doing her work and chores for her and dealing with her severe neuroses</code> は「A と B の間で（両方を抱えながら）」という並列負担の構造を持つ。<code>Between A and B</code> という構文は二つの重みが同時にかかっていることを示し、どちらかが従属的な付加物ではなく対等に話者を消耗させていることを表す。Congy 訳「それに加えて彼女の重い神経症に付き合わされて」の「それに加えて」は二番目の要素を付加要素として副次化しており、本来対等な並列構造が失われる。</li>
+<li>二つの負担が対等に並列されているからこそ、その両方にさらされたマクファレルの消耗が読み取れる。片方を「加えて」にすると、もう一方が主要な負担として見え、全体の疲弊の構造が崩れる。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>Between doing her work and chores for her and dealing with her severe neuroses</code> は「毎日毎日、彼女の仕事や家事を代行することと、彼女の重い神経症に付き合うこと、その両方に挟まれて」のように、二つの負担を対等に並べる。「それに加えて」という副次化語は使わない。</li>
+</ul>
+<h3 id="e-19-07-pain-in-my-ass">E-19-07 <code>"pain in my ass"</code> の私信らしい毒気を落とさない</h3>
+<p><strong>EN:</strong> <code>"pain in my ass"</code>
+<strong>行:</strong> <code>3435</code>
+<strong>JP:</strong> <code>厄介な存在</code></p>
+<p><strong>要旨:</strong> ここは業務文ではなく愚痴の私信であり、もっと砕けた苛立ちが要る。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>pain in my ass</code> は英語の口語的な罵倒表現であり、「うんざりする存在・面倒な奴」という強い苛立ちを伴う口語語である。Congy 訳「厄介な存在」は意味としては近いが、書き言葉的・中立的な語感であり、マクファレルが親しい同僚へのメールの中で感情を崩して愚痴っているトーンが消える。</li>
+<li>このメールは全体として「表向きは業務報告だが実質は疲弊した同僚への打ち明け話」という二重の性格を持っている。<code>pain in my ass</code> のような口語的な汚語は、その「プロの外皮が剥げて本音が漏れた瞬間」として機能する。上品な語に置き換えると、その瞬間の漏れが消えてしまう。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>pain in my ass</code> は「本当に厄介この上ない」「こっちにとっては大迷惑です」「正直、目障りで仕方がない」のように、口語的で感情的な毒気を保つ語に訳す。「厄介な存在」という語は書き言葉的すぎる。</li>
+</ul>
+<h2 id="note">補強したい箇所 [NOTE]</h2>
+<h3 id="n-19-01-at-least-i-get-overtime-pay">N-19-01 <code>"At least I get overtime pay."</code> は疑問にしすぎない</h3>
+<p><strong>EN:</strong> <code>"At least I get overtime pay."</code>
+<strong>行:</strong> <code>3431</code>
+<strong>JP:</strong> <code>せめてもの救いは、残業代をもらえることでしょうか。</code></p>
+<p><strong>要旨:</strong> <code>せめてもの救い</code> まではよいが、<code>でしょうか</code> で締めると自嘲より不確かな疑問に寄る。断定寄りの自嘲に寄せた方がよい。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>At least I get overtime pay.</code> はピリオドで終わる平叙文であり、断定的な自嘲である。「せめて残業代はもらえる」というマクファレルが自分の状況に苦笑いしながら言い聞かせているトーンである。Congy 訳「せめてもの救いは、残業代をもらえることでしょうか。」の「でしょうか」は話者が自分の言葉を疑っているような語感になり、自嘲ではなく不確かな自問になってしまう。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li>「せめて残業代はもらえますよね。」「まあ、残業代は出るからいいか。」のように断定的な自嘲で締める。「でしょうか」という疑問語尾は使わない。</li>
+</ul>
+<h3 id="n-19-02-for-one-random-bouts-of-screaming">N-19-02 <code>For one</code> と <code>random bouts of screaming</code> は進捗報告の口調を崩さない</h3>
+<p><strong>EN:</strong> <code>"For one, she's finally stopped compulsively calling me "sir". It was a bit funny at first, but it got weird really quick, so I'm glad we can finally move past that. The random bouts of screaming haven't stopped though, and neither has her tendency to stare at me while I sleep, but they've become less frequent."</code>
+<strong>行:</strong> <code>JP訳文はcongy版と内容が異なる（「旦那様」→「先生」等）ため実文照合不可</code>
+<strong>JP:</strong> <code>一つに、私のことを反射的に「先生」と呼ぶのがようやく止まりました。最初は少し可笑しかったんですが、すぐに不気味になったので、ようやくこれが終わってくれてほっとしています。突然叫び出すのはまだ続いていますし、私が寝ている間にじっと見つめるのも相変わらずですが、頻度は減っています。</code></p>
+<p><strong>要旨:</strong> <code>For one</code> は列挙の入口であり、<code>bouts</code> は発作的な反復である。単発の動作に畳み込まず、症状の持続を残す。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>For one,</code> は列挙の開始を示す副詞句であり、「まず一つ目に言うと」という流れ整理の機能を持つ。省略または中立語に置き換えると、マクファレルが複数の改善点と残存症状を整理しながら報告しているというメールの構成が読みにくくなる。</li>
+<li><code>random bouts of screaming</code> の <code>bouts</code>（発作・繰り返しのまとまり）は、叫び声が一回起きるのではなく断続的に繰り返す発作として記録されていることを示す。Congy 訳「突然叫び出す」は単発の動作として読めてしまい、症状が持続・反復しているという医療観察の記録としての語感が薄れる。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>For one,</code> は「まず、」「一点目として、」と明示的な列挙開始語で訳す。</li>
+<li><code>random bouts of screaming</code> は「突発的な叫び声の発作」「不規則に繰り返す叫びの発作」のように、反復・発作性を示す語感を保つ。</li>
+</ul>
+<h3 id="n-19-03-weve-still-got-a-ways-to-go">N-19-03 <code>we've still got a ways to go</code> は先の長さを残す</h3>
+<p><strong>EN:</strong> <code>"we've still got a ways to go."</code>
+<strong>行:</strong> <code>3433</code>
+<strong>JP:</strong> <code>まだまだ道のりは長い</code></p>
+<p><strong>要旨:</strong> 意味は合うが、<code>we've still got</code> の主観的な疲れが薄い。<code>まだ先は長い</code> だけでなく、話者が自分の手で抱えている感じを残す。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>we've still got a ways to go</code> の <code>we've got</code>（私たちは〜を抱えている）は、話者が先の道のりを重さとして今自分が持っているという感覚を込める。<code>まだまだ道のりは長い</code> という訳は客観的な見立てを述べているだけであり、それを自分が背負っているという一人称的な疲労感が出にくい。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li>「まだまだやることは山積みですよ」「先はまだ長そうです」のように、マクファレル自身が進捗を手の内に抱えているという一人称の重みを出す。</li>
+</ul>
+<h3 id="n-19-04-i-really-needed-to-get-this-off-my-chest-the-committees-hands-were-tied">N-19-04 <code>I really needed to get this off my chest.</code> と <code>the Committee's hands were tied</code> を打ち明けとして処理する</h3>
+<p><strong>EN:</strong> <code>"I really needed to get this off my chest. I know you said the Committee's hands were tied, but if there's anything you can do, please help me out here."</code>
+<strong>行:</strong> <code>3437</code>
+<strong>JP:</strong> <code>このメールを送ることは恐らく、私のキャリアの中で最も馬鹿な行為かもしれませんが、どうしてもこの気持ちのはけ口を見つけたかったのです。委員会にはどうすることもできないと言われましたが、もし何かできることがあれば、どうか私のことをお助けください。</code></p>
+<p><strong>要旨:</strong> ここは単なる不満ではなく、打ち明けの独白である。<code>get this off my chest</code> は胸の内を明かすことで、<code>hands were tied</code> は手が縛られている比喩を保つ。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>get this off my chest</code> は「胸のうちを誰かに打ち明けて楽になる」という体感的な慣用句である。Congy 訳「どうしてもこの気持ちのはけ口を見つけたかったのです」は「はけ口」という語で感情を外に排出する語感になっているが、<code>off my chest</code>（胸の重荷を下ろす）の打ち明けの親密さより「発散」の語感が強い。</li>
+<li><code>the Committee's hands were tied</code> は「手が縛られた」という体感的な比喩であり、委員会が行動の自由を制限された状態を物理的な縛りの比喩で示す。「どうすることもできないと言われた」という訳は意味は通るが、比喩の体感的な硬さが消える。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>get this off my chest</code> は「どうしても胸の内を話したかった」「ずっと言えずにいたことを言わせてもらいたかった」のように、打ち明けの親密な緊張を保つ。「はけ口を見つける」より打ち明けの一歩踏み込む語感にする。</li>
+<li><code>the Committee's hands were tied</code> は「委員会は手を縛られている」「委員会にはどうにもできない、と言われている」のように比喩の物理感を保つか、「委員会には対応の余地がないとのことですが」と制度的な拘束感として処理する。</li>
+</ul>
+<h3 id="n-19-05-psychotic-woman">N-19-05 <code>psychotic woman</code> は臨床語ではなく罵倒として置く</h3>
+<p><strong>EN:</strong> <code>"I'm not sure how much longer I can handle this psychotic woman."</code>
+<strong>行:</strong> <code>3437</code>
+<strong>JP:</strong> <code>この精神異常な女性に私はこれ以上耐えられないのかもしれません。</code></p>
+<p><strong>要旨:</strong> ここは診断ではなく、私信の愚痴としての粗い言葉である。上品な語へ逃がさず、話者の苛立ちを残す。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>psychotic woman</code> はマクファレルが私信の愚痴の中で使った口語的な罵倒語であり、医学的な精神病診断を指しているのではなく「頭がおかしい女」という感情的な罵りである。Congy 訳「この精神異常な女性」は「精神異常」という臨床用語に近い語を使っており、マクファレルが冷静に医学的判断を述べているような語感になってしまう。私信の疲れきった怒りが臨床記録に近づいてしまう。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>psychotic woman</code> は「この気が狂った女」「この異常な女」「この頭のおかしな人」など、口語的で感情的な罵倒として訳す。「精神異常な」のような臨床的な語感の語は避ける。</li>
+</ul>
+<h3 id="n-19-06-de-facto-co-opted-into-being-her-full-time-caretaker-shes-completely-worn-me-down">N-19-06 <code>de facto co-opted into being her full-time caretaker</code> と <code>she's completely worn me down</code> を一つの被害として読む</h3>
+<p><strong>EN:</strong> <code>"I've been de facto co-opted into being her full-time caretaker, and frankly she's being a real pain in my ass. Between doing her work and chores for her and dealing with her severe neuroses all day every day, she's completely worn me down to the point that I can't even respect her as a person anymore, much less a coworker."</code>
+<strong>行:</strong> <code>3435</code>
+<strong>JP:</strong> <code>誰にもこんなことを言えないでしょうが… フローラさん、私は本当に彼女に腹が立ってきました。私は事実上彼女の専属介護人になってしまいました。正直に言って、彼女は本当に厄介な存在です。毎日毎日、彼女の仕事や家事を代わりにやって、//それに加えて//彼女の重い神経症に付き合わされて、彼女のことを人間として尊重できないぐらいに疲れ果ててしまいました。ましてや一同僚として彼女に敬意を払うだなんて無理でしょう。</code></p>
+<p><strong>要旨:</strong> ここは「面倒を見るようになった」では弱い。本人の意思に反して介護役へ組み込まれ、摩耗させられた、という被害の向きを残す。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>de facto co-opted into being her full-time caretaker</code> は「事実上（正式な手続きなしに）専属介護人として組み込まれた」という受動的な被害の語である。<code>co-opted</code>（組み込まれた・取り込まれた）は話者の意思に反して構造に取り込まれたことを示し、<code>de facto</code>（事実上の・公式ではないが現実として）という法律・行政用語が加わることで、非公式に義務を押しつけられた制度的被害の性格が出る。</li>
+<li><code>she's completely worn me down</code> は「彼女が自分を完全に摩耗させた・擦り切らせた」という因果の語であり、SCP-8980 が能動的にマクファレルを消耗させた構造を持つ。「疲れ果てた」という自動詞化では、SCP-8980 が消耗の原因であるという関係が薄れる。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>de facto co-opted into being her full-time caretaker</code> は「事実上、彼女の専属介護人へと組み込まれてしまいました」のように、話者の意思に反して制度的に取り込まれた受動性を保つ。</li>
+<li><code>she's completely worn me down</code> は「彼女に完全に擦り切らされてしまいました」「彼女のせいで完全に消耗しました」のように、SCP-8980 を摩耗の能動的原因として示す。</li>
+</ul>
+<h3 id="n-19-07-somethings-gonna-give">N-19-07 <code>Something's gonna give.</code> は限界ではなく破綻予告として置く</h3>
+<p><strong>EN:</strong> <code>"Something's gonna give."</code>
+<strong>行:</strong> <code>3435</code>
+<strong>JP:</strong> <code>もう限界は近いのかもしれません。</code></p>
+<p><strong>要旨:</strong> <code>Something</code> の漠然さが大事で、何が折れるかはまだ決まっていない。<code>限界</code> に収束させず、何かが壊れる予告として訳す。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>Something's gonna give.</code> は「何かが折れる・壊れる・決壊する（それが何かはまだ分からない）」という漠然とした破綻の予告文である。<code>give</code>（突っ張っていたものが緩む・折れる）という動詞が示すのは、どこかに圧力がかかり続けており近いうちに何かが破断するという予感である。Congy 訳「もう限界は近いのかもしれません」は、マクファレル自身の限界として収束させており、<code>Something</code> の漠然さ（何が・誰が折れるのか分からない）が失われる。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>Something's gonna give.</code> は「何かが近いうちに壊れます。」「どこかでいつか限界が来る。」「何かがいずれ折れますよ。」のように、主体が「何か（something）」であることを保ち、話者自身ではなく状況全体の破綻を予告する語感にする。</li>
+</ul>
+<h3 id="n-19-08-calling-it-quits-and-letting-her-rot">N-19-08 <code>calling it quits and letting her rot</code> は放置の残酷さを落とさない</h3>
+<p><strong>EN:</strong> <code>"calling it quits and letting her rot"</code>
+<strong>行:</strong> <code>3435</code>
+<strong>JP:</strong> <code>諦めて放っておこうか</code></p>
+<p><strong>要旨:</strong> <code>calling it quits</code> と <code>letting her rot</code> は別動作で、後者には朽ち果てるまで放置する残酷さがある。<code>放っておく</code> だけでは弱い。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>calling it quits</code> は「もうやめにする・撤退する」という決断の語であり、<code>letting her rot</code>（彼女を腐らせて放置する）という文字通りには残酷な放棄の語と接続されている。<code>let X rot</code> は物（木材・果物・建物）が徐々に腐っていくという生物的な比喩であり、人に使うと「目も向けずに衰えて朽ち果てるに任せる」という放棄の残酷さが出る。Congy 訳「諦めて放っておこうか」は「放っておく」という中立語に落とされており、腐敗・朽ちるという生物的な比喩の残酷さが消えている。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>calling it quits and letting her rot</code> は「手を引いて、あとは腐るに任せておこうか」「もうやめにして、あとは朽ち果てるに任せておこうか」のように、<code>rot</code>（腐る・朽ちる）の生物的な放棄の残酷さを保つ語で訳す。</li>
+</ul>
+<h3 id="n-19-09-lillian">N-19-09 結語で <code>Lillian</code> を出すかどうかは細い調整点</h3>
+<p><strong>要旨:</strong> 人物の残余の見え方に関わるので注記として残すが、硬い誤りではない。このままでも話は通るが、最後まで <code>her</code> で押すか、どこかで <code>Lillian</code> を戻すかで、マクファレルの情の残り方は少し変わる。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li>メール全体を通じてマクファレルが <code>her</code>（彼女）という三人称で SCP-8980 を指し続ける場合、Lillian という個人名が一度も出てこないまま記事が終わる。これは制度的な距離感を保つ語り口として一貫しているともいえるが、どこかで <code>Lillian</code> という名前を一度出すことで、マクファレルが SCP-8980 を制度上の番号でも案件でもなく固有名詞を持つ人物として認識している感情的な文脈を示せる。どちらの方針を取るかは翻訳者の判断の余地がある。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li>Lillian を最後に出すか <code>her</code> のみで通すかは訳者の判断で選択する。出す場合は「リリアン」を、マクファレルの感情が最も漏れる文（例: <code>Something's gonna give</code> の付近や最後の退路を悩む箇所）に置くと効果的である。</li>
+</ul>
+<h3 id="n-19-10-director">N-19-10 <code>Director</code> の肩書き訳は記事全体で揃えたい</h3>
+<p><strong>要旨:</strong> このファイル単独で壊れているわけではないが、制度語の統一として見直す価値がある。いまのままでも大意は崩れないので、本文の必須修正とは分けて扱いたい。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>Director</code> は財団の役職名であり、記事全体で統一した訳語（「管理官」「ディレクター」「所長」など）を使うことが文書の制度語としての整合性を保つ。このセグメント単独では <code>Director Thompson</code> の訳として「トンプソン管理官」が使われているが、他のセグメントで異なる訳が使われている場合、制度語としての統一が崩れる。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li>記事全体で <code>Director</code> の訳語を統一する際にこの箇所も合わせて見直す。このセグメント単独での必須修正ではなく、全体の制度語統一の際に対応する。</li>
+</ul>
+<h3 id="n-19-11">N-19-11 署名の肩書き表記は書式上の判断幅がある</h3>
+<p><strong>要旨:</strong> 修正候補ではあるが、即座の必須修正ではない。署名欄だけ英語肩書きを残すか、日本語本文に合わせるかは書式判断として最後に揃えればよい。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li>英語メールの署名形式を日本語本文に合わせて全訳するか、メール書式として英語肩書きを一部残すかは文書デザイン上の判断である。SCP 記事としての「架空文書」の書式整合性と翻訳文書としての日本語統一のどちらを優先するかによって選択が変わる。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li>全文日本語で統一する場合は肩書き・署名欄も日本語に訳す。原文のメール書式の視覚的特徴を残す場合は署名行のみ英語を維持してもよい。本文との統一感を確認した上で書式判断する。</li>
+</ul>
+<h2 id="_3">実務上の結論</h2>
+<ul>
+<li>マクファレルの声は「親しい同僚への疲れたメール」として訳す</li>
+<li>慣用句は辞書第一義へ崩さない</li>
+<li>NOTE 論点は必須修正ではなく、メール文体の仕上げとして対応を検討すること</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

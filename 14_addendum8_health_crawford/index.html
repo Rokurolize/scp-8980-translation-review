@@ -1,0 +1,1524 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../13_addendum7_tertiary_exp/">
+      
+      
+        <link rel="next" href="../15_incident2_ace_exploit/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>SCP-8980 該当箇所 14 査読 - SCP-8980 日本語訳査読レビュー</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#scp-8980-14" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href=".." title="SCP-8980 日本語訳査読レビュー" class="md-header__button md-logo" aria-label="SCP-8980 日本語訳査読レビュー" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SCP-8980 日本語訳査読レビュー
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              SCP-8980 該当箇所 14 査読
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="検索">
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="SCP-8980 日本語訳査読レビュー" class="md-nav__button md-logo" aria-label="SCP-8980 日本語訳査読レビュー" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    SCP-8980 日本語訳査読レビュー
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 日本語訳査読レビュー
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_css_and_theme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 01 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_ec_popup_modal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 02 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_tabview_and_ec_memorandum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 03 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_page_header_scp_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 04 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_addendum1_initial_interview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 05 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_addendum2_test_results/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 06 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_addendum3_experimentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 07 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_addendum4_secondary_exp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 08 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_addendum5_post_reemployment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 09 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_form2093a_first_filing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 10 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11_form2093a_rewritten_response/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 11 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12_addendum6_containment_plan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 12 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13_addendum7_tertiary_exp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 13 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 14 査読
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 14 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        このファイルの使い方
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        総評
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        直すべき箇所 [ERROR]
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="直すべき箇所 [ERROR]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#e-14-01-what-makes-you-say-that-lillian-fidgets-in-place-absentmindedly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-14-01 "What makes you say that, Lillian?" から "fidgets in place absentmindedly" までを、穏やかな誘導として残す
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-14-02-his-loss-right" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-14-02 "His loss, right?" は慰めの軽口であって、確認ではない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-14-03-something-new-seems-to-be-bothering-you-today-its-important" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-14-03 Something new seems to be bothering you today. と It's important... を、やさしい語で丸めない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-14-04-its-simply-awful-isnt-it-theres-no-shame" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-14-04 It's simply awful, isn't it? から There's no shame... までを、慰めの顔をした上書きとして読む
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-14-05-whats-the-fucking-point-then-what-the-hell-do-i-do-then" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-14-05 "What's the fucking point, then?" と "What the hell do I do then?" を、追い詰められた行き場のなさとして返す
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-14-06-a-challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-14-06 "a challenge" は前段で植え付けられた言い換えである
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-14-07-subject-newfound-motivation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-14-07 "SUBJECT: Newfound Motivation" は「動機」ではなく、持ち上がった意欲の件名である
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-14-08-id-8980-s12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-14-08 ログ ID 8980-S12 を崩さない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-14-09-change-of-heart-gives-a-single-shit-about-me" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-14-09 "change of heart" と "gives a single shit about me" で、心境の変化を疑問視するだけに留めない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-14-10-im-just-feeling-better-alright-can-i-go" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-14-10 "I'm just feeling better, alright?" から "Can I go?" までを、押しつけられた同意として拾う
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-14-11-get-their-act-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-14-11 "get their act together" を、道徳的更生ではなく持ち直しとして読む
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-14-12-i-plead-the-fifth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-14-12 "I plead the fifth" を法廷文言に寄せすぎない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-14-13-cant-a-lady-do-her-fucking-job-in-peace-why-do-you-have-to-worm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-14-13 "Can't a lady do her fucking job in peace?" と "Why do you have to worm..." を落とさない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-14-14-thanks-for-wasting-my-time-asshole" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-14-14 "Thanks for wasting my time. Asshole." を落とさない
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        実務上の結論
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15_incident2_ace_exploit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 15 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16_addendum9_depression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 16 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17_addendum10_neutralization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 17 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18_investigation_summary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 18 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19_mcpharrell_email_logout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 19 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        このファイルの使い方
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        総評
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        直すべき箇所 [ERROR]
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="直すべき箇所 [ERROR]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#e-14-01-what-makes-you-say-that-lillian-fidgets-in-place-absentmindedly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-14-01 "What makes you say that, Lillian?" から "fidgets in place absentmindedly" までを、穏やかな誘導として残す
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-14-02-his-loss-right" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-14-02 "His loss, right?" は慰めの軽口であって、確認ではない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-14-03-something-new-seems-to-be-bothering-you-today-its-important" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-14-03 Something new seems to be bothering you today. と It's important... を、やさしい語で丸めない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-14-04-its-simply-awful-isnt-it-theres-no-shame" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-14-04 It's simply awful, isn't it? から There's no shame... までを、慰めの顔をした上書きとして読む
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-14-05-whats-the-fucking-point-then-what-the-hell-do-i-do-then" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-14-05 "What's the fucking point, then?" と "What the hell do I do then?" を、追い詰められた行き場のなさとして返す
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-14-06-a-challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-14-06 "a challenge" は前段で植え付けられた言い換えである
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-14-07-subject-newfound-motivation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-14-07 "SUBJECT: Newfound Motivation" は「動機」ではなく、持ち上がった意欲の件名である
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-14-08-id-8980-s12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-14-08 ログ ID 8980-S12 を崩さない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-14-09-change-of-heart-gives-a-single-shit-about-me" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-14-09 "change of heart" と "gives a single shit about me" で、心境の変化を疑問視するだけに留めない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-14-10-im-just-feeling-better-alright-can-i-go" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-14-10 "I'm just feeling better, alright?" から "Can I go?" までを、押しつけられた同意として拾う
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-14-11-get-their-act-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-14-11 "get their act together" を、道徳的更生ではなく持ち直しとして読む
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-14-12-i-plead-the-fifth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-14-12 "I plead the fifth" を法廷文言に寄せすぎない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-14-13-cant-a-lady-do-her-fucking-job-in-peace-why-do-you-have-to-worm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-14-13 "Can't a lady do her fucking job in peace?" と "Why do you have to worm..." を落とさない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-14-14-thanks-for-wasting-my-time-asshole" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-14-14 "Thanks for wasting my time. Asshole." を落とさない
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        実務上の結論
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="scp-8980-14">SCP-8980 該当箇所 14 査読</h1>
+<p><strong>対象 EN:</strong> <code>articles/fragment_scp-8980-1/segments/en/14_addendum8_health_crawford.wikidot</code>
+<strong>対象 JP:</strong> <code>source_jp.wikidot 行 2366-2713</code></p>
+<h2 id="_1">このファイルの使い方</h2>
+<p>この箇所の指摘は、基本論点に追加の補強を加えた査読である。指摘は原文の登場順に並んでおり、すべて修正が必要である。</p>
+<h2 id="_2">総評</h2>
+<p>この箇所では、クロフォードの刷り込みが後半のバーンズ面談でそのまま再生される。
+したがって、前半の身体描写と後半のメタデータ、復唱、退室要求のどれも小粒ではない。</p>
+<h2 id="error">直すべき箇所 [ERROR]</h2>
+<h3 id="e-14-01-what-makes-you-say-that-lillian-fidgets-in-place-absentmindedly">E-14-01 <code>"What makes you say that, Lillian?"</code> から <code>"fidgets in place absentmindedly"</code> までを、穏やかな誘導として残す</h3>
+<p><strong>EN:</strong> <code>"What makes you say that, Lillian?"</code> / <code>"fidgets in place absentmindedly"</code> / <code>"Dr. Crawford is occupied writing notes at her desk"</code>
+<strong>行:</strong> <code>2408</code> / <code>2440</code> / <code>2440</code>
+<strong>JP:</strong> <code>どうしてそう思うんですか、リリアン？</code> / <code>ぼんやりと__その場で足踏みをしている。__</code> / <code>クロフォード博士は机でメモを取っており</code></p>
+<p><strong>要旨:</strong> ここは雑談の入口ではなく、相手をほどきながら話を引き出す誘導である。<code>occupied writing notes</code> を弱めると、クロフォードが話を聞くより記録を優先している嫌さが抜ける。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>What makes you say that, Lillian?</code> は一見オープンな問いに見えるが、「なぜそう思うか」を言語化させることで話者自身に感情の整理と説明を担わせるソクラテス式誘導である。「どうしてそう思うんですか、リリアン？」という訳は形式的には正しいが、クロフォードがこの質問を武器として使っていることが伝わらない。聞いているふりをしながら情報を取る側の主導権が消える。</li>
+<li><code>Dr. Crawford is occupied writing notes at her desk</code> は、SCP-8980 が話している間クロフォードがメモを取ることに集中しているという描写であり、「聴いている」のではなく「記録している」という姿勢の描写として機能する。Congy 訳「机でメモを取っており」は行為を記述しているが、<code>occupied</code>（そのことに没頭している・そちらにかかっている）という語が消えることで、クロフォードの注意がどこに向いているかの重要な手がかりが失われる。</li>
+<li><code>fidgets in place absentmindedly</code> は SCP-8980 がこのセッションの中でぼんやりした状態に移行していることを示すト書きであり、後半で植え付けが成立する伏線として機能する。「ぼんやりとその場で足踏みをしている」は意味としては近いが、<code>fidgets</code>（落ち着きなくそわそわ動く）と <code>absentmindedly</code>（うわの空で）の組み合わせが持つ「意識が離れていく」感覚は、「足踏み」という目的を持った動作の語では出にくい。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>occupied writing notes</code> は「メモ取りに専念しており」「机のメモから目も上げず」のように、クロフォードの注意が SCP-8980 ではなく記録へ向いていることを明示する。</li>
+<li><code>fidgets in place absentmindedly</code> は「その場でぼんやりとそわそわしている」「放心したように足をもぞもぞさせている」など、意識が遠ざかっていく様子を保つ。目的を持った動作に変換しない。</li>
+</ul>
+<h3 id="e-14-02-his-loss-right">E-14-02 <code>"His loss, right?"</code> は慰めの軽口であって、確認ではない</h3>
+<p><strong>EN:</strong> <code>"His loss, right?"</code>
+<strong>行:</strong> <code>2484</code>
+<strong>JP:</strong> <code>彼の損です。いいですね？</code></p>
+<p><strong>要旨:</strong> ここは相手を軽く慰める語り口であり、採点のような確認にするとクロフォードの押しつけが弱まる。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>His loss</code> は英語の慰め定型句であり、「それは向こうの損失ですよ」「彼らが損をしただけよ」と SCP-8980 ではなく相手方を損した者として位置づける言い回しである。Congy 訳「彼の損です。いいですね？」の前半は直訳として不自然ではないが、後半の「いいですね？」が問題である。</li>
+<li>原文の <code>right?</code> は付加疑問として相手に同意を求める発話技法であり、「そうでしょう？」「ねえ？」という同意の引き出しに使われる。しかし Congy 訳の「いいですね？」は「これで納得しましたか？」「了解しましたか？」という確認・許可要求の問いとして読まれてしまう。クロフォードが温かい共感を装って押しつけている構造が崩れ、単に SCP-8980 が受け入れたかどうかを確認している会話に変わる。</li>
+<li>クロフォードの言葉遣いはこのセッション全体を通じて「親しみやすく優しい祖母的な人物」を装っている。<code>His loss, right?</code> はその演技の一環であり、SCP-8980 の感情に共鳴するふりをして話を先へ進める道具として使われている。訳語が確認調になると、クロフォードのキャラクター設計にある「包み込む柔らかさで相手を誘導する」という構造が見えなくなる。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>His loss, right?</code> は「向こうが損しただけよ、ねえ？」「それは相手の損ですよ、そう思いません？」のように、慰めの言葉として述べたあとに相手の同意を引き出す語尾をつける。確認・許可を求める語尾（「いいですね？」「わかりましたか？」）は使わない。</li>
+<li>クロフォードの発話全体で一貫して、いかにも温かみのある親しみやすい語り口（祖母的な話し方）を維持する。これが後半の誘導と植え付けの効果を際立たせる。</li>
+</ul>
+<h3 id="e-14-03-something-new-seems-to-be-bothering-you-today-its-important">E-14-03 <code>Something new seems to be bothering you today.</code> と <code>It's important...</code> を、やさしい語で丸めない</h3>
+<p><strong>EN:</strong> <code>"Something new seems to be bothering you today."</code> / <code>"It's important for you to be able to communicate your feelings with me if you want me to be able to help you."</code>
+<strong>行:</strong> <code>2542</code> / <code>2548</code>
+<strong>JP:</strong> <code>今日は、何か新しいことで悩んでいらっしゃるみたいですね。</code> / <code>あなたが自身の気持ちを私に伝えられるようになることが大切なのですよ。</code></p>
+<p><strong>要旨:</strong> ここは相談の顔をした上書きであり、話しやすさを演出しながら相手の拒否権を奪っている。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>Something new seems to be bothering you today.</code> の <code>seems to be</code> は話し手の観察を一歩引いた断言として提示する表現であり、断定を避けることで「あなたの状態を私は見ています」という事実を柔らかく押しつける。Congy 訳「なんだか今日はいつもと違うことがあるみたいですね。」は <code>bothering</code>（困らせている、悩ませている）という「何かが SCP-8980 を苦しめている」という観察内容を「いつもと違うことがある」という中立的な変化の記述に薄めている。クロフォードが SCP-8980 の苦しみをすでに読んでいるという含意が消える。</li>
+<li><code>It's important for you to be able to communicate your feelings with me if you want me to be able to help you.</code> は <code>if</code> 条件節が含んでいる権力構造が鍵である。「私の助けが欲しければ、気持ちを話してもらわないといけない」という条件付けであり、助けを受け取る権利がクロフォードへの開示と交換になっている。Congy 訳「私があなたを助けられるようになりたければ、気持ちを私に伝えられることが大事ですよ。」では主語が「私が助けられるようになりたければ」という話者自身の願望になっており、条件節の主語が入れ替わっている。原文の条件節の主語は「あなたが助けを望むなら」であり、義務の負担をかけているのは SCP-8980 側の選択である。</li>
+<li>この二文はセットで「あなたの苦しみは私には見えている」「でも話してくれないと助けられない」という論理の流れを作っており、SCP-8980 に沈黙する選択肢がないように見せる誘導である。訳でどちらかを平坦化すると、この二段構えの構造が崩れる。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>bothering you</code> は「悩ませている」「困らせている」という能動的な苦しみの語で訳す。「いつもと違う」という中立語に薄めない。「今日は何か新しいことで悩まされているみたいね。」のように苦しみが SCP-8980 に向かってくる語感を保つ。</li>
+<li><code>if you want me to be able to help you</code> は「私の助けを望むのであれば」という条件節として SCP-8980 に帰属させる。「あなたが助けを望むなら、気持ちを話してくれることが大事よ」のように、条件の主体を正しく訳す。</li>
+</ul>
+<h3 id="e-14-04-its-simply-awful-isnt-it-theres-no-shame">E-14-04 <code>It's simply awful, isn't it?</code> から <code>There's no shame...</code> までを、慰めの顔をした上書きとして読む</h3>
+<p><strong>EN:</strong> <code>"It's simply awful, isn't it?"</code> / <code>"Oh, dearie, it's my job to know these things."</code> / <code>"There's no shame in feeling upset or angry at the circumstances you've been put in."</code>
+<strong>行:</strong> <code>2554</code> / <code>2566</code> / <code>2588</code>
+<strong>JP:</strong> <code>さぞ辛いことでしょうね。</code> / <code>おやまあ、そういうことを知っておくのは私の仕事なんですから</code> / <code>自分が置かれている状況に対して取り乱したり怒りを感じたりするのは、決して恥ずべきことではありません。</code></p>
+<p><strong>要旨:</strong> ここは同意を取りながら、相手の受け取り方を全部クロフォード側の枠へ戻している。<code>It's simply awful, isn't it?</code> を外すと、同情の口調だけが残って、同意の押しつけが見えなくなる。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>It's simply awful, isn't it?</code> は付加疑問であり、単なる同情ではなく同意の要求として機能する。クロフォードが SCP-8980 の状況を「ひどい」と先に判定し、「そうでしょう？」と同意させる。これにより SCP-8980 は自分の状況を「ひどい」という枠の中で受け取ることを受動的に承認させられる。Congy 訳「それは、ひどいことですよね？」はこの構造を保っているが、続く台詞との連動が維持されているかが重要。</li>
+<li><code>Oh, dearie, it's my job to know these things.</code> の <code>dearie</code> は年配の女性が目下の者に使う親しみ形の呼称であり、意図的な上下関係の演出を含む。<code>it's my job to know</code> は「私はあなたのことを知っている（告げる必要もなく）」というクロフォードの情報上の優位を宣言する台詞であり、SCP-8980 に「何も隠せない」という感覚を与える。Congy 訳「あら、そういうことを知っておくのは私の仕事なんですから。」は意味は通るが、「あら」という独り言風の間投詞では <code>Oh, dearie</code> の「あなたへ向けた親しみ形の圧」が消える。</li>
+<li><code>There's no shame in feeling upset or angry at the circumstances you've been put in.</code> は許可付与の形を取った感情の管理である。「悲しむ・怒ることを恥じないでいい」という言葉は一見解放的だが、「upset または angry」という特定の感情カテゴリを提示することで、SCP-8980 が感じているより複雑なもの（絶望・不信・怒りとも違う何か）を「そのどちらか」に整理させる枠組みの押しつけである。Congy 訳はこの台詞の訳自体より、前後の流れの中でこれが「クロフォードによる感情カタログの提示」として機能することが伝わっているかが問題になる。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>It's simply awful, isn't it?</code> は付加疑問の同意要求として訳す。「それはただただひどいことよ、そう思わない？」のように、クロフォードが先に判定して同意を求めている構造を保つ。</li>
+<li><code>Oh, dearie</code> は親しみを装った上下感のある呼びかけとして訳す。「あのね、あなた」「ねえ、あなた」など、祖母が孫に使うような親しみと優越が同居する呼びかけにする。</li>
+<li>この三文を連続したものとして読み、クロフォードが（1）共感・同意取得→（2）情報支配の宣言→（3）許可付与による感情整理の提示、という順序で SCP-8980 の感情を自分の枠の中に回収していく流れが訳でも保たれるよう、各台詞の語感を統一して訳す。</li>
+</ul>
+<h3 id="e-14-05-whats-the-fucking-point-then-what-the-hell-do-i-do-then">E-14-05 <code>"What's the fucking point, then?"</code> と <code>"What the hell do I do then?"</code> を、追い詰められた行き場のなさとして返す</h3>
+<p><strong>EN:</strong> <code>"What's the fucking point, then?"</code> / <code>"(Mumbling) What the hell do I do then?"</code>
+<strong>行:</strong> <code>2576</code> / <code>2594</code>
+<strong>JP:</strong> <code>じゃあ、一体全体何の意味があるんですか？</code> / <code>じゃあ、一体どうすればいいのですか？</code></p>
+<p><strong>要旨:</strong> ここは説明を求めているのではなく、行き先を失った反発が噴き出している。無難な質問にすると、追い詰められた感じが抜ける。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>What's the fucking point, then?</code> は修辞疑問であり、「意味なんてないじゃないか」という絶望の断言を疑問文の形で発している。<code>What is the use?</code> と同じ構造で、答えを求めていない。Congy 訳「じゃあ、何の意味があるんだよ？」は疑問符で終わっており、字義的には問いの形を保っているが、修辞疑問の読み方（「意味などない」という諦め）がクロフォードへの反発として伝わるかどうかは、文脈と語気に依存する。</li>
+<li><code>fucking</code> は感情を高めた強調の汚語であり、SCP-8980 がここで自制を失い感情を爆発させていることの記号である。Congy 訳「何の意味があるんだよ？」では「だよ」が男性的な荒い語尾として使われているが、<code>fucking</code> の感情的な爆発の強度が十分に出ているかを検討する必要がある。</li>
+<li><code>(Mumbling) What the hell do I do then?</code> のト書き <code>Mumbling</code>（つぶやき・低い声）は、SCP-8980 がもうクロフォードへ向けて発語するのではなく、自分の中で言葉が漏れ出した状態を示す。Congy 訳「じゃあ、私は何をすればいいんだよ。」は質問としての形式を保っているが、<code>Mumbling</code> が指示する声の方向性（内側に向いている、独り言に近い）と整合しているかを確認する必要がある。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>What's the fucking point, then?</code> は修辞疑問として訳す。「じゃあ、意味なんてないじゃないですか。」または「じゃあ、何の意味があるっていうんですか！」のように、問いが「意味はない」という諦めを含んでいる表現にする。答えを求めているように読まれないようにする。</li>
+<li><code>(Mumbling) What the hell do I do then?</code> は独り言・嘆きとして訳す。「（つぶやいて）じゃあ、私はどうすればいいって言うの……。」のように、相手への発話ではなく自分の内側に向いた嘆きとして処理する。疑問符は使わないか、省略点（……）を加えて独り言の揺らぎを出す。</li>
+</ul>
+<h3 id="e-14-06-a-challenge">E-14-06 <code>"a challenge"</code> は前段で植え付けられた言い換えである</h3>
+<p><strong>EN:</strong> <code>"consider their problems like... a challenge"</code> / <code>"A challenge..."</code> / <code>"Yeah... a... a challenge, right? It's a challenge. I can... yeah... yeah..."</code>
+<strong>行:</strong> <code>jp_quoteはメタ記述（実際の訳文ではなく記述）</code> / <code>jp_quoteはメタ記述（復唱という観察）</code> / <code>2614</code>
+<strong>JP:</strong> <code>課題のように考える</code> だけで済ませた訳 / 復唱</p>
+<p><strong>要旨:</strong> ここはクロフォードが「乗り越えるもの」という枠へ言い換え、SCP-8980 がそれを呑み込んで自分に言い聞かせる場面である。復唱だけ切り出すと、植え付けの気味悪さが薄れる。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li>クロフォードはこの会話の中で <code>a challenge</code> を三回以上繰り返す（<code>consider their problems like... a challenge</code> → <code>a challenge</code> → <code>I think every trial you face can be tolerable if you just see it as a challenge</code>）。これは SCP-8980 の苦しみ・問題・被害を「乗り越えるべき課題」という積極的な再解釈語に置き換える操作であり、ガスライティングの典型的な言語的技法である。Congy 訳はこの語を「挑戦」で一貫して訳しているが、「挑戦」は前向きな自発的行動の意味合いが強く、苦しみを無理やり塗り替えているという押しつけ感が薄れる。</li>
+<li>SCP-8980 が <code>Yeah... a... a challenge, right? It's a challenge. I can... yeah... yeah...</code> と繰り返す場面は、植え付けの語が本人の口から出てくる瞬間であり、自分自身の言葉ではなくクロフォードの語彙を反復することで洗脳の効果が可視化される。この場面が機能するには、<code>a challenge</code> がクロフォードの語として異物感を持っている必要がある。「挑戦」という自然な日本語では、SCP-8980 がその語を借用しているという違和感が出にくい。</li>
+<li><code>every trial you face</code> の <code>face</code> が Congy 訳で落とされている。<code>face a trial</code>（試練に向き合う）の <code>face</code> は「向き合う」という動作主体性を含む語であり、試練を SCP-8980 自身が正面から受ける主体として描く。これを省略すると、試練が単に「存在するもの」になり、SCP-8980 が向き合うべき（向き合えない）という対比の重みが消える。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>a challenge</code> はクロフォードの押しつけ的な再定義語として、「乗り越えるべき課題」「試練」など、より外から与えられた枠という語感を持つ語に訳す。「挑戦」のような自発的前向き語は避ける。</li>
+<li>SCP-8980 が <code>Yeah... a... a challenge, right?</code> と繰り返す場面では、その語を「自分のものではない語を試しながら繰り返している」感覚が出るよう、語尾・間投詞・反復を原文の言いよどみに沿って丁寧に処理する。「……乗り越えるべき課題、だよね？ 課題なんだよね。私……できる……うん……うん……」のように、吞み込もうとしている過程を見せる。</li>
+<li><code>every trial you face</code> の <code>face</code> を落とさない。「あなたが直面するどんな試練も」のように、SCP-8980 が試練に向き合う主体であることを明示する。</li>
+</ul>
+<h3 id="e-14-07-subject-newfound-motivation">E-14-07 <code>"SUBJECT: Newfound Motivation"</code> は「動機」ではなく、持ち上がった意欲の件名である</h3>
+<p><strong>EN:</strong> <code>"SUBJECT: Newfound Motivation"</code>
+<strong>行:</strong> <code>2646</code>
+<strong>JP:</strong> <code>新たに見つかった動機</code></p>
+<p><strong>要旨:</strong> 件名を説明文にすると、報告書の冷たさではなく質問票みたいに見える。ここは生産性の急上昇を示すラベルとして置く。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>Newfound Motivation</code> は医療・研究報告書の件名として使われているラベルであり、「最近になって現れた動機」ではなく「新たに発生した意欲の記録」を一語で示す。<code>newfound</code> は「それ以前にはなかったが、最近になって突然現れた」という属性を持つ形容詞であり、<code>motivation</code>（動機・意欲）と合わさることで「説明がつかない突然の意欲の急上昇」という医療観察の対象を示すラベルになっている。</li>
+<li>Congy 訳「新たに見つかった動機」は形容詞部分（<code>newfound</code>）を分析的に展開しており、件名の圧縮されたラベル語感が失われる。医療報告書の件名は感想ではなく観察事象を示す名詞句であるため、説明的な訳語より短い名詞句に留めるべきである。</li>
+<li>この件名はバーンズのセッション後に提出される報告書のものであり、クロフォードが SCP-8980 の行動変化を「新しく発生した意欲」として分類・記録したことを示す。その事務的な冷たさが件名の短さに現れており、説明文調の訳では記録する側の制度的距離感が薄れる。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>SUBJECT: Newfound Motivation</code> は「件名：新たな意欲の発現」「件名：意欲の急激な向上」のように、事象を記録するラベルとして短い名詞句で訳す。「新たに見つかった動機」という分析的展開を避ける。</li>
+</ul>
+<h3 id="e-14-08-id-8980-s12">E-14-08 ログ ID <code>8980-S12</code> を崩さない</h3>
+<p><strong>EN:</strong> <code>ID 8980-S12</code>
+<strong>行:</strong> <code>2656</code>
+<strong>JP:</strong> <code>IDは8980-W12</code></p>
+<p><strong>要旨:</strong> これは単純だが重大な誤記で、文書追跡性を壊す。</p>
+<p><strong>修正:</strong> <code>8980-S12</code> に戻す。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li>ログ ID <code>8980-S12</code> の <code>S</code> は記録種別を示す分類記号であり、<code>W</code> は別種の分類を示す。Congy 訳では <code>8980-W12</code> と誤記されており、これは SCP Foundation 文書内の記録追跡が壊れることを意味する。架空の文書設定ではあるが、記録文書の ID は設定の整合性を担保するため、原文通り <code>S12</code> のまま訳す必要がある。</li>
+<li>ID の誤記はこの一箇所だけであれば些細に見えるが、後続のログ参照やクロスリンクとの整合に影響する。文書形式の正確な再現は、SCP 記事の「書類文体」としての真正性を維持するために不可欠である。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>8980-W12</code> を <code>8980-S12</code> に修正する。記号の変更のみで他は手を加えない。</li>
+</ul>
+<h3 id="e-14-09-change-of-heart-gives-a-single-shit-about-me">E-14-09 <code>"change of heart"</code> と <code>"gives a single shit about me"</code> で、心境の変化を疑問視するだけに留めない</h3>
+<p><strong>EN:</strong> <code>"you've had such a sudden change of heart"</code> / <code>"I'm sure Steele gives a single shit about me"</code>
+<strong>行:</strong> <code>2668</code> / <code>2670</code>
+<strong>JP:</strong> <code>あなたがなぜそんなに急に考えを変えたのか</code> / <code>ああ、スティールなんかがどうして私のことを気にするんでしょうね</code></p>
+<p><strong>要旨:</strong> ここは、バーンズが生産性の急上昇を「心境の変化」として疑い、SCP-8980 がその見立てを下品に突き返す場面である。<code>single shit</code> の汚さを抜くと、苛立ちが丸くなる。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>we've had such a sudden change of heart</code> のバーンズの発話は複数の問題を持つ。<code>we've had</code> という一人称複数形は、SCP-8980 の心境変化をバーンズ自身も共有する集合的な出来事として語る書き方であり、「あなたが変わった」ではなく「私たちは変化した」という権威的な括り込みを行っている。Congy 訳「あなたがなぜそんなに急に考えを変えたのか」は <code>we've</code> を <code>あなたが</code> に正しく限定しているが、この括り込みのニュアンスが省かれている。</li>
+<li><code>I'm sure Steele gives a single shit about me</code> は否定を含む皮肉表現である。<code>give a (single) shit</code> は「まったく気にかけない」という俗語であり、<code>I'm sure [X] gives a single shit about me</code> = 「スティールなんかが私のことを気にかけてくれるはずがない（という皮肉）」の意味である。Congy 訳「ああ、スティールなんかがどうして私のことを気にするんでしょうね」は「どうして〜するんでしょうね」という疑問形にしており、皮肉の切り口よりも疑問の語感が前に出てしまう。</li>
+<li><code>single shit</code> は汚語としての強度があり、SCP-8980 がバーンズの干渉に生理的な嫌悪を感じていることを表す語感を持つ。これを「気にする」という一般的な動詞に置き換えると、SCP-8980 の怒りの質（理性的な不満ではなく、内臓的な嫌悪）が薄れる。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>we've had such a sudden change of heart</code> はバーンズが SCP-8980 を「集合的な主語（私たち）」に括り込む操作を含む台詞として処理する。「急にそれほど変わるものでしょうか」「どういう心境の変化なのか、気になりますね」のように、バーンズが SCP-8980 の変化を他人事として疑いながら、自分もその変化に関わっているかのような含みを匂わせる語感にする。</li>
+<li><code>I'm sure Steele gives a single shit about me</code> は皮肉として訳す。「スティールが私のことなんか気にかけるわけもないでしょうね」「スティールが私のことを気にするとでも？　笑わせないでください」のように、「気にしているはずがない」という断定を皮肉の形で出す。汚語強度は訳語の雑さや体言止め・語調の粗さで補う。</li>
+</ul>
+<h3 id="e-14-10-im-just-feeling-better-alright-can-i-go">E-14-10 <code>"I'm just feeling better, alright?"</code> から <code>"Can I go?"</code> までを、押しつけられた同意として拾う</h3>
+<p><strong>EN:</strong> <code>"I'm just feeling better, alright?"</code> / <code>"My therapist has been really useful."</code> / <code>"I admit it. Therapy was helpful. Can I go?"</code>
+<strong>行:</strong> <code>2674</code> / <code>EN行2674・JP行2678で行ずれがあるため照合保留</code> / <code>2678</code>
+<strong>JP:</strong> <code>いいですか？私はただ気分がよくなっただけ。セラピストのおかげです。</code> / <code>あなたの言う通りでしたよ、いいですか？セラピストが本当に役に立ったんですよ？</code></p>
+<p><strong>要旨:</strong> ここは <code>alright?</code> と <code>okay?</code> を重ねながら、相手の語彙をなぞって退室を求めている。<code>I'm just feeling better</code> を落とすと、前段の刷り込みが終わった後の自動再生が見えなくなる。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>I'm just feeling better, alright?</code> が Congy 訳で落ちているか変形されている。この台詞は SCP-8980 がクロフォードの療法の効果を、その場を逃げるために口にしている発話であり、「気分が良くなった」という言葉を <code>alright?</code> というバーンズへの防衛的な確認で締めている。<code>alright?</code> はここでは「それでいいでしょう？」「文句はないでしょう？」という意味であり、クロフォード側の語彙で管理されることへの諦めの現れとして機能する。</li>
+<li><code>I admit it.</code> というこの文が抜けると、SCP-8980 が明示的に「そう、あなたの言う通り認めます」と発話する瞬間が消える。この文は三語だが、SCP-8980 の抵抗がこの時点で完全に崩れ、クロフォードの誘導に屈服したことを宣言する転換点として機能する。訳で省略または他の文と融合させると、服従の宣言が曖昧になる。</li>
+<li><code>Can I go?</code> は SCP-8980 がこの場から逃げたいという唯一の直接的な意思表示であり、クロフォードとバーンズに囲まれた状況での退室要求の言葉である。この台詞が訳で抜けると、面談の全体が「普通の心理セッション」として閉じてしまい、SCP-8980 がこの場に留め置かれている事実、そして「気分が良くなった＋認める＋もう行っていいですか？」という三段の脱出試みの構造が消える。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li>三つの台詞（<code>I'm just feeling better, alright?</code> / <code>I admit it.</code> / <code>Can I go?</code>）を順序通り訳し、それぞれを独立した一文として扱う。前の文と繋げて一文化しない。</li>
+<li><code>alright?</code> は「それでいいでしょう？」「それで構わないでしょう？」という、許可を求めながら押しつけを遮断しようとする語尾として訳す。同意の確認（「いいですよね？」）とも違い、防衛的な締めの語気を保つ。</li>
+<li><code>Can I go?</code> は文末に単独で置き、「もう行ってもいいですか？」という退室要求を明示する。この一文が、バーンズとのやり取り全体への SCP-8980 の最終的な答えである。</li>
+</ul>
+<h3 id="e-14-11-get-their-act-together">E-14-11 <code>"get their act together"</code> を、道徳的更生ではなく持ち直しとして読む</h3>
+<p><strong>EN:</strong> <code>"It's not so common for someone to get their act together without fixing the root cause."</code>
+<strong>行:</strong> <code>2680</code>
+<strong>JP:</strong> <code>根本的な原因を解決せずに行動が改まるのはあまり宜しいことではないようで。</code></p>
+<p><strong>要旨:</strong> ここは素行の更生を言っているのではなく、異常な持ち直し方の不自然さを見ている。<code>行動が改まる</code> にすると、医療的な観察が道徳説教に寄る。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>get their act together</code> は口語慣用句であり、「言動がまとまる」「ちゃんとするようになる」「立て直す」という意味で使われる。ここでバーンズが言っているのは、SCP-8980 が急に生産性を高め、行動をまとめてきた事実が根本原因なしには不自然だという医療的観察である。Congy 訳「行動が改まる」は「行動の改善」を「更生・品行の改善」という道徳的文脈で読める語に近づけており、バーンズの発話が「SCP-8980 の素行が良くなること」について道徳的な期待を述べているように見えてしまう。</li>
+<li>この文脈におけるバーンズの観察は「root cause（根本的な原因）が解決されていないのに get their act together するのは珍しい」という臨床的な異常事態の指摘であり、道徳的判断ではなく機能的・医療的な観察である。訳語が道徳的語感を持つと、バーンズが治療者としての疑問を呈している場面が、上司が部下の態度を評価している場面に変わる。</li>
+<li><code>without fixing the root cause</code> の <code>root cause</code>（根本的な原因）は医療・工学の専門用語であり、「問題の根本にある原因」を指す。ここに「素行」「行動が改まる」という非専門語が組み合わさると、臨床観察の語感が消えて言説の性格が変わる。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>get their act together</code> は「まともになる」「立て直す」「ちゃんとやれるようになる」のような、機能的な回復・整備を示す語で訳す。「行動が改まる」という道徳更生語は避ける。</li>
+<li><code>without fixing the root cause</code> は「根本的な原因を解決せずに」として専門的な響きを保つ。「問題の根っこを直さないのに」のように口語的に落としても意味は通るが、臨床観察の文体として硬さを維持することが望ましい。</li>
+</ul>
+<h3 id="e-14-12-i-plead-the-fifth">E-14-12 <code>"I plead the fifth"</code> を法廷文言に寄せすぎない</h3>
+<p><strong>EN:</strong> <code>"I plead the fifth."</code>
+<strong>行:</strong> <code>2684</code>
+<strong>JP:</strong> <code>黙秘権を行使します。</code></p>
+<p><strong>要旨:</strong> これは本気の法廷答弁ではなく、皮肉を帯びた決まり文句である。硬すぎると、SCP-8980 が Byrnes をかわした冗談の感じが消える。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>I plead the fifth</code> は米国憲法修正第5条（自己負罪拒否特権）に由来するが、日常会話では「それは答えたくない」「答える気がない」という軽い拒否表現として使われる慣用フレーズである。ここでの SCP-8980 の発話は、バーンズへの直接の口撃に対する機知を帯びた回避であり、本物の法廷答弁の厳粛さを持った発言ではない。</li>
+<li>Congy 訳「黙秘権を行使します。」は法廷手続きの文体であり、日本語話者には正式な手続きを行使しているかのような印象を与える。SCP-8980 のこのシーンのトーンは苦境の中でも一瞬の機知を見せるものであり、過剰に法廷調になると皮肉の軽さと機知が消え、SCP-8980 が硬く官僚的な口調で返答しているように見える。</li>
+<li>同じ発話の直後に退室要求が続くという流れを考えると、<code>I plead the fifth</code> はバーンズの詮索を一言で切り、会話を終わらせるための機知の道具として使われている。法廷文言の硬さはその「一言で切る」軽快さを鈍らせる。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>I plead the fifth</code> は「それはお答えできません」「黙秘します」のように口語的な拒否に変えるか、皮肉の語感を保つなら「第五条発動です」「自己負罪お断り」など、フレーズの意味を崩さずに軽さを出す工夫をする。「黙秘権を行使します」という行政手続き語は避ける。</li>
+</ul>
+<h3 id="e-14-13-cant-a-lady-do-her-fucking-job-in-peace-why-do-you-have-to-worm">E-14-13 <code>"Can't a lady do her fucking job in peace?"</code> と <code>"Why do you have to worm..."</code> を落とさない</h3>
+<p><strong>EN:</strong> <code>"Can't a lady do her fucking job in peace? Why do you have to worm your way into every goddamn thing I do?"</code>
+<strong>行:</strong> <code>EN行2690でwikidotマークアップで2文が分断されているため照合保留</code></p>
+<p><strong>要旨:</strong> ここは、SCP-8980 がようやく抑え込んでいた怒りを噴き出す場面である。ここを抜くと、後の切り上げ要求が単なる切り替えに見える。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>Can't a lady do her fucking job in peace?</code> は修辞疑問であり、「働く女性として平穏に職務をこなす基本的な権利を主張する」声である。<code>a lady</code> という三人称的な一般化は、自分個人の苦情ではなく「女性として正当に有する権利」を普遍的に据えることで、バーンズへの告発に格を与えている。<code>fucking</code> は極限まで達した怒りの爆発の記号であり、それまで抑制してきた感情の爆発点を示す。Congy 訳でこの台詞が欠落していると、SCP-8980 の最後の怒りの爆発が消え、その後の会話終了が唐突な切り替えに見える。</li>
+<li><code>Why do you have to worm your way into every goddamn thing I do?</code> の <code>worm your way into</code>（虫のようにじわじわと潜り込む）は、バーンズの干渉が侵入的・粘り強く・意図的に SCP-8980 の活動圏に入り込んでくるものだという生理的な嫌悪を言葉にした表現である。「関わってくる」「巻き込んでくる」のような中立語では、この侵入感・嫌悪感が出ない。<code>goddamn</code> はもう一つの強調汚語であり、SCP-8980 の発話の中で怒りが極まっていることを二重に示している。</li>
+<li>この二文が欠落すると、バーンズとのやり取りが「SCP-8980 が生産性について説明し、退室した」という記録に見え、バーンズが SCP-8980 の仕事・生活すべてに浸食してきたことへの怒りの噴出という場面の核心が消える。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>Can't a lady do her fucking job in peace?</code> は修辞疑問として訳す。「仕事くらい邪魔しないでいただけませんか！」「女が一人で仕事もできないんですか！」のように、答えを求めない怒りの発話として処理する。</li>
+<li><code>worm your way into every goddamn thing I do</code> の <code>worm</code> の侵入感と生理的嫌悪を保つ。「くまなく首を突っ込んでくる」「どこにでも潜り込んでくる」など、意図的な侵入の語感を維持する。<code>goddamn</code> は感情強調語として同等の強度の汚語を当てる。</li>
+</ul>
+<h3 id="e-14-14-thanks-for-wasting-my-time-asshole">E-14-14 <code>"Thanks for wasting my time. Asshole."</code> を落とさない</h3>
+<p><strong>EN:</strong> <code>"Thanks for wasting my time. Asshole."</code>
+<strong>行:</strong> <code>現行source_en.wikidotに該当行なし</code></p>
+<p><strong>要旨:</strong> この一言で、面談は「終わった会話」ではなく、見せかけの対話を使った消耗戦だったと分かる。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>Thanks for wasting my time.</code> は皮肉の感謝であり、「（笑）、時間を無駄にさせてくれてありがとうよ」という文字通りの逆説的礼賛である。面談全体への事後評価として一語で「これは無駄だった」という SCP-8980 の結論を宣言する機能を持つ。この台詞が欠落すると、面談の終わりが「やり取りの自然な終了」として読まれ、消耗戦として閲覧者に面談の性質が伝わらない。</li>
+<li><code>Asshole.</code> はピリオドで終わる独立した短文である。感嘆符ではなく、静かな断定である。これはバーンズを叫んで罵るのではなく、事実として確定したことを述べる語感であり、SCP-8980 の本記事全体で守られてきた <code>!</code> の抑制（感情表現の静かさ）と一致している。この一語が訳で欠落または柔らかくなると、バーンズへの SCP-8980 の最終評価が失われる。</li>
+<li>この場面は <code>source_ref.kind = "note"</code> が示すように現行の原文ファイルには確認できないが、証拠として指摘されている台詞であることに変わりない。翻訳者として原文のすべての声に責任を持つという観点から、もし原文に該当行が存在した場合に欠落・軟化しないよう明示しておく必要がある。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>Thanks for wasting my time.</code> は「時間を無駄にさせてくれてありがとう。」という皮肉の一文として訳す。「どうもありがとうございました」という礼儀的な感謝語にしない。</li>
+<li><code>Asshole.</code> は「最低。」「最悪。」「くそったれ。」のようなピリオド終わりの静かな罵倒として一語で訳す。感嘆符は使わない。</li>
+</ul>
+<h2 id="_3">実務上の結論</h2>
+<ul>
+<li>前半の誘導は、単なる雑談に整えない</li>
+<li>中盤の同情は、相手の受け取り方を上書きしていると明示する</li>
+<li>後半の拒絶は、最後まで拒絶として残す</li>
+<li>退室要求と罵倒は、抜くと場面の重さが落ちる</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

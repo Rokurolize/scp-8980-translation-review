@@ -1,0 +1,1329 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../05_addendum1_initial_interview/">
+      
+      
+        <link rel="next" href="../07_addendum3_experimentation/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>SCP-8980 該当箇所 06 査読 - SCP-8980 日本語訳査読レビュー</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#scp-8980-06" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href=".." title="SCP-8980 日本語訳査読レビュー" class="md-header__button md-logo" aria-label="SCP-8980 日本語訳査読レビュー" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SCP-8980 日本語訳査読レビュー
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              SCP-8980 該当箇所 06 査読
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="検索">
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="SCP-8980 日本語訳査読レビュー" class="md-nav__button md-logo" aria-label="SCP-8980 日本語訳査読レビュー" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    SCP-8980 日本語訳査読レビュー
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 日本語訳査読レビュー
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_css_and_theme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 01 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_ec_popup_modal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 02 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_tabview_and_ec_memorandum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 03 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_page_header_scp_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 04 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_addendum1_initial_interview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 05 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 06 査読
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 06 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        このファイルの使い方
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        総評
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        直すべき箇所 [ERROR]
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="直すべき箇所 [ERROR]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#e-06-01-being-put-through-the-wringer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-06-01 "being put through the wringer" が「散々苦労」に平坦化している
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-06-06-get-your-testing-set-up-by-tomorrow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-06-06 "get your testing set up by tomorrow" が受け手側の不利益をぼかしている
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-06-07-just-consider-this-a-an-extended-vacation-alright" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-06-07 "Just consider this a... an extended vacation, alright?" を段取り説明にしない
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        補強したい箇所 [NOTE]
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="補強したい箇所 [NOTE]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#n-06-01-visibly-agitated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-06-01 visibly agitated は観察記録として残したい
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-06-02-it-seems-like" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-06-02 it seems like は診断のクッションとして機能している
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-06-03-no-disciplinary-action-will-be-taken-at-this-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-06-03 no disciplinary action will be taken at this time は決定の温度を落とさない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-06-04-great-i-always-appreciate-it-when-a-meeting-goes-smoothly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-06-04 Great! I always appreciate it when a meeting goes smoothly. は満足の押しつけになっている
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-06-05-on-time-next-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-06-05 on time, next time! は軽い冗談ではなく釘刺し
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        実務上の結論
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_addendum3_experimentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 07 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_addendum4_secondary_exp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 08 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_addendum5_post_reemployment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 09 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_form2093a_first_filing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 10 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11_form2093a_rewritten_response/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 11 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12_addendum6_containment_plan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 12 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13_addendum7_tertiary_exp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 13 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14_addendum8_health_crawford/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 14 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15_incident2_ace_exploit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 15 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16_addendum9_depression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 16 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17_addendum10_neutralization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 17 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18_investigation_summary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 18 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19_mcpharrell_email_logout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SCP-8980 該当箇所 19 査読
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        このファイルの使い方
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        総評
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        直すべき箇所 [ERROR]
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="直すべき箇所 [ERROR]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#e-06-01-being-put-through-the-wringer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-06-01 "being put through the wringer" が「散々苦労」に平坦化している
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-06-06-get-your-testing-set-up-by-tomorrow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-06-06 "get your testing set up by tomorrow" が受け手側の不利益をぼかしている
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-06-07-just-consider-this-a-an-extended-vacation-alright" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-06-07 "Just consider this a... an extended vacation, alright?" を段取り説明にしない
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        補強したい箇所 [NOTE]
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="補強したい箇所 [NOTE]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#n-06-01-visibly-agitated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-06-01 visibly agitated は観察記録として残したい
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-06-02-it-seems-like" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-06-02 it seems like は診断のクッションとして機能している
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-06-03-no-disciplinary-action-will-be-taken-at-this-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-06-03 no disciplinary action will be taken at this time は決定の温度を落とさない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-06-04-great-i-always-appreciate-it-when-a-meeting-goes-smoothly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-06-04 Great! I always appreciate it when a meeting goes smoothly. は満足の押しつけになっている
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-06-05-on-time-next-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N-06-05 on time, next time! は軽い冗談ではなく釘刺し
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        実務上の結論
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="scp-8980-06">SCP-8980 該当箇所 06 査読</h1>
+<p><strong>対象 EN:</strong> <code>articles/fragment_scp-8980-1/segments/en/06_addendum2_test_results.wikidot</code>
+<strong>対象 JP:</strong> <code>source_jp.wikidot 行 1074-1228</code></p>
+<h2 id="_1">このファイルの使い方</h2>
+<p>バーンズの丁寧さが配慮ではなく圧力として機能していることを、訳文で必ず再現すること。
+指摘は error 2 件に加え、周辺の圧力表現の補強についても含む。</p>
+<h2 id="_2">総評</h2>
+<p>この箇所の芯は、SCP-8980 の疲弊と、バーンズのもっともらしい慰撫が正面衝突することにある。
+現行訳では、検査で絞られる身体感覚と、翌日も検査に入れられる嫌さの出し方が弱い。</p>
+<h2 id="error">直すべき箇所 [ERROR]</h2>
+<h3 id="e-06-01-being-put-through-the-wringer">E-06-01 <code>"being put through the wringer"</code> が「散々苦労」に平坦化している</h3>
+<p><strong>EN:</strong> <code>"being put through the wringer"</code>
+<strong>行:</strong> <code>1121</code>
+<strong>JP:</strong> <code>散々苦労してきた</code></p>
+<p><strong>要旨:</strong> ここは単に大変だったではなく、検査で絞られ消耗しきっていることを出す必要がある。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li>慣用句の身体性が落ちる</li>
+<li><code>blood drawn</code> と並ぶことで出る消耗感が弱まる</li>
+<li>SCP-8980 の怒りが「愚痴」寄りに見えてしまう</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>絞り尽くされた</code></li>
+<li><code>しごかれた</code></li>
+<li><code>くたくたになった</code></li>
+</ul>
+<h3 id="e-06-06-get-your-testing-set-up-by-tomorrow">E-06-06 <code>"get your testing set up by tomorrow"</code> が受け手側の不利益をぼかしている</h3>
+<p><strong>EN:</strong> <code>"I'll be sure to get your testing set up by tomorrow."</code>
+<strong>行:</strong> <code>1211</code>
+<strong>JP:</strong> <code>明日までには検査の手はずを整えておきます。</code></p>
+<p><strong>要旨:</strong> ここは段取りの説明ではなく、「明日にはまた検査に入れる」という通知である。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>手はずを整える</code> では準備側の事務作業に寄る</li>
+<li>SCP-8980 が翌日からまた検査にかけられることが軽くなる</li>
+<li>バーンズの丁寧な支配の滑りがよくなりすぎる</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>明日には検査に入れるよう手配する</code></li>
+<li><code>次の検査を始められるようにしておく</code></li>
+</ul>
+<h3 id="e-06-07-just-consider-this-a-an-extended-vacation-alright">E-06-07 <code>"Just consider this a... an extended vacation, alright?"</code> を段取り説明にしない</h3>
+<p><strong>EN:</strong> <code>"Just consider this a... an extended vacation, alright?"</code>
+<strong>行:</strong> <code>1195</code>
+<strong>JP:</strong> <code>長期休暇の類であると思ってください。いいですね？</code></p>
+<p><strong>要旨:</strong> これは中立な予定説明ではなく、次の検査を「休暇」と呼んで丸めた支配の言い方である。<code>alright?</code> も確認ではなく、やわらかい圧として残したい。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>extended vacation</code> の皮肉が弱まる</li>
+<li>検査を受ける不利益がぼける</li>
+<li><code>alright?</code> の押しつけが消える</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>しばらくの長期休暇</code></li>
+<li><code>とでも思っておいてください</code></li>
+</ul>
+<h2 id="note">補強したい箇所 [NOTE]</h2>
+<h3 id="n-06-01-visibly-agitated">N-06-01 <code>visibly agitated</code> は観察記録として残したい</h3>
+<p><strong>EN:</strong> <code>SCP-8980 is seated, though visibly agitated; it repeatedly taps its leg and huffs for an extended period.</code>
+<strong>行:</strong> <code>1103</code>
+<strong>JP:</strong> <code>SCP-8980は着席していたが明らかに動揺しており、長時間にわたって足を繰り返し叩き、息を荒くしている。</code></p>
+<p><strong>要旨:</strong> ここは「動揺している」だけでは足りず、外から見て分かる動揺であることが大事である。<code>repeatedly</code> と <code>for an extended period</code> も、観察記録の粘りとして残したい。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>visibly agitated</code> の <code>visibly</code> は「外から観察できる形で」という副詞であり、SCP-8980 の内面の推測ではなく、観察者が目視で確認できる行動的な動揺の記録であることを示している。これはト書き・観察記録の文体において重要であり、「明らかに動揺しており」という Congy 訳は意味は通るが、「外から見て分かる」という観察の基盤が弱くなっている。</li>
+<li><code>repeatedly</code>（繰り返し）と <code>for an extended period</code>（長時間にわたって）は、この動揺行動の頻度と持続時間を示す観察記録的な語である。「繰り返し叩き続けた」「長時間にわたって」という継続・頻度の記述は、SCP-8980 の状態が一時的ではなく持続的なストレス状態にあることを観察記録として示している。これらが保持されることで、後続の面談での SCP-8980 の反応の背景が読み取れる。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>visibly agitated</code> は「目に見えて落ち着かない様子で」「外から見ても分かる動揺を見せており」のように、観察者が視覚的に確認できる行動的動揺として訳す。</li>
+<li><code>repeatedly</code> と <code>for an extended period</code> は省略しない。繰り返しと長時間という観察記録の具体性を保つ。</li>
+</ul>
+<h3 id="n-06-02-it-seems-like">N-06-02 <code>it seems like</code> は診断のクッションとして機能している</h3>
+<p><strong>EN:</strong> <code>Well... it seems like the anomaly is trying to humiliate you.</code>
+<strong>行:</strong> <code>1155</code>
+<strong>JP:</strong> <code>ええ、どうやら件の異常現象はあなたの自尊心を傷つけようと試みているみたいなんです。</code></p>
+<p><strong>要旨:</strong> <code>it seems like</code> は断定を避けるクッションであり、<code>humiliate</code> は単なる「傷つける」ではない。ここは、バーンズが丁寧に見せかけて決めつけている嫌さを残したい。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>it seems like</code> は断定を柔らかく包むクッションであり、バーンズが自分の解釈を「さも当然のように」提示しながら、形式上は推測として語っている二重性を表している。丁寧な語り口で相手の経験を代わりに解釈・命名するという操作が、この <code>seems like</code> の軽さに包まれている。Congy 訳「どうやら〜みたいなんです」はこの感触をある程度保っているが、「どうやら」が推測の印象を強めすぎ、バーンズが既に結論を持っている感じが弱まる。</li>
+<li><code>humiliate</code> は「恥をかかせる・公衆の前で面目を失わせる」という語であり、「自尊心を傷つける」より社会的な恥辱・屈辱のニュアンスを持つ。SCP-8980 が自分の異常性によって他者の前で屈辱を与えられているという解釈をバーンズが提示しており、<code>humiliate</code> の語は SCP-8980 の異常性をより「加害的なもの」として描写する方向に機能する。「傷つける」では個人的な感情傷害として弱まる。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>it seems like</code> は「どうやら〜らしい」の推測語感を残しながら、バーンズが既に結論を持ちつつ柔らかく提示している感じを保つ。完全に確信した断定にも、単なる推測にも寄せすぎない。</li>
+<li><code>humiliate</code> は「恥をかかせる」「辱める」「屈辱を与える」のように、公的な恥・社会的屈辱として訳す。「傷つける」や「不快にさせる」では語の強度と方向性が足りない。</li>
+</ul>
+<h3 id="n-06-03-no-disciplinary-action-will-be-taken-at-this-time">N-06-03 <code>no disciplinary action will be taken at this time</code> は決定の温度を落とさない</h3>
+<p><strong>EN:</strong> <code>While the incident in question was found to be a violation of the Foundation Citation Policy, no disciplinary action will be taken at this time.</code>
+<strong>行:</strong> <code>ENおよびJPソース行1203にwikidotスパンマークアップ（[[span class="red-text"]]）がen_quoteおよびjp_quoteを跨ぐ形で存在し部分一致不可</code>
+<strong>JP:</strong> <code>この件は財団の引用規定に違反していると判断されましたが、現時点では懲戒処分は行われません。</code></p>
+<p><strong>要旨:</strong> ここは「現時点では」が核であり、単なる説明ではなく委員会の決定である。<code>will be taken</code> の決定性を、ぼかしすぎないようにしたい。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>no disciplinary action will be taken at this time</code> は委員会・上位機関が下した決定の文書的陳述であり、<code>will be taken</code> の未来形は「（今後）処分は行われない」という制度的決定の宣言を表している。<code>at this time</code>（現時点では）という限定句は、「今は行われないが将来は変わりうる」という含みを持っており、これが制度的な保留感・脅しとして機能している。</li>
+<li>Congy 訳「現時点では懲戒処分は行われません」は意味的には近いが、「行われません」が現在の事実陳述として読まれる余地がある。これは委員会が決定を下した宣告文であり、「処分なしと決定した」という制度的な確定感（<code>will be taken</code> の決定性）を保つことで、文書の重みが出る。<code>at this time</code> の「今は」という限定も、後で変わりうるという含みとして読めるよう明示する。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>will be taken</code> の決定性を保ち、委員会が正式に決定を下したことが読める語にする。「行われません」よりも「行われないこととする」「行わない旨を決定した」のように、宣告・決定としての重みを持たせる。</li>
+<li><code>at this time</code>（現時点では）の限定句は省略しない。将来の可能性を開いたまま今は処分なしという制度的留保の構造を保つ。</li>
+</ul>
+<h3 id="n-06-04-great-i-always-appreciate-it-when-a-meeting-goes-smoothly">N-06-04 <code>Great! I always appreciate it when a meeting goes smoothly.</code> は満足の押しつけになっている</h3>
+<p><strong>EN:</strong> <code>Great! I always appreciate it when a meeting goes smoothly.</code>
+<strong>行:</strong> <code>1211</code>
+<strong>JP:</strong> <code>良いね！話がスムーズに進むといつも嬉しくなりますね。</code></p>
+<p><strong>要旨:</strong> <code>Great!</code> は単なる相づちではなく、手続きがうまく進んだことへの満足である。<code>いつも嬉しくなる</code> だけだと、圧のある達成感が少し弱い。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>Great!</code> は感嘆詞として手続き完了への強い満足を表しており、バーンズ自身のアジェンダが滞りなく進んだことへの満足感の宣言として機能している。これはSCP-8980 への配慮や共感の語ではなく、バーンズ側の目標達成感である。</li>
+<li><code>I always appreciate it when a meeting goes smoothly</code> の <code>goes smoothly</code>（スムーズに進む）は、表向きは会話の円滑さを指しているが、文脈としてはバーンズの意図通りに進んだことへの言及として読む必要がある。SCP-8980 が抵抗せず、バーンズの言い分を通した面談を「スムーズ」と称している。Congy 訳「話がスムーズに進むといつも嬉しくなるね。」は意味としては近いが、「嬉しくなる」という語が個人的な感情として軽くなっており、バーンズが制御の達成感を相手に向けて押しつけているという圧力の感触が弱い。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>Great!</code> は軽い相づちではなく、強い満足の宣言として訳す。「よかった！」「いい感じだ！」よりも達成感が出る語を選ぶ。</li>
+<li><code>appreciate it when a meeting goes smoothly</code> は「こういう会議はいつも助かる」「スムーズに進んでくれると本当に楽だ」のように、バーンズが管理者としての達成感を語っているという語感を保つ。</li>
+</ul>
+<h3 id="n-06-05-on-time-next-time">N-06-05 <code>on time, next time!</code> は軽い冗談ではなく釘刺し</h3>
+<p><strong>EN:</strong> <code>Alright, I'll see you bright and early tomorrow — on time, next time!</code>
+<strong>行:</strong> <code>1215</code>
+<strong>JP:</strong> <code>わかりました。じゃあ、明日の朝早くに会いましょう。今度は時間通りに行きますよ！</code></p>
+<p><strong>要旨:</strong> ここは親しげな締めではなく、遅刻を釘刺しする台詞である。<code>on time, next time!</code> の嫌味を落とすと、最後の一刺しがなくなる。</p>
+<p><strong>何がだめか:</strong></p>
+<ul>
+<li><code>on time, next time!</code> は「次は時間通りに来い」というバーンズから SCP-8980 への命令的な釘刺しである。<code>!</code> が付いていることで、親しげな語調でありながら、遅刻に対する批判・命令の強さが残っている。これは面談の終わりに差し込む一言で、会話全体を「バーンズが管理している」という形で締めている。</li>
+<li>Congy 訳「今度は時間通りに行きますよ！」は一人称「行きます」を使っており、SCP-8980 が自分でそう言っているかのような読みになる。原文はバーンズが SCP-8980 に向けて言っている台詞であり、主語はバーンズ、宛先は SCP-8980 である。訳で主語が SCP-8980 に移ってしまうと、バーンズの最後の一刺しが SCP-8980 の自己申告に変わってしまい、釘刺しが消える。</li>
+</ul>
+<p><strong>修正の方向:</strong></p>
+<ul>
+<li><code>on time, next time!</code> は「次は時間通りに来るように！」「今度こそ時間通りに」のように、バーンズが SCP-8980 に向けて言っている命令的な釘刺しとして訳す。</li>
+<li>主語をバーンズ（話者）に置き、SCP-8980 に向けた要求・批判の語感を保つ。自己申告（「私が時間通りにします」）の形にしない。</li>
+</ul>
+<h2 id="_3">実務上の結論</h2>
+<ul>
+<li>消耗の慣用句は身体感覚を戻す</li>
+<li>バーンズの診断、拘束告知、締めの釘刺しは、どれも丁寧な顔をした圧として訳す</li>
+<li>修正対象は error 2 件に加え、観察描写と終端の圧力表現の補強も含む</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

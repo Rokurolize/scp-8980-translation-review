@@ -1,7 +1,7 @@
 # SCP-8980 該当箇所 03 査読
 
 **対象 EN:** `articles/fragment_scp-8980-1/segments/en/03_tabview_and_ec_memorandum.wikidot`
-**対象 JP:** `congy.wikidot` 行 896-980 付近
+**対象 JP:** `source_jp.wikidot 行 790-890`
 
 ## このファイルの使い方
 
@@ -13,7 +13,7 @@
 ここは題名、内容警告、倫理委員会覚書という「読者の読み方を決める入口」が一度に並ぶ。
 量は短いが、ここで言葉の温度を落とすと本文全体の牙が抜ける。
 
-今回、強く採るべき論点は 1 つだけである。
+修正の最重要点は 1 つである。
 それが題名後半 `"Without Regards"` の処理である。
 
 ## 直すべき箇所 [ERROR]

@@ -1,7 +1,7 @@
 # SCP-8980 該当箇所 17 査読
 
 **対象 EN:** `articles/fragment_scp-8980-1/segments/en/17_addendum10_neutralization.wikidot`
-**対象 JP:** `congy.wikidot` 行 4279-4335 付近
+**対象 JP:** `source_jp.wikidot 行 3194-3249`
 
 ## このファイルの使い方
 

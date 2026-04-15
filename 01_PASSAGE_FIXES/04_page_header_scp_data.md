@@ -1,13 +1,13 @@
 # SCP-8980 該当箇所 04 査読
 
 **対象 EN:** `articles/fragment_scp-8980-1/segments/en/04_page_header_scp_data.wikidot`
-**対象 JP:** `congy.wikidot` 行 1020-1124 付近
+**対象 JP:** `source_jp.wikidot 行 891-953`
 
 ## このファイルの使い方
 
 - `[ERROR]` はそのまま修正対象
-- `[NOTE]` は意味は通るが、制度文体や係り先を整えたい論点
-- `[OUT-OF-SCOPE]` はこの箇所単体では処理しない論点
+- `[NOTE]` は意味は通るが、制度文体や係り先を整えることが望ましい論点
+- `[OUT-OF-SCOPE]` はこの箇所では修正しない論点
 
 この箇所は SCP ファイルの顔であり、ここでの誤りは本文全体の読み方を早い段階で誤らせる。
 

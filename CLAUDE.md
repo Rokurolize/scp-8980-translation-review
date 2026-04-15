@@ -87,6 +87,12 @@ extra_blocks : 追加ブロック（"混入箇所:" "修正:" 等）
 - 指摘を持たない区間（CSS/テーマ等）は `extra_sections` に保持
 - 原文に対応行がない注記は `source_ref.kind == "note"`
 
+#### テキストフィールドの想定読者
+
+`usage_notes`・`overview`・`conclusions` の文章は、査読を受ける側（翻訳者・修正実施者）に向けて書く。
+査読者内部の優先順位・採択決定・作業自己報告（「今回は〜採る」「〜確認する」「補強済み」等）は記載しない。
+判断基準の詳細は `review_db/rewrite_criteria.md` を参照。
+
 ### `jq` による直接操作例
 
 ```bash
